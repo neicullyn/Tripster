@@ -30,8 +30,10 @@ API_HOST = 'api.yelp.com'
 DEFAULT_TERM = 'dinner'
 DEFAULT_LOCATION = 'San Francisco, CA'
 DEFAULT_SEARCH_LIMIT = 10
+DEFAULT_RADIUS = 3200 # unit is in meters (1600 meters = 1 mile)
 SEARCH_PATH = '/v2/search/'
 BUSINESS_PATH = '/v2/business/'
+
 
 # OAuth credential placeholders that must be filled in by users.
 CONSUMER_KEY = 'iC0cdMCqvnYbqxNaxzIEZQ'
@@ -82,7 +84,7 @@ def request(host, path, url_params=None):
 
     return response
 
-def search(term, location, ll, limit):
+def search(term, location, ll, limit, radius):
     """Query the Search API by a search term and location.
 
     Args:
@@ -97,13 +99,15 @@ def search(term, location, ll, limit):
         url_params = {
             'term': term.replace(' ', '+'),
             'll': ','.join(ll),
-            'limit': limit
+            'limit': limit,
+            'radius_filter': radius
         }
     else:
         url_params = {
             'term': term.replace(' ', '+'),
             'location': location.replace(' ', '+'),
-            'limit': limit
+            'limit': limit,
+            'radius_filter': radius
         }
     return request(API_HOST, SEARCH_PATH, url_params=url_params)
 
@@ -120,14 +124,14 @@ def get_business(business_id):
 
     return request(API_HOST, business_path)
 
-def query_api(term, location, ll, limit):
+def query_api(term, location, ll, limit, radius):
     """Queries the API by the input values from the user.
 
     Args:
         term (str): The search term to query.
         location (str): The location of the business to query.
     """
-    response = search(term, location, ll, limit)
+    response = search(term, location, ll, limit, radius)
 
     businesses = response.get('businesses')
 
@@ -146,7 +150,6 @@ def query_api(term, location, ll, limit):
 
     # print u'Result for business "{0}" found:'.format(business_id)
     # pprint.pprint(response, indent=2)
-
     return businesses
 
 
@@ -157,7 +160,8 @@ def main():
     parser.add_argument('-q', '--term', dest='term', default=DEFAULT_TERM, type=str, help='Search term (default: %(default)s)')
     parser.add_argument('-l', '--location', dest='location', default=DEFAULT_LOCATION, type=str, help='Search location (default: %(default)s)')
     parser.add_argument('-ll', '--latlong', dest='ll', type=str, nargs=2, help='Search latitude and longtitude')
-    parser.add_argument('-n', '--limit', dest='limit', default=DEFAULT_SEARCH_LIMIT, type=int, help='Search limit number')
+    parser.add_argument('-n', '--limit', dest='limit', default=DEFAULT_SEARCH_LIMIT, type=int, help='Limit on number of results')
+    parser.add_argument('-r', '--radius', dest='radius_filter', default=DEFAULT_RADIUS, type=int, help='Search radius')
 
     input_values = parser.parse_args()
 
@@ -165,7 +169,8 @@ def main():
         query_api(input_values.term, 
                   input_values.location, 
                   input_values.ll,
-                  input_values.limit)
+                  input_values.limit, 
+                  input_values.radius_filter)
     except urllib2.HTTPError as error:
         sys.exit('Encountered HTTP error {0}. Abort program.'.format(error.code))
 
