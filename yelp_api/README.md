@@ -28,10 +28,19 @@ query_api(self, ll,
 
 An exception will raise if invalid search condition is entered
 """
+# query by radius
 try:
 	businesses = yelp.query_api(ll=["34.1", "-118.1"], term="bar")
 except:
 	businesses = []
+
+# query by bounds
+try:
+	businesses = yelp.query_by_bounds(37.9, -122.5, 37.78, -122.4, term='bar')
+except:
+	businesses = []
+
+
 
 for business in businesses:
 	print(business['id'])

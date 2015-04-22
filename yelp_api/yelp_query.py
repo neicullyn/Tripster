@@ -157,6 +157,20 @@ class YelpQuery:
         # print u'Result for business "{0}" found:'.format(business_id)
         # pprint.pprint(response, indent=2)
 
+    def query_by_bounds(self, sw_lat, sw_lon, ne_lat, ne_lon, 
+                       term=DEFAULT_TERM, 
+                       limit=DEFAULT_SEARCH_LIMIT,
+                       radius=DEFAULT_RADIUS):
+        # http://api.yelp.com/v2/search?term=food&bounds=37.900000,-122.500000|37.788022,-122.399797&limit=3
+        url_params = {
+            'term': term.replace(' ', '+'),
+            'bounds': "{},{}|{},{}".format(sw_lat, sw_lon, ne_lat, ne_lon),
+            'limit': limit,
+            'radius_filter': radius
+        }
+
+        response = self.request(API_HOST, SEARCH_PATH, url_params=url_params)
+        return response.get('businesses')
 
 
 def main():
