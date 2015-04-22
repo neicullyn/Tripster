@@ -17,7 +17,8 @@ Run the code by specifying the optional arguments:
 
 Or run the code inside a program
 
-```
+~~~python
+from yelp_query import YelpQuery
 yelp = YelpQuery()
 
 """
@@ -31,4 +32,7 @@ try:
 	businesses = yelp.query_api(ll=["34.1", "-118.1"], term="bar")
 except:
 	businesses = []
-```
+
+for business in businesses:
+	print(business['id'])
+~~~
