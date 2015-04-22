@@ -29,7 +29,7 @@ import oauth2
 API_HOST = 'api.yelp.com'
 DEFAULT_TERM = 'dinner'
 DEFAULT_LOCATION = 'San Francisco, CA'
-DEFAULT_SEARCH_LIMIT = 10
+DEFAULT_SEARCH_LIMIT = 3
 DEFAULT_RADIUS = 3200 # unit is in meters (1600 meters = 1 mile)
 SEARCH_PATH = '/v2/search/'
 BUSINESS_PATH = '/v2/business/'
@@ -124,7 +124,11 @@ def get_business(business_id):
 
     return request(API_HOST, business_path)
 
-def query_api(term, location, ll, limit, radius):
+def query_api(ll,
+              term = DEFAULT_TERM, 
+              location = DEFAULT_LOCATION,
+              limit = DEFAULT_SEARCH_LIMIT, 
+              radius = DEFAULT_RADIUS):
     """Queries the API by the input values from the user.
 
     Args:
@@ -155,8 +159,8 @@ def query_api(term, location, ll, limit, radius):
 
 
 def main():
+    # python yelp_query.py --term="bars" -ll 34.1 -118.1
     parser = argparse.ArgumentParser()
-
     parser.add_argument('-q', '--term', dest='term', default=DEFAULT_TERM, type=str, help='Search term (default: %(default)s)')
     parser.add_argument('-l', '--location', dest='location', default=DEFAULT_LOCATION, type=str, help='Search location (default: %(default)s)')
     parser.add_argument('-ll', '--latlong', dest='ll', type=str, nargs=2, help='Search latitude and longtitude')
@@ -166,11 +170,14 @@ def main():
     input_values = parser.parse_args()
 
     try:
-        query_api(input_values.term, 
-                  input_values.location, 
-                  input_values.ll,
-                  input_values.limit, 
-                  input_values.radius_filter)
+        businesses = query_api(term=input_values.term, 
+                  location=input_values.location, 
+                  ll=input_values.ll,
+                  limit=input_values.limit, 
+                  radius=input_values.radius_filter)
+
+        # for bus in businesses:
+        #     print(bus['id'])
     except urllib2.HTTPError as error:
         sys.exit('Encountered HTTP error {0}. Abort program.'.format(error.code))
 
