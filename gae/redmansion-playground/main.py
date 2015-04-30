@@ -8,6 +8,7 @@ import subprocess
 
 import google_maps
 import route_boxes
+import json
 
 from google.appengine.api import users
 from google.appengine.ext import ndb
@@ -128,12 +129,16 @@ class GoogleMapsPage(webapp2.RedirectHandler):
         routes = q.query('pasadena', 'lax')
         
         data_per_route = [{} for route in routes]
+        
+        
+        self.response.write('Runing\n')
         for idx, route in enumerate(routes):
-            boxes = route_boxes.routeboxes()            
+            self.response.write('Route {}\n'.format(idx))
+            boxes = route_boxes.route_boxes(route, 0.01)            
             data_per_route[idx]['restaurants, All'] = boxes.query('restaurants, All')
             
         content = json.dumps(data_per_route, sort_keys=True, indent=4)
-        self.response.write(str(routes))
+        self.response.write(str(content))
         
 #         sys.stdout = gae_stdout
 app = webapp2.WSGIApplication([

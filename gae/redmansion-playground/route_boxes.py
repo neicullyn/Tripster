@@ -8,6 +8,8 @@ import copy
 import yelp_query
 
 
+# import matplotlib.pyplot as plt
+
 def xfrange(start, stop, step):
     while start < stop:
         yield start
@@ -32,14 +34,14 @@ class route_boxes:
         self.merge_boxes()
             
     def generate_boxes(self):        
-        self.lat_space = [val for val in xfrange(self.lat_min, self.lat_max, box_size)]
-        self.lon_space = [val for val in xfrange(self.lon_min, self.lon_max, box_size)]             
+        self.lat_space = [val for val in xfrange(self.lat_min, self.lat_max, self.box_size)]
+        self.lon_space = [val for val in xfrange(self.lon_min, self.lon_max, self.box_size)]             
         self.boxes_matrix = [[(u,v) for v in self.lon_space] for u in self.lat_space]
         
     def _get_index(self, point):
         u, v = point
-        i = int((u - self.lat_min) / box_size)
-        j = int((v - self.lon_min) / box_size)
+        i = int((u - self.lat_min) / self.box_size)
+        j = int((v - self.lon_min) / self.box_size)
         return i, j
     
     def color_boxes(self):
@@ -230,24 +232,46 @@ class route_boxes:
     def box_num_to_ll(self, box_num):
         return (box_num[0] * self.box_size + self.lat_min, box_num[1] * self.box_size + self.lon_min)
     
+    def box_num_to_ll2(self, box_num):
+        return (box_num[0] * self.box_size + self.lat_min + self.box_size, box_num[1] * self.box_size + self.lon_min + self.box_size)
+    
+    def _query_func(self, sw, ne, catagory):
+        d = {}
+        
+        q = yelp_query.YelpQuery()            
+        
+        rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, term=catagory);
+        
+        for x in rst['businesses']:
+            d[x['id']] = x
+            
+        if rst['total'] > 20:
+            rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, offset=20, term=catagory);
+            for x in rst['businesses']:
+                d[x['id']] = x
+                
+        return d
+    
     def query(self, catagory):
         if len(self.row_merge_list) < len(self.col_merge_list):
             l = self.row_merge_list
         else:
             l = self.col_merge_list
         
-        rtn = []
+        para_list = []
         
         for ll in l:   
             sw, ne = ll
             sw = self.box_num_to_ll(sw)
-            ne = self.box_num_to_ll(ne)
-            print sw, ne
-            q = yelp_query.YelpQuery()            
-            rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, term=catagory);
-            
-            rtn.append(rst)
-        return rtn
+            ne = self.box_num_to_ll2(ne)
+            para_list.append((sw, ne, catagory))
+        
+        rtn = map(lambda x:self._query_func(*x), para_list)
+
+        d = {}
+        for sub_d in rtn:
+            d.update(sub_d)
+        return d
             
             
         
@@ -313,10 +337,10 @@ class route_boxes:
         gca.plot(self.lon, self.lat, 'ro-')
 
     def adjust_axis(self, gca):
-        gca.axis((round(min(self.lon) - 4 * box_size, 2), 
-                  round(max(self.lon) + 4 * box_size, 2), 
-                  round(min(self.lat) - 4 * box_size, 2), 
-                  round(max(self.lat) + 4 * box_size, 2)))
+        gca.axis((round(min(self.lon) - 4 * self.box_size, 2), 
+                  round(max(self.lon) + 4 * self.box_size, 2), 
+                  round(min(self.lat) - 4 * self.box_size, 2), 
+                  round(max(self.lat) + 4 * self.box_size, 2)))
             
 
     
@@ -330,13 +354,10 @@ if __name__ == "__main__":
         data_str = input_file.read()
         
     data = json.loads(data_str)
-    print data
     routes = data['routes']
     route = routes[0]
-    print len(routes)
     #         for key, val in route.items():
     #             print key, val
-    print route['overview_polyline']
     #         points = route['overview_polyline']['points'] + '='
     # 
     points_raw = route['overview_polyline']['points']
@@ -344,9 +365,22 @@ if __name__ == "__main__":
     route = google_maps.points_decode(points_raw)
 #     route = [(1, -0.5), (0, 0)]
 #     route = [(1, -0.5), (0, 0), (0.8, 1), (1.1, 0.9), (1.4, 1.3), (1.1, 1.3)]
-        
-    boxes = route_boxes(route, box_size)    
-    boxes.query('restaurants, All')
+    
+#     print route
+# 
+    boxes = route_boxes(route, box_size)
+    d = boxes.query('restaurants, All')
+    print len(d)
+    for key, val in d.items():
+        print key
+
+#     plt.figure()
+#     boxes.draw_boxes(plt.gca(), method=6)    
+#     boxes.adjust_axis(plt.gca())  
+#     
+#     for x in boxes.col_merge_list:
+#         print x
+    
 #     plt.figure()
 #     boxes.draw_route(plt.gca())
 #     boxes.adjust_axis(plt.gca())    
