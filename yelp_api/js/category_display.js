@@ -1,2489 +1,2489 @@
-[
+var category_list = [
     {
         "alias": "abruzzese",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "abruzzese"
+        "title": "Abruzzese"
     },
     {
         "alias": "absinthebars",
         "country_whitelist": [
-            "cz"
+            "CZ"
         ],
         "parents": [
             "bars"
         ],
-        "title": "absinthe bars"
+        "title": "Absinthe Bars"
     },
     {
         "alias": "accessories",
         "parents": [
             "fashion"
         ],
-        "title": "accessories"
+        "title": "Accessories"
     },
     {
         "alias": "accountants",
         "parents": [
             "professional"
         ],
-        "title": "accountants"
+        "title": "Accountants"
     },
     {
         "alias": "active",
         "parents": [
             null
         ],
-        "title": "active life"
+        "title": "Active Life"
     },
     {
         "alias": "acupuncture",
         "parents": [
             "health"
         ],
-        "title": "acupuncture"
+        "title": "Acupuncture"
     },
     {
         "alias": "adoptionservices",
         "parents": [
             "localservices"
         ],
-        "title": "adoption services"
+        "title": "Adoption Services"
     },
     {
         "alias": "adult",
         "parents": [
             "shopping"
         ],
-        "title": "adult"
+        "title": "Adult"
     },
     {
         "alias": "adultedu",
         "parents": [
             "education"
         ],
-        "title": "adult education"
+        "title": "Adult Education"
     },
     {
         "alias": "adultentertainment",
         "parents": [
             "nightlife"
         ],
-        "title": "adult entertainment"
+        "title": "Adult Entertainment"
     },
     {
         "alias": "advertising",
         "parents": [
             "professional"
         ],
-        "title": "advertising"
+        "title": "Advertising"
     },
     {
         "alias": "afghani",
         "country_blacklist": [
-            "tr",
-            "mx",
-            "es",
-            "pt"
+            "TR",
+            "MX",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "afghan"
+        "title": "Afghan"
     },
     {
         "alias": "african",
         "country_blacklist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "african"
+        "title": "African"
     },
     {
         "alias": "agriturismi",
         "country_whitelist": [
-            "fr",
-            "it",
-            "cl"
+            "FR",
+            "IT",
+            "CL"
         ],
         "parents": [
             "hotels"
         ],
-        "title": "agriturismi"
+        "title": "Agriturismi"
     },
     {
         "alias": "aircraftdealers",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "aircraft dealers"
+        "title": "Aircraft Dealers"
     },
     {
         "alias": "airlines",
         "parents": [
             "transport"
         ],
-        "title": "airlines"
+        "title": "Airlines"
     },
     {
         "alias": "airport_shuttles",
         "parents": [
             "transport"
         ],
-        "title": "airport shuttles"
+        "title": "Airport Shuttles"
     },
     {
         "alias": "airportlounges",
         "parents": [
             "bars"
         ],
-        "title": "airport lounges"
+        "title": "Airport Lounges"
     },
     {
         "alias": "airports",
         "parents": [
             "hotelstravel"
         ],
-        "title": "airports"
+        "title": "Airports"
     },
     {
         "alias": "alentejo",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "alentejo"
+        "title": "Alentejo"
     },
     {
         "alias": "algarve",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "algarve"
+        "title": "Algarve"
     },
     {
         "alias": "allergist",
         "parents": [
             "physicians"
         ],
-        "title": "allergists"
+        "title": "Allergists"
     },
     {
         "alias": "alsatian",
         "country_whitelist": [
-            "fr",
-            "de"
+            "FR",
+            "DE"
         ],
         "parents": [
             "french"
         ],
-        "title": "alsatian"
+        "title": "Alsatian"
     },
     {
         "alias": "altoatesine",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "altoatesine"
+        "title": "Altoatesine"
     },
     {
         "alias": "amateursportsteams",
         "parents": [
             "active"
         ],
-        "title": "amateur sports teams"
+        "title": "Amateur Sports Teams"
     },
     {
         "alias": "amusementparks",
         "parents": [
             "active"
         ],
-        "title": "amusement parks"
+        "title": "Amusement Parks"
     },
     {
         "alias": "anesthesiologists",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "se",
-            "pt",
-            "it",
-            "us"
+            "BE",
+            "FR",
+            "AU",
+            "SE",
+            "PT",
+            "IT",
+            "US"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "anesthesiologists"
+        "title": "Anesthesiologists"
     },
     {
         "alias": "animalshelters",
         "parents": [
             "pets"
         ],
-        "title": "animal shelters"
+        "title": "Animal Shelters"
     },
     {
         "alias": "antiques",
         "parents": [
             "shopping"
         ],
-        "title": "antiques"
+        "title": "Antiques"
     },
     {
         "alias": "apartments",
         "parents": [
             "realestate"
         ],
-        "title": "apartments"
+        "title": "Apartments"
     },
     {
         "alias": "appliances",
         "parents": [
             "homeandgarden"
         ],
-        "title": "appliances"
+        "title": "Appliances"
     },
     {
         "alias": "appraisalservices",
         "parents": [
             "localservices"
         ],
-        "title": "appraisal services"
+        "title": "Appraisal Services"
     },
     {
         "alias": "apulian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "apulian"
+        "title": "Apulian"
     },
     {
         "alias": "aquariums",
         "parents": [
             "active"
         ],
-        "title": "aquariums"
+        "title": "Aquariums"
     },
     {
         "alias": "aquariumservices",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "petservices"
         ],
-        "title": "aquarium services"
+        "title": "Aquarium Services"
     },
     {
         "alias": "arabian",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "arabian"
+        "title": "Arabian"
     },
     {
         "alias": "arabpizza",
         "country_whitelist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "arabian"
         ],
-        "title": "arab pizza"
+        "title": "Arab Pizza"
     },
     {
         "alias": "arcades",
         "parents": [
             "arts"
         ],
-        "title": "arcades"
+        "title": "Arcades"
     },
     {
         "alias": "archery",
         "parents": [
             "active"
         ],
-        "title": "archery"
+        "title": "Archery"
     },
     {
         "alias": "architects",
         "parents": [
             "professional"
         ],
-        "title": "architects"
+        "title": "Architects"
     },
     {
         "alias": "architecturaltours",
         "parents": [
             "tours"
         ],
-        "title": "architectural tours"
+        "title": "Architectural Tours"
     },
     {
         "alias": "argentine",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "argentine"
+        "title": "Argentine"
     },
     {
         "alias": "armenian",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "tr",
-            "it",
-            "us",
-            "cz",
-            "ar",
-            "gb",
-            "pl"
+            "ES",
+            "BE",
+            "FR",
+            "TR",
+            "IT",
+            "US",
+            "CZ",
+            "AR",
+            "GB",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "armenian"
+        "title": "Armenian"
     },
     {
         "alias": "arroceria_paella",
         "country_whitelist": [
-            "es"
+            "ES"
         ],
         "parents": [
             "spanish"
         ],
-        "title": "arroceria / paella"
+        "title": "Arroceria / Paella"
     },
     {
         "alias": "artclasses",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "education"
         ],
-        "title": "art classes"
+        "title": "Art Classes"
     },
     {
         "alias": "arts",
         "parents": [
             null
         ],
-        "title": "arts & entertainment"
+        "title": "Arts & Entertainment"
     },
     {
         "alias": "artsandcrafts",
         "parents": [
             "shopping"
         ],
-        "title": "arts & crafts"
+        "title": "Arts & Crafts"
     },
     {
         "alias": "artschools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "art schools"
+        "title": "Art Schools"
     },
     {
         "alias": "artspacerentals",
         "country_whitelist": [
-            "hk",
-            "se",
-            "sg",
-            "jp",
-            "it",
-            "us"
+            "HK",
+            "SE",
+            "SG",
+            "JP",
+            "IT",
+            "US"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "art space rentals"
+        "title": "Art Space Rentals"
     },
     {
         "alias": "artsupplies",
         "parents": [
             "artsandcrafts"
         ],
-        "title": "art supplies"
+        "title": "Art Supplies"
     },
     {
         "alias": "arttours",
         "parents": [
             "tours"
         ],
-        "title": "art tours"
+        "title": "Art Tours"
     },
     {
         "alias": "asianfusion",
         "parents": [
             "restaurants"
         ],
-        "title": "asian fusion"
+        "title": "Asian Fusion"
     },
     {
         "alias": "asturian",
         "country_whitelist": [
-            "es"
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "asturian"
+        "title": "Asturian"
     },
     {
         "alias": "atvrentals",
         "country_whitelist": [
-            "fi",
-            "se",
-            "us",
-            "no"
+            "FI",
+            "SE",
+            "US",
+            "NO"
         ],
         "parents": [
             "active"
         ],
-        "title": "atv rentals/tours"
+        "title": "ATV Rentals/Tours"
     },
     {
         "alias": "auctionhouses",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "dk",
-            "pt",
-            "it",
-            "us",
-            "au",
-            "gb",
-            "mx",
-            "se"
+            "ES",
+            "BE",
+            "FR",
+            "DK",
+            "PT",
+            "IT",
+            "US",
+            "AU",
+            "GB",
+            "MX",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "auction houses"
+        "title": "Auction Houses"
     },
     {
         "alias": "audiologist",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "audiologist"
+        "title": "Audiologist"
     },
     {
         "alias": "australian",
         "country_blacklist": [
-            "dk",
-            "es",
-            "pt"
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "australian"
+        "title": "Australian"
     },
     {
         "alias": "austrian",
         "country_blacklist": [
-            "dk",
-            "es"
+            "DK",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "austrian"
+        "title": "Austrian"
     },
     {
         "alias": "authorized_postal_representative",
         "country_whitelist": [
-            "se",
-            "no"
+            "SE",
+            "NO"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "authorized postal representative"
+        "title": "Authorized Postal Representative"
     },
     {
         "alias": "auto",
         "parents": [
             null
         ],
-        "title": "automotive"
+        "title": "Automotive"
     },
     {
         "alias": "auto_detailing",
         "country_blacklist": [
-            "ch",
-            "au",
-            "dk",
-            "br",
-            "de",
-            "es",
-            "at"
+            "CH",
+            "AU",
+            "DK",
+            "BR",
+            "DE",
+            "ES",
+            "AT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "auto detailing"
+        "title": "Auto Detailing"
     },
     {
         "alias": "autocustomization",
         "country_whitelist": [
-            "sg",
-            "pt",
-            "us"
+            "SG",
+            "PT",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "auto customization"
+        "title": "Auto Customization"
     },
     {
         "alias": "autodamageassessment",
         "country_whitelist": [
-            "de",
-            "dk",
-            "se",
-            "no"
+            "DE",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "auto"
         ],
-        "title": "car inspectors"
+        "title": "Car Inspectors"
     },
     {
         "alias": "autoelectric",
         "country_whitelist": [
-            "it",
-            "br"
+            "IT",
+            "BR"
         ],
         "parents": [
             "auto"
         ],
-        "title": "auto electric services"
+        "title": "Auto Electric Services"
     },
     {
         "alias": "autoglass",
         "country_blacklist": [
-            "dk",
-            "es"
+            "DK",
+            "ES"
         ],
         "parents": [
             "auto"
         ],
-        "title": "auto glass services"
+        "title": "Auto Glass Services"
     },
     {
         "alias": "autoloanproviders",
         "country_whitelist": [
-            "au",
-            "pt",
-            "sg",
-            "tr",
-            "it",
-            "us"
+            "AU",
+            "PT",
+            "SG",
+            "TR",
+            "IT",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "auto loan providers"
+        "title": "Auto Loan Providers"
     },
     {
         "alias": "autopartssupplies",
         "parents": [
             "auto"
         ],
-        "title": "auto parts & supplies"
+        "title": "Auto Parts & Supplies"
     },
     {
         "alias": "autorepair",
         "parents": [
             "auto"
         ],
-        "title": "auto repair"
+        "title": "Auto Repair"
     },
     {
         "alias": "auvergnat",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "french"
         ],
-        "title": "auvergnat"
+        "title": "Auvergnat"
     },
     {
         "alias": "azores",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "azores"
+        "title": "Azores"
     },
     {
         "alias": "baby_gear",
         "parents": [
             "shopping"
         ],
-        "title": "baby gear & furniture"
+        "title": "Baby Gear & Furniture"
     },
     {
         "alias": "baden",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "baden"
+        "title": "Baden"
     },
     {
         "alias": "badminton",
         "country_blacklist": [
-            "nz",
-            "sg",
-            "br",
-            "es",
-            "pl"
+            "NZ",
+            "SG",
+            "BR",
+            "ES",
+            "PL"
         ],
         "parents": [
             "active"
         ],
-        "title": "badminton"
+        "title": "Badminton"
     },
     {
         "alias": "bagels",
         "country_blacklist": [
-            "au",
-            "es"
+            "AU",
+            "ES"
         ],
         "parents": [
             "food"
         ],
-        "title": "bagels"
+        "title": "Bagels"
     },
     {
         "alias": "baguettes",
         "country_whitelist": [
-            "pt",
-            "no",
-            "de",
-            "tr",
-            "it",
-            "se",
-            "mx"
+            "PT",
+            "NO",
+            "DE",
+            "TR",
+            "IT",
+            "SE",
+            "MX"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "baguettes"
+        "title": "Baguettes"
     },
     {
         "alias": "bailbondsmen",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "bail bondsmen"
+        "title": "Bail Bondsmen"
     },
     {
         "alias": "bakeries",
         "parents": [
             "food"
         ],
-        "title": "bakeries"
+        "title": "Bakeries"
     },
     {
         "alias": "bangladeshi",
         "country_blacklist": [
-            "es",
-            "tr",
-            "dk",
-            "pt",
-            "mx"
+            "ES",
+            "TR",
+            "DK",
+            "PT",
+            "MX"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "bangladeshi"
+        "title": "Bangladeshi"
     },
     {
         "alias": "bankruptcy",
         "parents": [
             "lawyers"
         ],
-        "title": "bankruptcy law"
+        "title": "Bankruptcy Law"
     },
     {
         "alias": "banks",
         "parents": [
             "financialservices"
         ],
-        "title": "banks & credit unions"
+        "title": "Banks & Credit Unions"
     },
     {
         "alias": "barbers",
         "parents": [
             "beautysvc"
         ],
-        "title": "barbers"
+        "title": "Barbers"
     },
     {
         "alias": "barreclasses",
         "country_whitelist": [
-            "au",
-            "pt",
-            "us"
+            "AU",
+            "PT",
+            "US"
         ],
         "parents": [
             "fitness"
         ],
-        "title": "barre classes"
+        "title": "Barre Classes"
     },
     {
         "alias": "bars",
         "parents": [
             "nightlife"
         ],
-        "title": "bars"
+        "title": "Bars"
     },
     {
         "alias": "bartenders",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "dk",
-            "pt",
-            "ca",
-            "de",
-            "it",
-            "us",
-            "au"
+            "BE",
+            "FR",
+            "NL",
+            "DK",
+            "PT",
+            "CA",
+            "DE",
+            "IT",
+            "US",
+            "AU"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "bartenders"
+        "title": "Bartenders"
     },
     {
         "alias": "bartendingschools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "bartending schools"
+        "title": "Bartending Schools"
     },
     {
         "alias": "basketballcourts",
         "country_blacklist": [
-            "nl",
-            "ca",
-            "pl",
-            "cz",
-            "gb",
-            "br",
-            "ie",
-            "se"
+            "NL",
+            "CA",
+            "PL",
+            "CZ",
+            "GB",
+            "BR",
+            "IE",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "basketball courts"
+        "title": "Basketball Courts"
     },
     {
         "alias": "basque",
         "country_blacklist": [
-            "tr",
-            "au",
-            "sg",
-            "dk",
-            "pt"
+            "TR",
+            "AU",
+            "SG",
+            "DK",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "basque"
+        "title": "Basque"
     },
     {
         "alias": "bathing_area",
         "country_whitelist": [
-            "pt",
-            "no",
-            "fi",
-            "de",
-            "jp",
-            "se"
+            "PT",
+            "NO",
+            "FI",
+            "DE",
+            "JP",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "bathing area"
+        "title": "Bathing Area"
     },
     {
         "alias": "batterystores",
         "parents": [
             "shopping"
         ],
-        "title": "battery stores"
+        "title": "Battery Stores"
     },
     {
         "alias": "battingcages",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "us",
-            "tw"
+            "JP",
+            "SG",
+            "US",
+            "TW"
         ],
         "parents": [
             "active"
         ],
-        "title": "batting cages"
+        "title": "Batting Cages"
     },
     {
         "alias": "bavarian",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "bavarian"
+        "title": "Bavarian"
     },
     {
         "alias": "bbq",
         "country_blacklist": [
-            "au",
-            "br",
-            "es"
+            "AU",
+            "BR",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "barbeque"
+        "title": "Barbeque"
     },
     {
         "alias": "beachbars",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "nl",
-            "pt",
-            "no",
-            "de",
-            "it",
-            "au",
-            "at",
-            "sg",
-            "se"
+            "FR",
+            "CH",
+            "NL",
+            "PT",
+            "NO",
+            "DE",
+            "IT",
+            "AU",
+            "AT",
+            "SG",
+            "SE"
         ],
         "parents": [
             "bars"
         ],
-        "title": "beach bars"
+        "title": "Beach Bars"
     },
     {
         "alias": "beaches",
         "parents": [
             "active"
         ],
-        "title": "beaches"
+        "title": "Beaches"
     },
     {
         "alias": "beachvolleyball",
         "country_whitelist": [
-            "dk",
-            "no",
-            "de",
-            "jp",
-            "au",
-            "at",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "DK",
+            "NO",
+            "DE",
+            "JP",
+            "AU",
+            "AT",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "beach volleyball"
+        "title": "Beach Volleyball"
     },
     {
         "alias": "beautysvc",
         "parents": [
             null
         ],
-        "title": "beauty & spas"
+        "title": "Beauty & Spas"
     },
     {
         "alias": "bedbreakfast",
         "country_blacklist": [
-            "sg"
+            "SG"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "bed & breakfast"
+        "title": "Bed & Breakfast"
     },
     {
         "alias": "beer_and_wine",
         "parents": [
             "food"
         ],
-        "title": "beer, wine & spirits"
+        "title": "Beer, Wine & Spirits"
     },
     {
         "alias": "beerbar",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt",
-            "cl",
-            "nz",
-            "au",
-            "mx",
-            "es"
+            "BE",
+            "FR",
+            "PT",
+            "CL",
+            "NZ",
+            "AU",
+            "MX",
+            "ES"
         ],
         "parents": [
             "bars"
         ],
-        "title": "beer bar"
+        "title": "Beer Bar"
     },
     {
         "alias": "beergarden",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "beer garden"
+        "title": "Beer Garden"
     },
     {
         "alias": "beergardens",
         "country_whitelist": [
-            "fr",
-            "au",
-            "se",
-            "de",
-            "it",
-            "us",
-            "pl"
+            "FR",
+            "AU",
+            "SE",
+            "DE",
+            "IT",
+            "US",
+            "PL"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "beer gardens"
+        "title": "Beer Gardens"
     },
     {
         "alias": "beerhall",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "beer hall"
+        "title": "Beer Hall"
     },
     {
         "alias": "beira",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "beira"
+        "title": "Beira"
     },
     {
         "alias": "beisl",
         "country_whitelist": [
-            "at"
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "beisl"
+        "title": "Beisl"
     },
     {
         "alias": "belgian",
         "country_blacklist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "belgian"
+        "title": "Belgian"
     },
     {
         "alias": "berrichon",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "french"
         ],
-        "title": "berrichon"
+        "title": "Berrichon"
     },
     {
         "alias": "bespoke",
         "country_whitelist": [
-            "fr",
-            "pt",
-            "de",
-            "it",
-            "us",
-            "at",
-            "sg",
-            "es"
+            "FR",
+            "PT",
+            "DE",
+            "IT",
+            "US",
+            "AT",
+            "SG",
+            "ES"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "bespoke clothing"
+        "title": "Bespoke Clothing"
     },
     {
         "alias": "bettingcenters",
         "country_blacklist": [
-            "fr",
-            "no",
-            "ca",
-            "us",
-            "nz",
-            "br",
-            "fi",
-            "sg",
-            "es"
+            "FR",
+            "NO",
+            "CA",
+            "US",
+            "NZ",
+            "BR",
+            "FI",
+            "SG",
+            "ES"
         ],
         "parents": [
             "arts"
         ],
-        "title": "betting centers"
+        "title": "Betting Centers"
     },
     {
         "alias": "beverage_stores",
         "country_whitelist": [
-            "es",
-            "ch",
-            "pt",
-            "cl",
-            "de",
-            "tr",
-            "it",
-            "au",
-            "at",
-            "se"
+            "ES",
+            "CH",
+            "PT",
+            "CL",
+            "DE",
+            "TR",
+            "IT",
+            "AU",
+            "AT",
+            "SE"
         ],
         "parents": [
             "food"
         ],
-        "title": "beverage store"
+        "title": "Beverage Store"
     },
     {
         "alias": "bicyclepaths",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "cl",
-            "no",
-            "nz",
-            "ar",
-            "au",
-            "fi",
-            "mx"
+            "DK",
+            "PT",
+            "CL",
+            "NO",
+            "NZ",
+            "AR",
+            "AU",
+            "FI",
+            "MX"
         ],
         "parents": [
             "active"
         ],
-        "title": "bicycle paths"
+        "title": "Bicycle Paths"
     },
     {
         "alias": "bicycles",
         "country_whitelist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             null
         ],
-        "title": "bicycles"
+        "title": "Bicycles"
     },
     {
         "alias": "bike_repair_maintenance",
         "parents": [
             "localservices"
         ],
-        "title": "bike repair/maintenance"
+        "title": "Bike Repair/Maintenance"
     },
     {
         "alias": "bikeassociations",
         "country_whitelist": [
-            "dk",
-            "pt"
+            "DK",
+            "PT"
         ],
         "parents": [
             "bicycles"
         ],
-        "title": "bike associations"
+        "title": "Bike Associations"
     },
     {
         "alias": "bikerentals",
         "parents": [
             "active"
         ],
-        "title": "bike rentals"
+        "title": "Bike Rentals"
     },
     {
         "alias": "bikerepair",
         "country_whitelist": [
-            "dk",
-            "pt"
+            "DK",
+            "PT"
         ],
         "parents": [
             "bicycles"
         ],
-        "title": "bike repair"
+        "title": "Bike Repair"
     },
     {
         "alias": "bikes",
         "parents": [
             "sportgoods"
         ],
-        "title": "bikes"
+        "title": "Bikes"
     },
     {
         "alias": "bikesharing",
         "parents": [
             "transport"
         ],
-        "title": "bike sharing"
+        "title": "Bike Sharing"
     },
     {
         "alias": "bikeshop",
         "country_whitelist": [
-            "dk",
-            "pt"
+            "DK",
+            "PT"
         ],
         "parents": [
             "bicycles"
         ],
-        "title": "bike shop"
+        "title": "Bike Shop"
     },
     {
         "alias": "bingo",
         "country_whitelist": [
-            "es",
-            "dk",
-            "cl",
-            "no",
-            "it",
-            "us",
-            "nz",
-            "ar",
-            "au",
-            "gb",
-            "br",
-            "fi",
-            "ie",
-            "mx",
-            "se"
+            "ES",
+            "DK",
+            "CL",
+            "NO",
+            "IT",
+            "US",
+            "NZ",
+            "AR",
+            "AU",
+            "GB",
+            "BR",
+            "FI",
+            "IE",
+            "MX",
+            "SE"
         ],
         "parents": [
             "arts"
         ],
-        "title": "bingo halls"
+        "title": "Bingo Halls"
     },
     {
         "alias": "bistros",
         "country_blacklist": [
-            "es",
-            "ca",
-            "dk",
-            "us"
+            "ES",
+            "CA",
+            "DK",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "bistros"
+        "title": "Bistros"
     },
     {
         "alias": "blacksea",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "black sea"
+        "title": "Black Sea"
     },
     {
         "alias": "blinds",
         "parents": [
             "homeservices"
         ],
-        "title": "shades & blinds"
+        "title": "Shades & Blinds"
     },
     {
         "alias": "blowfish",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "blowfish"
+        "title": "Blowfish"
     },
     {
         "alias": "blowoutservices",
         "country_whitelist": [
-            "pt",
-            "ca",
-            "tr",
-            "us",
-            "cz",
-            "au",
-            "gb",
-            "ie"
+            "PT",
+            "CA",
+            "TR",
+            "US",
+            "CZ",
+            "AU",
+            "GB",
+            "IE"
         ],
         "parents": [
             "hair"
         ],
-        "title": "blow dry/out services"
+        "title": "Blow Dry/Out Services"
     },
     {
         "alias": "boatcharters",
         "parents": [
             "eventservices"
         ],
-        "title": "boat charters"
+        "title": "Boat Charters"
     },
     {
         "alias": "boatdealers",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "boat dealers"
+        "title": "Boat Dealers"
     },
     {
         "alias": "boating",
         "parents": [
             "active"
         ],
-        "title": "boating"
+        "title": "Boating"
     },
     {
         "alias": "boatrepair",
         "parents": [
             "professional"
         ],
-        "title": "boat repair"
+        "title": "Boat Repair"
     },
     {
         "alias": "bodyshops",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "body shops"
+        "title": "Body Shops"
     },
     {
         "alias": "bookbinding",
         "country_whitelist": [
-            "be",
-            "fr",
-            "fi",
-            "tr",
-            "it",
-            "es"
+            "BE",
+            "FR",
+            "FI",
+            "TR",
+            "IT",
+            "ES"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "bookbinding"
+        "title": "Bookbinding"
     },
     {
         "alias": "bookstores",
         "parents": [
             "media"
         ],
-        "title": "bookstores"
+        "title": "Bookstores"
     },
     {
         "alias": "bootcamps",
         "country_whitelist": [
-            "nz",
-            "au",
-            "es",
-            "pt",
-            "se",
-            "it",
-            "us"
+            "NZ",
+            "AU",
+            "ES",
+            "PT",
+            "SE",
+            "IT",
+            "US"
         ],
         "parents": [
             "fitness"
         ],
-        "title": "boot camps"
+        "title": "Boot Camps"
     },
     {
         "alias": "bourguignon",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "french"
         ],
-        "title": "bourguignon"
+        "title": "Bourguignon"
     },
     {
         "alias": "bowling",
         "parents": [
             "active"
         ],
-        "title": "bowling"
+        "title": "Bowling"
     },
     {
         "alias": "boxing",
         "country_blacklist": [
-            "es",
-            "dk",
-            "no",
-            "tr",
-            "cz",
-            "au",
-            "pl",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "ES",
+            "DK",
+            "NO",
+            "TR",
+            "CZ",
+            "AU",
+            "PL",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "fitness"
         ],
-        "title": "boxing"
+        "title": "Boxing"
     },
     {
         "alias": "brasseries",
         "parents": [
             "restaurants"
         ],
-        "title": "brasseries"
+        "title": "Brasseries"
     },
     {
         "alias": "brazilian",
         "parents": [
             "restaurants"
         ],
-        "title": "brazilian"
+        "title": "Brazilian"
     },
     {
         "alias": "brazilianempanadas",
         "country_whitelist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "brazilian"
         ],
-        "title": "brazilian empanadas"
+        "title": "Brazilian Empanadas"
     },
     {
         "alias": "breakfast_brunch",
         "parents": [
             "restaurants"
         ],
-        "title": "breakfast & brunch"
+        "title": "Breakfast & Brunch"
     },
     {
         "alias": "breweries",
         "parents": [
             "food"
         ],
-        "title": "breweries"
+        "title": "Breweries"
     },
     {
         "alias": "brewingsupplies",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "brewing supplies"
+        "title": "Brewing Supplies"
     },
     {
         "alias": "bridal",
         "parents": [
             "shopping"
         ],
-        "title": "bridal"
+        "title": "Bridal"
     },
     {
         "alias": "british",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "british"
+        "title": "British"
     },
     {
         "alias": "bubbletea",
         "country_whitelist": [
-            "be",
-            "fr",
-            "dk",
-            "no",
-            "tw",
-            "de",
-            "jp",
-            "us",
-            "hk",
-            "au",
-            "gb",
-            "fi",
-            "sg",
-            "pl"
+            "BE",
+            "FR",
+            "DK",
+            "NO",
+            "TW",
+            "DE",
+            "JP",
+            "US",
+            "HK",
+            "AU",
+            "GB",
+            "FI",
+            "SG",
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "bubble tea"
+        "title": "Bubble Tea"
     },
     {
         "alias": "buddhist_temples",
         "parents": [
             "religiousorgs"
         ],
-        "title": "buddhist temples"
+        "title": "Buddhist Temples"
     },
     {
         "alias": "buffets",
         "parents": [
             "restaurants"
         ],
-        "title": "buffets"
+        "title": "Buffets"
     },
     {
         "alias": "buildingsupplies",
         "parents": [
             "homeservices"
         ],
-        "title": "building supplies"
+        "title": "Building Supplies"
     },
     {
         "alias": "bulgarian",
         "country_blacklist": [
-            "nl",
-            "dk",
-            "pt",
-            "no",
-            "ca",
-            "tr",
-            "us",
-            "cz",
-            "nz",
-            "br",
-            "sg",
-            "es"
+            "NL",
+            "DK",
+            "PT",
+            "NO",
+            "CA",
+            "TR",
+            "US",
+            "CZ",
+            "NZ",
+            "BR",
+            "SG",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "bulgarian"
+        "title": "Bulgarian"
     },
     {
         "alias": "bulkbilling",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "medcenters"
         ],
-        "title": "bulk billing"
+        "title": "Bulk Billing"
     },
     {
         "alias": "bungeejumping",
         "country_whitelist": [
-            "nz",
-            "pt"
+            "NZ",
+            "PT"
         ],
         "parents": [
             "active"
         ],
-        "title": "bungee jumping"
+        "title": "Bungee Jumping"
     },
     {
         "alias": "burgers",
         "parents": [
             "restaurants"
         ],
-        "title": "burgers"
+        "title": "Burgers"
     },
     {
         "alias": "burmese",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "dk",
-            "es",
-            "pt"
+            "FI",
+            "TR",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "burmese"
+        "title": "Burmese"
     },
     {
         "alias": "buses",
         "parents": [
             "transport"
         ],
-        "title": "buses"
+        "title": "Buses"
     },
     {
         "alias": "businesslawyers",
         "country_whitelist": [
-            "ca",
-            "ie",
-            "gb",
-            "us",
-            "pt"
+            "CA",
+            "IE",
+            "GB",
+            "US",
+            "PT"
         ],
         "parents": [
             "lawyers"
         ],
-        "title": "business law"
+        "title": "Business Law"
     },
     {
         "alias": "bustours",
         "parents": [
             "tours"
         ],
-        "title": "bus tours"
+        "title": "Bus Tours"
     },
     {
         "alias": "butcher",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "food"
         ],
-        "title": "butcher"
+        "title": "Butcher"
     },
     {
         "alias": "c_and_mh",
         "parents": [
             "health"
         ],
-        "title": "counseling & mental health"
+        "title": "Counseling & Mental Health"
     },
     {
         "alias": "cabaret",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "arts"
         ],
-        "title": "cabaret"
+        "title": "Cabaret"
     },
     {
         "alias": "cabinetry",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "cabinetry"
+        "title": "Cabinetry"
     },
     {
         "alias": "cafes",
         "country_blacklist": [
-            "es"
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cafes"
+        "title": "Cafes"
     },
     {
         "alias": "cafeteria",
         "country_blacklist": [
-            "fr",
-            "ie",
-            "ca",
-            "cz",
-            "nz",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "FR",
+            "IE",
+            "CA",
+            "CZ",
+            "NZ",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cafeteria"
+        "title": "Cafeteria"
     },
     {
         "alias": "cajun",
         "country_blacklist": [
-            "au",
-            "sg",
-            "dk",
-            "es",
-            "pt"
+            "AU",
+            "SG",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cajun/creole"
+        "title": "Cajun/Creole"
     },
     {
         "alias": "cakeshop",
         "country_blacklist": [
-            "nl",
-            "cl",
-            "ca",
-            "tr",
-            "us",
-            "cz",
-            "ar",
-            "es",
-            "hk",
-            "fi",
-            "pl"
+            "NL",
+            "CL",
+            "CA",
+            "TR",
+            "US",
+            "CZ",
+            "AR",
+            "ES",
+            "HK",
+            "FI",
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "patisserie/cake shop"
+        "title": "Patisserie/Cake Shop"
     },
     {
         "alias": "calabrian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "calabrian"
+        "title": "Calabrian"
     },
     {
         "alias": "cambodian",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "dk",
-            "es",
-            "pt"
+            "FI",
+            "TR",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cambodian"
+        "title": "Cambodian"
     },
     {
         "alias": "campgrounds",
         "parents": [
             "hotelstravel"
         ],
-        "title": "campgrounds"
+        "title": "Campgrounds"
     },
     {
         "alias": "candy",
         "parents": [
             "gourmet"
         ],
-        "title": "candy stores"
+        "title": "Candy Stores"
     },
     {
         "alias": "cannabis_clinics",
         "country_whitelist": [
-            "nl",
-            "gb",
-            "ie",
-            "ca",
-            "tr",
-            "us",
-            "pl"
+            "NL",
+            "GB",
+            "IE",
+            "CA",
+            "TR",
+            "US",
+            "PL"
         ],
         "parents": [
             "health"
         ],
-        "title": "cannabis clinics"
+        "title": "Cannabis Clinics"
     },
     {
         "alias": "canteen",
         "country_whitelist": [
-            "ch",
-            "dk",
-            "no",
-            "de",
-            "jp",
-            "it",
-            "at",
-            "pl"
+            "CH",
+            "DK",
+            "NO",
+            "DE",
+            "JP",
+            "IT",
+            "AT",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "canteen"
+        "title": "Canteen"
     },
     {
         "alias": "cantonese",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "tw",
-            "jp",
-            "it",
-            "us",
-            "hk",
-            "nz",
-            "ar",
-            "au",
-            "gb",
-            "sg",
-            "se"
+            "BE",
+            "FR",
+            "NL",
+            "TW",
+            "JP",
+            "IT",
+            "US",
+            "HK",
+            "NZ",
+            "AR",
+            "AU",
+            "GB",
+            "SG",
+            "SE"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "cantonese"
+        "title": "Cantonese"
     },
     {
         "alias": "car_dealers",
         "parents": [
             "auto"
         ],
-        "title": "car dealers"
+        "title": "Car Dealers"
     },
     {
         "alias": "carbuyers",
         "country_whitelist": [
-            "au",
-            "nz",
-            "sg",
-            "br",
-            "us"
+            "AU",
+            "NZ",
+            "SG",
+            "BR",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "car buyers"
+        "title": "Car Buyers"
     },
     {
         "alias": "cardiology",
         "parents": [
             "physicians"
         ],
-        "title": "cardiologists"
+        "title": "Cardiologists"
     },
     {
         "alias": "careercounseling",
         "parents": [
             "professional"
         ],
-        "title": "career counseling"
+        "title": "Career Counseling"
     },
     {
         "alias": "caribbean",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "pt"
+            "FI",
+            "TR",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "caribbean"
+        "title": "Caribbean"
     },
     {
         "alias": "carpenters",
         "country_blacklist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "carpenters"
+        "title": "Carpenters"
     },
     {
         "alias": "carpet_cleaning",
         "parents": [
             "localservices"
         ],
-        "title": "carpet cleaning"
+        "title": "Carpet Cleaning"
     },
     {
         "alias": "carpeting",
         "parents": [
             "homeservices"
         ],
-        "title": "carpeting"
+        "title": "Carpeting"
     },
     {
         "alias": "carpetinstallation",
         "parents": [
             "homeservices"
         ],
-        "title": "carpet installation"
+        "title": "Carpet Installation"
     },
     {
         "alias": "carrental",
         "parents": [
             "hotelstravel"
         ],
-        "title": "car rental"
+        "title": "Car Rental"
     },
     {
         "alias": "carshares",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "dk",
-            "no",
-            "ca",
-            "de",
-            "us",
-            "au",
-            "at"
+            "FR",
+            "CH",
+            "DK",
+            "NO",
+            "CA",
+            "DE",
+            "US",
+            "AU",
+            "AT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "car share services"
+        "title": "Car Share Services"
     },
     {
         "alias": "carwash",
         "parents": [
             "auto"
         ],
-        "title": "car wash"
+        "title": "Car Wash"
     },
     {
         "alias": "casinos",
         "country_blacklist": [
-            "hk",
-            "jp"
+            "HK",
+            "JP"
         ],
         "parents": [
             "arts"
         ],
-        "title": "casinos"
+        "title": "Casinos"
     },
     {
         "alias": "castles",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "ch",
-            "pt",
-            "no",
-            "de",
-            "jp",
-            "it",
-            "at",
-            "fi",
-            "se",
-            "gb"
+            "ES",
+            "BE",
+            "FR",
+            "CH",
+            "PT",
+            "NO",
+            "DE",
+            "JP",
+            "IT",
+            "AT",
+            "FI",
+            "SE",
+            "GB"
         ],
         "parents": [
             "arts"
         ],
-        "title": "castles"
+        "title": "Castles"
     },
     {
         "alias": "catalan",
         "country_whitelist": [
-            "es",
-            "fr",
-            "tr",
-            "it",
-            "us"
+            "ES",
+            "FR",
+            "TR",
+            "IT",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "catalan"
+        "title": "Catalan"
     },
     {
         "alias": "catering",
         "parents": [
             "eventservices"
         ],
-        "title": "caterers"
+        "title": "Caterers"
     },
     {
         "alias": "centralbrazilian",
         "country_whitelist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "brazilian"
         ],
-        "title": "central brazilian"
+        "title": "Central Brazilian"
     },
     {
         "alias": "challengecourses",
         "country_whitelist": [
-            "hk",
-            "nz",
-            "ch",
-            "at",
-            "de",
-            "us"
+            "HK",
+            "NZ",
+            "CH",
+            "AT",
+            "DE",
+            "US"
         ],
         "parents": [
             "active"
         ],
-        "title": "challenge courses"
+        "title": "Challenge Courses"
     },
     {
         "alias": "champagne_bars",
         "country_blacklist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "bars"
         ],
-        "title": "champagne bars"
+        "title": "Champagne Bars"
     },
     {
         "alias": "cheekufta",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "turkish"
         ],
-        "title": "chee kufta"
+        "title": "Chee Kufta"
     },
     {
         "alias": "cheese",
         "parents": [
             "gourmet"
         ],
-        "title": "cheese shops"
+        "title": "Cheese Shops"
     },
     {
         "alias": "cheesesteaks",
         "country_whitelist": [
-            "nl",
-            "gb",
-            "au",
-            "ca",
-            "ie",
-            "us",
-            "pl"
+            "NL",
+            "GB",
+            "AU",
+            "CA",
+            "IE",
+            "US",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cheesesteaks"
+        "title": "Cheesesteaks"
     },
     {
         "alias": "chicken_wings",
         "country_whitelist": [
-            "ie",
-            "ca",
-            "de",
-            "tr",
-            "us",
-            "ar",
-            "at",
-            "br",
-            "sg",
-            "gb"
+            "IE",
+            "CA",
+            "DE",
+            "TR",
+            "US",
+            "AR",
+            "AT",
+            "BR",
+            "SG",
+            "GB"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "chicken wings"
+        "title": "Chicken Wings"
     },
     {
         "alias": "chickenshop",
         "parents": [
             "restaurants"
         ],
-        "title": "chicken shop"
+        "title": "Chicken Shop"
     },
     {
         "alias": "childcare",
         "parents": [
             "localservices"
         ],
-        "title": "child care & day care"
+        "title": "Child Care & Day Care"
     },
     {
         "alias": "childcloth",
         "parents": [
             "fashion"
         ],
-        "title": "children's clothing"
+        "title": "Children\'s Clothing"
     },
     {
         "alias": "chilean",
         "country_whitelist": [
-            "fi",
-            "fr",
-            "br",
-            "cl"
+            "FI",
+            "FR",
+            "BR",
+            "CL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "chilean"
+        "title": "Chilean"
     },
     {
         "alias": "chimneysweeps",
         "country_blacklist": [
-            "ar",
-            "mx"
+            "AR",
+            "MX"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "chimney sweeps"
+        "title": "Chimney Sweeps"
     },
     {
         "alias": "chinese",
         "parents": [
             "restaurants"
         ],
-        "title": "chinese"
+        "title": "Chinese"
     },
     {
         "alias": "chinesebazaar",
         "country_whitelist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "chinese bazaar"
+        "title": "Chinese Bazaar"
     },
     {
         "alias": "chiropractors",
         "parents": [
             "health"
         ],
-        "title": "chiropractors"
+        "title": "Chiropractors"
     },
     {
         "alias": "chocolate",
         "parents": [
             "gourmet"
         ],
-        "title": "chocolatiers & shops"
+        "title": "Chocolatiers & Shops"
     },
     {
         "alias": "choirs",
         "country_blacklist": [
-            "be",
-            "nl",
-            "ca",
-            "us",
-            "cz",
-            "nz",
-            "br",
-            "sg",
-            "pl"
+            "BE",
+            "NL",
+            "CA",
+            "US",
+            "CZ",
+            "NZ",
+            "BR",
+            "SG",
+            "PL"
         ],
         "parents": [
             "arts"
         ],
-        "title": "choirs"
+        "title": "Choirs"
     },
     {
         "alias": "christmastrees",
         "parents": [
             "homeandgarden"
         ],
-        "title": "christmas trees"
+        "title": "Christmas Trees"
     },
     {
         "alias": "churches",
         "parents": [
             "religiousorgs"
         ],
-        "title": "churches"
+        "title": "Churches"
     },
     {
         "alias": "churros",
         "country_whitelist": [
-            "es",
-            "ar",
-            "mx",
-            "pt",
-            "cl"
+            "ES",
+            "AR",
+            "MX",
+            "PT",
+            "CL"
         ],
         "parents": [
             "food"
         ],
-        "title": "churros"
+        "title": "Churros"
     },
     {
         "alias": "circusschools",
         "country_whitelist": [
-            "fi",
-            "fr",
-            "mx",
-            "pt"
+            "FI",
+            "FR",
+            "MX",
+            "PT"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "circus schools"
+        "title": "Circus Schools"
     },
     {
         "alias": "climbing",
         "parents": [
             "active"
         ],
-        "title": "climbing"
+        "title": "Climbing"
     },
     {
         "alias": "clowns",
         "country_blacklist": [
-            "pl",
-            "se",
-            "no",
-            "fi",
-            "sg",
-            "tr",
-            "es"
+            "PL",
+            "SE",
+            "NO",
+            "FI",
+            "SG",
+            "TR",
+            "ES"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "clowns"
+        "title": "Clowns"
     },
     {
         "alias": "cocktailbars",
         "parents": [
             "bars"
         ],
-        "title": "cocktail bars"
+        "title": "Cocktail Bars"
     },
     {
         "alias": "coffee",
         "parents": [
             "food"
         ],
-        "title": "coffee & tea"
+        "title": "Coffee & Tea"
     },
     {
         "alias": "coffeeshops",
         "country_whitelist": [
-            "nl",
-            "pt"
+            "NL",
+            "PT"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "coffeeshops"
+        "title": "Coffeeshops"
     },
     {
         "alias": "coffeeteasupplies",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "food"
         ],
-        "title": "coffee & tea supplies"
+        "title": "Coffee & Tea Supplies"
     },
     {
         "alias": "collegecounseling",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "education"
         ],
-        "title": "college counseling"
+        "title": "College Counseling"
     },
     {
         "alias": "collegeuniv",
         "parents": [
             "education"
         ],
-        "title": "colleges & universities"
+        "title": "Colleges & Universities"
     },
     {
         "alias": "colombian",
         "country_whitelist": [
-            "be",
-            "fr",
-            "cl",
-            "fi",
-            "ca",
-            "mx",
-            "us"
+            "BE",
+            "FR",
+            "CL",
+            "FI",
+            "CA",
+            "MX",
+            "US"
         ],
         "parents": [
             "latin"
         ],
-        "title": "colombian"
+        "title": "Colombian"
     },
     {
         "alias": "comedyclubs",
         "parents": [
             "nightlife"
         ],
-        "title": "comedy clubs"
+        "title": "Comedy Clubs"
     },
     {
         "alias": "comfortfood",
         "country_whitelist": [
-            "ar",
-            "fi",
-            "ca",
-            "jp",
-            "mx",
-            "us"
+            "AR",
+            "FI",
+            "CA",
+            "JP",
+            "MX",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "comfort food"
+        "title": "Comfort Food"
     },
     {
         "alias": "comicbooks",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "media"
         ],
-        "title": "comic books"
+        "title": "Comic Books"
     },
     {
         "alias": "commercialrealestate",
         "country_whitelist": [
-            "be",
-            "nl",
-            "pt",
-            "au",
-            "ca",
-            "de",
-            "us"
+            "BE",
+            "NL",
+            "PT",
+            "AU",
+            "CA",
+            "DE",
+            "US"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "commercial real estate"
+        "title": "Commercial Real Estate"
     },
     {
         "alias": "communitycenters",
         "country_whitelist": [
-            "ca",
-            "ie",
-            "gb",
-            "pt",
-            "no"
+            "CA",
+            "IE",
+            "GB",
+            "PT",
+            "NO"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "community centers"
+        "title": "Community Centers"
     },
     {
         "alias": "computers",
         "parents": [
             "shopping"
         ],
-        "title": "computers"
+        "title": "Computers"
     },
     {
         "alias": "concept_shops",
         "country_blacklist": [
-            "es",
-            "cl",
-            "jp",
-            "ca",
-            "tr",
-            "it",
-            "us",
-            "cz",
-            "nz",
-            "ar",
-            "pl",
-            "br",
-            "hk",
-            "sg",
-            "se"
+            "ES",
+            "CL",
+            "JP",
+            "CA",
+            "TR",
+            "IT",
+            "US",
+            "CZ",
+            "NZ",
+            "AR",
+            "PL",
+            "BR",
+            "HK",
+            "SG",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "concept shops"
+        "title": "Concept Shops"
     },
     {
         "alias": "congee",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "tw"
+            "HK",
+            "SG",
+            "TW"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "congee"
+        "title": "Congee"
     },
     {
         "alias": "contractors",
         "parents": [
             "homeservices"
         ],
-        "title": "contractors"
+        "title": "Contractors"
     },
     {
         "alias": "convenience",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "food"
         ],
-        "title": "convenience stores"
+        "title": "Convenience Stores"
     },
     {
         "alias": "conveyorsushi",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "jp",
-            "tw"
+            "HK",
+            "SG",
+            "JP",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "conveyor belt sushi"
+        "title": "Conveyor Belt Sushi"
     },
     {
         "alias": "cookingclasses",
         "parents": [
             "artsandcrafts"
         ],
-        "title": "cooking classes"
+        "title": "Cooking Classes"
     },
     {
         "alias": "cookingschools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "cooking schools"
+        "title": "Cooking Schools"
     },
     {
         "alias": "copyshops",
         "parents": [
             "localservices"
         ],
-        "title": "printing services"
+        "title": "Printing Services"
     },
     {
         "alias": "corsican",
         "country_whitelist": [
-            "be",
-            "fr"
+            "BE",
+            "FR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "corsican"
+        "title": "Corsican"
     },
     {
         "alias": "cosmeticdentists",
         "parents": [
             "dentists"
         ],
-        "title": "cosmetic dentists"
+        "title": "Cosmetic Dentists"
     },
     {
         "alias": "cosmetics",
@@ -2491,455 +2491,455 @@
             "beautysvc",
             "shopping"
         ],
-        "title": "cosmetics & beauty supply"
+        "title": "Cosmetics & Beauty Supply"
     },
     {
         "alias": "cosmeticsurgeons",
         "parents": [
             "physicians"
         ],
-        "title": "cosmetic surgeons"
+        "title": "Cosmetic Surgeons"
     },
     {
         "alias": "cosmetology_schools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "cosmetology schools"
+        "title": "Cosmetology Schools"
     },
     {
         "alias": "costumes",
         "parents": [
             "artsandcrafts"
         ],
-        "title": "costumes"
+        "title": "Costumes"
     },
     {
         "alias": "countryclubs",
         "country_whitelist": [
-            "cl",
-            "jp",
-            "it",
-            "us",
-            "ar",
-            "br",
-            "sg",
-            "mx",
-            "es"
+            "CL",
+            "JP",
+            "IT",
+            "US",
+            "AR",
+            "BR",
+            "SG",
+            "MX",
+            "ES"
         ],
         "parents": [
             "arts"
         ],
-        "title": "country clubs"
+        "title": "Country Clubs"
     },
     {
         "alias": "countrydancehalls",
         "country_whitelist": [
-            "se",
-            "us"
+            "SE",
+            "US"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "country dance halls"
+        "title": "Country Dance Halls"
     },
     {
         "alias": "couriers",
         "parents": [
             "localservices"
         ],
-        "title": "couriers & delivery services"
+        "title": "Couriers & Delivery Services"
     },
     {
         "alias": "courthouses",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ch",
-            "nl",
-            "pt",
-            "no",
-            "de",
-            "it",
-            "us",
-            "au",
-            "at"
+            "BE",
+            "FR",
+            "CH",
+            "NL",
+            "PT",
+            "NO",
+            "DE",
+            "IT",
+            "US",
+            "AU",
+            "AT"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "courthouses"
+        "title": "Courthouses"
     },
     {
         "alias": "cprclasses",
         "country_whitelist": [
-            "au",
-            "se",
-            "us",
-            "pt"
+            "AU",
+            "SE",
+            "US",
+            "PT"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "cpr classes"
+        "title": "CPR Classes"
     },
     {
         "alias": "creperies",
         "parents": [
             "restaurants"
         ],
-        "title": "creperies"
+        "title": "Creperies"
     },
     {
         "alias": "criminaldefense",
         "parents": [
             "lawyers"
         ],
-        "title": "criminal defense law"
+        "title": "Criminal Defense Law"
     },
     {
         "alias": "csa",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "de",
-            "at",
-            "us"
+            "FR",
+            "CH",
+            "DE",
+            "AT",
+            "US"
         ],
         "parents": [
             "food"
         ],
-        "title": "csa"
+        "title": "CSA"
     },
     {
         "alias": "cuban",
         "country_blacklist": [
-            "sg",
-            "tr",
-            "dk"
+            "SG",
+            "TR",
+            "DK"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cuban"
+        "title": "Cuban"
     },
     {
         "alias": "cucinacampana",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "cucina campana"
+        "title": "Cucina campana"
     },
     {
         "alias": "culturalcenter",
         "country_blacklist": [
-            "ch",
-            "nl",
-            "ca",
-            "de",
-            "tr",
-            "cz",
-            "nz",
-            "at",
-            "br",
-            "ie"
+            "CH",
+            "NL",
+            "CA",
+            "DE",
+            "TR",
+            "CZ",
+            "NZ",
+            "AT",
+            "BR",
+            "IE"
         ],
         "parents": [
             "arts"
         ],
-        "title": "cultural center"
+        "title": "Cultural Center"
     },
     {
         "alias": "cupcakes",
         "country_blacklist": [
-            "es",
-            "ca",
-            "tr",
-            "cz",
-            "gb",
-            "br",
-            "ie",
-            "pl"
+            "ES",
+            "CA",
+            "TR",
+            "CZ",
+            "GB",
+            "BR",
+            "IE",
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "cupcakes"
+        "title": "Cupcakes"
     },
     {
         "alias": "currencyexchange",
         "parents": [
             "financialservices"
         ],
-        "title": "currency exchange"
+        "title": "Currency Exchange"
     },
     {
         "alias": "currysausage",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "curry sausage"
+        "title": "Curry Sausage"
     },
     {
         "alias": "custommerchandise",
         "parents": [
             "shopping"
         ],
-        "title": "customized merchandise"
+        "title": "Customized Merchandise"
     },
     {
         "alias": "cyclingclasses",
         "country_blacklist": [
-            "nz",
-            "ar",
-            "br",
-            "pt",
-            "ca",
-            "ie",
-            "mx"
+            "NZ",
+            "AR",
+            "BR",
+            "PT",
+            "CA",
+            "IE",
+            "MX"
         ],
         "parents": [
             "active"
         ],
-        "title": "cycling classes"
+        "title": "Cycling Classes"
     },
     {
         "alias": "cypriot",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "cypriot"
+        "title": "Cypriot"
     },
     {
         "alias": "czech",
         "country_whitelist": [
-            "be",
-            "fr",
-            "dk",
-            "no",
-            "ca",
-            "de",
-            "it",
-            "us",
-            "pl",
-            "cz",
-            "au",
-            "gb",
-            "fi",
-            "ie",
-            "se"
+            "BE",
+            "FR",
+            "DK",
+            "NO",
+            "CA",
+            "DE",
+            "IT",
+            "US",
+            "PL",
+            "CZ",
+            "AU",
+            "GB",
+            "FI",
+            "IE",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "czech"
+        "title": "Czech"
     },
     {
         "alias": "czechslovakian",
         "country_whitelist": [
-            "ar",
-            "mx",
-            "pt"
+            "AR",
+            "MX",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "czech/slovakian"
+        "title": "Czech/Slovakian"
     },
     {
         "alias": "damagerestoration",
         "country_whitelist": [
-            "nz",
-            "au",
-            "pt",
-            "sg",
-            "tr",
-            "us"
+            "NZ",
+            "AU",
+            "PT",
+            "SG",
+            "TR",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "damage restoration"
+        "title": "Damage Restoration"
     },
     {
         "alias": "dance_schools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "dance schools"
+        "title": "Dance Schools"
     },
     {
         "alias": "danceclubs",
         "parents": [
             "nightlife"
         ],
-        "title": "dance clubs"
+        "title": "Dance Clubs"
     },
     {
         "alias": "dancerestaurants",
         "country_whitelist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "dance restaurants"
+        "title": "Dance Restaurants"
     },
     {
         "alias": "dancestudio",
         "parents": [
             "fitness"
         ],
-        "title": "dance studios"
+        "title": "Dance Studios"
     },
     {
         "alias": "danish",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "se",
-            "no"
+            "FR",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "danish"
+        "title": "Danish"
     },
     {
         "alias": "datarecovery",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "ch",
-            "pt",
-            "de",
-            "it",
-            "us",
-            "au",
-            "at",
-            "se"
+            "ES",
+            "BE",
+            "FR",
+            "CH",
+            "PT",
+            "DE",
+            "IT",
+            "US",
+            "AU",
+            "AT",
+            "SE"
         ],
         "parents": [
             "itservices"
         ],
-        "title": "data recovery"
+        "title": "Data Recovery"
     },
     {
         "alias": "daycamps",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "active"
         ],
-        "title": "day camps"
+        "title": "Day Camps"
     },
     {
         "alias": "debtrelief",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "financialservices"
         ],
-        "title": "debt relief services"
+        "title": "Debt Relief Services"
     },
     {
         "alias": "delicatessen",
         "country_blacklist": [
-            "it",
-            "us"
+            "IT",
+            "US"
         ],
         "parents": [
             "food"
         ],
-        "title": "delicatessen"
+        "title": "Delicatessen"
     },
     {
         "alias": "delis",
         "country_blacklist": [
-            "ch",
-            "dk",
-            "pt",
-            "cl",
-            "de",
-            "it",
-            "no",
-            "at",
-            "se"
+            "CH",
+            "DK",
+            "PT",
+            "CL",
+            "DE",
+            "IT",
+            "NO",
+            "AT",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "delis"
+        "title": "Delis"
     },
     {
         "alias": "dentalhygeiniststorefront",
         "country_whitelist": [
-            "ca"
+            "CA"
         ],
         "parents": [
             "dentalhygienists"
         ],
-        "title": "storefront clinics"
+        "title": "Storefront Clinics"
     },
     {
         "alias": "dentalhygienists",
         "country_whitelist": [
-            "ca",
-            "de",
-            "pt"
+            "CA",
+            "DE",
+            "PT"
         ],
         "parents": [
             "health"
         ],
-        "title": "dental hygienists"
+        "title": "Dental Hygienists"
     },
     {
         "alias": "dentalhygienistsmobile",
         "country_whitelist": [
-            "ca"
+            "CA"
         ],
         "parents": [
             "dentalhygienists"
         ],
-        "title": "mobile clinics"
+        "title": "Mobile Clinics"
     },
     {
         "alias": "dentists",
         "parents": [
             "health"
         ],
-        "title": "dentists"
+        "title": "Dentists"
     },
     {
         "alias": "departmentsofmotorvehicles",
         "country_blacklist": [
-            "be",
-            "fr"
+            "BE",
+            "FR"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "departments of motor vehicles"
+        "title": "Departments of Motor Vehicles"
     },
     {
         "alias": "deptstores",
@@ -2947,1256 +2947,1256 @@
             "shopping",
             "fashion"
         ],
-        "title": "department stores"
+        "title": "Department Stores"
     },
     {
         "alias": "dermatology",
         "parents": [
             "physicians"
         ],
-        "title": "dermatologists"
+        "title": "Dermatologists"
     },
     {
         "alias": "desserts",
         "parents": [
             "food"
         ],
-        "title": "desserts"
+        "title": "Desserts"
     },
     {
         "alias": "diagnosticimaging",
         "country_whitelist": [
-            "fr",
-            "pt",
-            "ca",
-            "us",
-            "au",
-            "gb",
-            "br",
-            "ie",
-            "mx"
+            "FR",
+            "PT",
+            "CA",
+            "US",
+            "AU",
+            "GB",
+            "BR",
+            "IE",
+            "MX"
         ],
         "parents": [
             "diagnosticservices"
         ],
-        "title": "diagnostic imaging"
+        "title": "Diagnostic Imaging"
     },
     {
         "alias": "diagnosticservices",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt",
-            "ca",
-            "it",
-            "us",
-            "au",
-            "gb",
-            "br",
-            "ie",
-            "mx"
+            "BE",
+            "FR",
+            "PT",
+            "CA",
+            "IT",
+            "US",
+            "AU",
+            "GB",
+            "BR",
+            "IE",
+            "MX"
         ],
         "parents": [
             "health"
         ],
-        "title": "diagnostic services"
+        "title": "Diagnostic Services"
     },
     {
         "alias": "dimsum",
         "country_blacklist": [
-            "tr",
-            "br",
-            "pt"
+            "TR",
+            "BR",
+            "PT"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "dim sum"
+        "title": "Dim Sum"
     },
     {
         "alias": "diners",
         "country_blacklist": [
-            "fi",
-            "au",
-            "se",
-            "no"
+            "FI",
+            "AU",
+            "SE",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "diners"
+        "title": "Diners"
     },
     {
         "alias": "discgolf",
         "country_blacklist": [
-            "au",
-            "sg",
-            "dk"
+            "AU",
+            "SG",
+            "DK"
         ],
         "parents": [
             "active"
         ],
-        "title": "disc golf"
+        "title": "Disc Golf"
     },
     {
         "alias": "discountstore",
         "parents": [
             "shopping"
         ],
-        "title": "discount store"
+        "title": "Discount Store"
     },
     {
         "alias": "distilleries",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "food"
         ],
-        "title": "distilleries"
+        "title": "Distilleries"
     },
     {
         "alias": "divebars",
         "country_blacklist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "bars"
         ],
-        "title": "dive bars"
+        "title": "Dive Bars"
     },
     {
         "alias": "diving",
         "parents": [
             "active"
         ],
-        "title": "diving"
+        "title": "Diving"
     },
     {
         "alias": "divorce",
         "parents": [
             "lawyers"
         ],
-        "title": "divorce & family law"
+        "title": "Divorce & Family Law"
     },
     {
         "alias": "diyfood",
         "country_blacklist": [
-            "es",
-            "fr",
-            "ch",
-            "cl",
-            "de",
-            "it",
-            "no",
-            "nz",
-            "at",
-            "fi",
-            "se"
+            "ES",
+            "FR",
+            "CH",
+            "CL",
+            "DE",
+            "IT",
+            "NO",
+            "NZ",
+            "AT",
+            "FI",
+            "SE"
         ],
         "parents": [
             "food"
         ],
-        "title": "do-it-yourself food"
+        "title": "Do-It-Yourself Food"
     },
     {
         "alias": "djs",
         "parents": [
             "eventservices"
         ],
-        "title": "djs"
+        "title": "DJs"
     },
     {
         "alias": "dog_parks",
         "parents": [
             "parks"
         ],
-        "title": "dog parks"
+        "title": "Dog Parks"
     },
     {
         "alias": "dogwalkers",
         "parents": [
             "petservices"
         ],
-        "title": "dog walkers"
+        "title": "Dog Walkers"
     },
     {
         "alias": "dolmusstation",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "transport"
         ],
-        "title": "dolmus station"
+        "title": "Dolmus Station"
     },
     {
         "alias": "dominican",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "caribbean"
         ],
-        "title": "dominican"
+        "title": "Dominican"
     },
     {
         "alias": "donairs",
         "country_whitelist": [
-            "be",
-            "fr",
-            "dk",
-            "ca",
-            "tr",
-            "pl"
+            "BE",
+            "FR",
+            "DK",
+            "CA",
+            "TR",
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "donairs"
+        "title": "Donairs"
     },
     {
         "alias": "donburi",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "donburi"
+        "title": "Donburi"
     },
     {
         "alias": "donuts",
         "country_blacklist": [
-            "es",
-            "dk",
-            "se",
-            "no"
+            "ES",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "food"
         ],
-        "title": "donuts"
+        "title": "Donuts"
     },
     {
         "alias": "doorsales",
         "country_whitelist": [
-            "nz",
-            "pt",
-            "it",
-            "us",
-            "br"
+            "NZ",
+            "PT",
+            "IT",
+            "US",
+            "BR"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "door sales/installation"
+        "title": "Door Sales/Installation"
     },
     {
         "alias": "doulas",
         "country_whitelist": [
-            "be",
-            "fr",
-            "it",
-            "pt",
-            "us"
+            "BE",
+            "FR",
+            "IT",
+            "PT",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "doulas"
+        "title": "Doulas"
     },
     {
         "alias": "driving_schools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "driving schools"
+        "title": "Driving Schools"
     },
     {
         "alias": "drugstores",
         "country_blacklist": [
-            "fr",
-            "dk",
-            "cl",
-            "no",
-            "tr",
-            "ar",
-            "fi",
-            "mx",
-            "se"
+            "FR",
+            "DK",
+            "CL",
+            "NO",
+            "TR",
+            "AR",
+            "FI",
+            "MX",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "drugstores"
+        "title": "Drugstores"
     },
     {
         "alias": "drycleaninglaundry",
         "parents": [
             "localservices"
         ],
-        "title": "dry cleaning & laundry"
+        "title": "Dry Cleaning & Laundry"
     },
     {
         "alias": "drywall",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "drywall installation & repair"
+        "title": "Drywall Installation & Repair"
     },
     {
         "alias": "duilawyers",
         "country_whitelist": [
-            "ca",
-            "de",
-            "us"
+            "CA",
+            "DE",
+            "US"
         ],
         "parents": [
             "lawyers"
         ],
-        "title": "dui law"
+        "title": "DUI Law"
     },
     {
         "alias": "dumplings",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "dumplings"
+        "title": "Dumplings"
     },
     {
         "alias": "earnosethroat",
         "parents": [
             "physicians"
         ],
-        "title": "ear nose & throat"
+        "title": "Ear Nose & Throat"
     },
     {
         "alias": "eastern_european",
         "country_whitelist": [
-            "fr",
-            "au"
+            "FR",
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "eastern european"
+        "title": "Eastern European"
     },
     {
         "alias": "easterngerman",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "eastern german"
+        "title": "Eastern German"
     },
     {
         "alias": "easternmexican",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "eastern mexican"
+        "title": "Eastern Mexican"
     },
     {
         "alias": "editorialservices",
         "country_whitelist": [
-            "be",
-            "nl",
-            "pt",
-            "cl",
-            "de",
-            "it",
-            "us",
-            "ar",
-            "br",
-            "mx"
+            "BE",
+            "NL",
+            "PT",
+            "CL",
+            "DE",
+            "IT",
+            "US",
+            "AR",
+            "BR",
+            "MX"
         ],
         "parents": [
             "professional"
         ],
-        "title": "editorial services"
+        "title": "Editorial Services"
     },
     {
         "alias": "education",
         "parents": [
             null
         ],
-        "title": "education"
+        "title": "Education"
     },
     {
         "alias": "educationservices",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "education"
         ],
-        "title": "educational services"
+        "title": "Educational Services"
     },
     {
         "alias": "egyptian",
         "country_whitelist": [
-            "be",
-            "ca",
-            "fr",
-            "us",
-            "it"
+            "BE",
+            "CA",
+            "FR",
+            "US",
+            "IT"
         ],
         "parents": [
             "mideastern"
         ],
-        "title": "egyptian"
+        "title": "Egyptian"
     },
     {
         "alias": "electricians",
         "parents": [
             "homeservices"
         ],
-        "title": "electricians"
+        "title": "Electricians"
     },
     {
         "alias": "electronics",
         "parents": [
             "shopping"
         ],
-        "title": "electronics"
+        "title": "Electronics"
     },
     {
         "alias": "electronicsrepair",
         "parents": [
             "localservices"
         ],
-        "title": "electronics repair"
+        "title": "Electronics Repair"
     },
     {
         "alias": "elementaryschools",
         "parents": [
             "education"
         ],
-        "title": "elementary schools"
+        "title": "Elementary Schools"
     },
     {
         "alias": "eltern_cafes",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "food",
             "restaurants"
         ],
-        "title": "parent cafes"
+        "title": "Parent Cafes"
     },
     {
         "alias": "embassy",
         "country_blacklist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "embassy"
+        "title": "Embassy"
     },
     {
         "alias": "embroideryandcrochet",
         "country_whitelist": [
-            "br",
-            "pt",
-            "no",
-            "it",
-            "us",
-            "mx"
+            "BR",
+            "PT",
+            "NO",
+            "IT",
+            "US",
+            "MX"
         ],
         "parents": [
             "artsandcrafts"
         ],
-        "title": "embroidery & crochet"
+        "title": "Embroidery & Crochet"
     },
     {
         "alias": "emergencyrooms",
         "country_whitelist": [
-            "se",
-            "us"
+            "SE",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "emergency rooms"
+        "title": "Emergency Rooms"
     },
     {
         "alias": "emilian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "emilian"
+        "title": "Emilian"
     },
     {
         "alias": "employmentagencies",
         "parents": [
             "professional"
         ],
-        "title": "employment agencies"
+        "title": "Employment Agencies"
     },
     {
         "alias": "employmentlawyers",
         "parents": [
             "lawyers"
         ],
-        "title": "employment law"
+        "title": "Employment Law"
     },
     {
         "alias": "endocrinologists",
         "country_whitelist": [
-            "es",
-            "fr",
-            "it",
-            "us"
+            "ES",
+            "FR",
+            "IT",
+            "US"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "endocrinologists"
+        "title": "Endocrinologists"
     },
     {
         "alias": "endodontists",
         "parents": [
             "dentists"
         ],
-        "title": "endodontists"
+        "title": "Endodontists"
     },
     {
         "alias": "eroticmassage",
         "country_blacklist": [
-            "dk",
-            "cl",
-            "jp",
-            "no",
-            "tr",
-            "us",
-            "hk",
-            "tw",
-            "fi",
-            "se"
+            "DK",
+            "CL",
+            "JP",
+            "NO",
+            "TR",
+            "US",
+            "HK",
+            "TW",
+            "FI",
+            "SE"
         ],
         "parents": [
             "beautysvc"
         ],
-        "title": "erotic massage"
+        "title": "Erotic Massage"
     },
     {
         "alias": "estateliquidation",
         "parents": [
             "realestate"
         ],
-        "title": "estate liquidation"
+        "title": "Estate Liquidation"
     },
     {
         "alias": "estateplanning",
         "country_blacklist": [
-            "se",
-            "no"
+            "SE",
+            "NO"
         ],
         "parents": [
             "lawyers"
         ],
-        "title": "estate planning law"
+        "title": "Estate Planning Law"
     },
     {
         "alias": "ethiopian",
         "country_blacklist": [
-            "dk",
-            "pt",
-            "sg",
-            "tr",
-            "mx",
-            "es"
+            "DK",
+            "PT",
+            "SG",
+            "TR",
+            "MX",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "ethiopian"
+        "title": "Ethiopian"
     },
     {
         "alias": "ethnicgrocery",
         "country_whitelist": [
-            "de",
-            "au",
-            "pt"
+            "DE",
+            "AU",
+            "PT"
         ],
         "parents": [
             "food"
         ],
-        "title": "ethnic grocery"
+        "title": "Ethnic Grocery"
     },
     {
         "alias": "ethnicmarkets",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "gourmet"
         ],
-        "title": "ethnic food"
+        "title": "Ethnic Food"
     },
     {
         "alias": "eventphotography",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "pt",
-            "de",
-            "jp",
-            "it",
-            "us",
-            "ar",
-            "au"
+            "BE",
+            "FR",
+            "NL",
+            "PT",
+            "DE",
+            "JP",
+            "IT",
+            "US",
+            "AR",
+            "AU"
         ],
         "parents": [
             "photographers"
         ],
-        "title": "event photography"
+        "title": "Event Photography"
     },
     {
         "alias": "eventplanning",
         "parents": [
             "eventservices"
         ],
-        "title": "party & event planning"
+        "title": "Party & Event Planning"
     },
     {
         "alias": "eventservices",
         "parents": [
             null
         ],
-        "title": "event planning & services"
+        "title": "Event Planning & Services"
     },
     {
         "alias": "experiences",
         "country_whitelist": [
-            "de",
-            "pt",
-            "se",
-            "no"
+            "DE",
+            "PT",
+            "SE",
+            "NO"
         ],
         "parents": [
             "active"
         ],
-        "title": "experiences"
+        "title": "Experiences"
     },
     {
         "alias": "eyelashservice",
         "country_blacklist": [
-            "br",
-            "dk",
-            "es",
-            "it"
+            "BR",
+            "DK",
+            "ES",
+            "IT"
         ],
         "parents": [
             "beautysvc"
         ],
-        "title": "eyelash service"
+        "title": "Eyelash Service"
     },
     {
         "alias": "fabricstores",
         "parents": [
             "artsandcrafts"
         ],
-        "title": "fabric stores"
+        "title": "Fabric Stores"
     },
     {
         "alias": "facepainting",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "us"
+            "NZ",
+            "AU",
+            "BR",
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "face painting"
+        "title": "Face Painting"
     },
     {
         "alias": "fado_houses",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "fado houses"
+        "title": "Fado Houses"
     },
     {
         "alias": "falafel",
         "country_blacklist": [
-            "ar",
-            "mx",
-            "pt"
+            "AR",
+            "MX",
+            "PT"
         ],
         "parents": [
             "mediterranean"
         ],
-        "title": "falafel"
+        "title": "Falafel"
     },
     {
         "alias": "familydr",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "family practice"
+        "title": "Family Practice"
     },
     {
         "alias": "farmersmarket",
         "parents": [
             "food"
         ],
-        "title": "farmers market"
+        "title": "Farmers Market"
     },
     {
         "alias": "fashion",
         "parents": [
             "shopping"
         ],
-        "title": "fashion"
+        "title": "Fashion"
     },
     {
         "alias": "fasil",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "fasil music"
+        "title": "Fasil Music"
     },
     {
         "alias": "fencesgates",
         "country_whitelist": [
-            "nz",
-            "br",
-            "pt",
-            "sg",
-            "it",
-            "us"
+            "NZ",
+            "BR",
+            "PT",
+            "SG",
+            "IT",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "fences & gates"
+        "title": "Fences & Gates"
     },
     {
         "alias": "fencing",
         "parents": [
             "active"
         ],
-        "title": "fencing clubs"
+        "title": "Fencing Clubs"
     },
     {
         "alias": "ferries",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "jp",
-            "de",
-            "tr",
-            "it",
-            "hk",
-            "nz",
-            "es",
-            "fi",
-            "sg",
-            "se"
+            "DK",
+            "PT",
+            "NO",
+            "JP",
+            "DE",
+            "TR",
+            "IT",
+            "HK",
+            "NZ",
+            "ES",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "transport"
         ],
-        "title": "ferries"
+        "title": "Ferries"
     },
     {
         "alias": "fertility",
         "parents": [
             "physicians"
         ],
-        "title": "fertility"
+        "title": "Fertility"
     },
     {
         "alias": "festivals",
         "parents": [
             "arts"
         ],
-        "title": "festivals"
+        "title": "Festivals"
     },
     {
         "alias": "filipino",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "dk",
-            "es"
+            "FI",
+            "TR",
+            "DK",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "filipino"
+        "title": "Filipino"
     },
     {
         "alias": "financialadvising",
         "parents": [
             "financialservices"
         ],
-        "title": "financial advising"
+        "title": "Financial Advising"
     },
     {
         "alias": "financialservices",
         "parents": [
             null
         ],
-        "title": "financial services"
+        "title": "Financial Services"
     },
     {
         "alias": "firearmtraining",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "firearm training"
+        "title": "Firearm Training"
     },
     {
         "alias": "firedepartments",
         "country_blacklist": [
-            "nz",
-            "gb",
-            "br",
-            "sg",
-            "ca",
-            "ie"
+            "NZ",
+            "GB",
+            "BR",
+            "SG",
+            "CA",
+            "IE"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "fire departments"
+        "title": "Fire Departments"
     },
     {
         "alias": "fireplace",
         "parents": [
             "homeservices"
         ],
-        "title": "fireplace services"
+        "title": "Fireplace Services"
     },
     {
         "alias": "fireprotection",
         "parents": [
             "homeservices"
         ],
-        "title": "fire protection services"
+        "title": "Fire Protection Services"
     },
     {
         "alias": "firewood",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "se",
-            "no",
-            "fi",
-            "us"
+            "FR",
+            "DK",
+            "SE",
+            "NO",
+            "FI",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "firewood"
+        "title": "Firewood"
     },
     {
         "alias": "fireworks",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "fireworks"
+        "title": "Fireworks"
     },
     {
         "alias": "firstaidclasses",
         "country_blacklist": [
-            "be",
-            "fr",
-            "nl",
-            "br",
-            "ie",
-            "sg",
-            "nz"
+            "BE",
+            "FR",
+            "NL",
+            "BR",
+            "IE",
+            "SG",
+            "NZ"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "first aid classes"
+        "title": "First Aid Classes"
     },
     {
         "alias": "fischbroetchen",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "fischbroetchen"
+        "title": "Fischbroetchen"
     },
     {
         "alias": "fishing",
         "parents": [
             "active"
         ],
-        "title": "fishing"
+        "title": "Fishing"
     },
     {
         "alias": "fishmonger",
         "country_whitelist": [
-            "au",
-            "dk",
-            "pt",
-            "no",
-            "fi",
-            "de",
-            "se"
+            "AU",
+            "DK",
+            "PT",
+            "NO",
+            "FI",
+            "DE",
+            "SE"
         ],
         "parents": [
             "food"
         ],
-        "title": "fishmonger"
+        "title": "Fishmonger"
     },
     {
         "alias": "fishnchips",
         "country_blacklist": [
-            "br",
-            "pt"
+            "BR",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "fish & chips"
+        "title": "Fish & Chips"
     },
     {
         "alias": "fitness",
         "parents": [
             "active"
         ],
-        "title": "fitness & instruction"
+        "title": "Fitness & Instruction"
     },
     {
         "alias": "fitnessequipment",
         "parents": [
             "shopping"
         ],
-        "title": "fitness/exercise equipment"
+        "title": "Fitness/Exercise Equipment"
     },
     {
         "alias": "fleamarkets",
         "parents": [
             "shopping"
         ],
-        "title": "flea markets"
+        "title": "Flea Markets"
     },
     {
         "alias": "flemish",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "belgian"
         ],
-        "title": "flemish"
+        "title": "Flemish"
     },
     {
         "alias": "flightinstruction",
         "parents": [
             "specialtyschools"
         ],
-        "title": "flight instruction"
+        "title": "Flight Instruction"
     },
     {
         "alias": "flooring",
         "parents": [
             "homeservices"
         ],
-        "title": "flooring"
+        "title": "Flooring"
     },
     {
         "alias": "florists",
         "parents": [
             "flowers"
         ],
-        "title": "florists"
+        "title": "Florists"
     },
     {
         "alias": "flowers",
         "parents": [
             "shopping"
         ],
-        "title": "flowers & gifts"
+        "title": "Flowers & Gifts"
     },
     {
         "alias": "flyboarding",
         "parents": [
             "active"
         ],
-        "title": "flyboarding"
+        "title": "Flyboarding"
     },
     {
         "alias": "fondue",
         "country_blacklist": [
-            "dk",
-            "es"
+            "DK",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "fondue"
+        "title": "Fondue"
     },
     {
         "alias": "food",
         "parents": [
             null
         ],
-        "title": "food"
+        "title": "Food"
     },
     {
         "alias": "food_court",
         "country_whitelist": [
-            "no",
-            "ie",
-            "ca",
-            "us",
-            "nz",
-            "au",
-            "gb",
-            "sg",
-            "se"
+            "NO",
+            "IE",
+            "CA",
+            "US",
+            "NZ",
+            "AU",
+            "GB",
+            "SG",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "food court"
+        "title": "Food Court"
     },
     {
         "alias": "foodbanks",
         "parents": [
             "nonprofit"
         ],
-        "title": "food banks"
+        "title": "Food Banks"
     },
     {
         "alias": "fooddeliveryservices",
         "parents": [
             "food"
         ],
-        "title": "food delivery services"
+        "title": "Food Delivery Services"
     },
     {
         "alias": "foodsafety",
         "country_whitelist": [
-            "sg",
-            "pt",
-            "us"
+            "SG",
+            "PT",
+            "US"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "food safety training"
+        "title": "Food Safety Training"
     },
     {
         "alias": "foodstands",
         "parents": [
             "restaurants"
         ],
-        "title": "food stands"
+        "title": "Food Stands"
     },
     {
         "alias": "foodtours",
         "parents": [
             "tours"
         ],
-        "title": "food tours"
+        "title": "Food Tours"
     },
     {
         "alias": "foodtrucks",
         "country_blacklist": [
-            "cz",
-            "sg",
-            "es"
+            "CZ",
+            "SG",
+            "ES"
         ],
         "parents": [
             "food"
         ],
-        "title": "food trucks"
+        "title": "Food Trucks"
     },
     {
         "alias": "football",
         "parents": [
             "active"
         ],
-        "title": "soccer"
+        "title": "Soccer"
     },
     {
         "alias": "formalwear",
         "country_whitelist": [
-            "fr",
-            "pt",
-            "ca",
-            "de",
-            "us",
-            "nz",
-            "au",
-            "at",
-            "br",
-            "sg"
+            "FR",
+            "PT",
+            "CA",
+            "DE",
+            "US",
+            "NZ",
+            "AU",
+            "AT",
+            "BR",
+            "SG"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "formal wear"
+        "title": "Formal Wear"
     },
     {
         "alias": "framing",
         "parents": [
             "artsandcrafts"
         ],
-        "title": "framing"
+        "title": "Framing"
     },
     {
         "alias": "freediving",
         "parents": [
             "diving"
         ],
-        "title": "free diving"
+        "title": "Free Diving"
     },
     {
         "alias": "french",
         "parents": [
             "restaurants"
         ],
-        "title": "french"
+        "title": "French"
     },
     {
         "alias": "friterie",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "it",
-            "pl"
+            "BE",
+            "FR",
+            "AU",
+            "IT",
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "friterie"
+        "title": "Friterie"
     },
     {
         "alias": "friulan",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "friulan"
+        "title": "Friulan"
     },
     {
         "alias": "funeralservices",
         "parents": [
             "localservices"
         ],
-        "title": "funeral services & cemeteries"
+        "title": "Funeral Services & Cemeteries"
     },
     {
         "alias": "funfair",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at",
-            "pt"
+            "CH",
+            "DE",
+            "AT",
+            "PT"
         ],
         "parents": [
             "festivals"
         ],
-        "title": "fun fair"
+        "title": "Fun Fair"
     },
     {
         "alias": "furniture",
         "parents": [
             "homeandgarden"
         ],
-        "title": "furniture stores"
+        "title": "Furniture Stores"
     },
     {
         "alias": "furnitureassembly",
         "parents": [
             "homeservices"
         ],
-        "title": "furniture assembly"
+        "title": "Furniture Assembly"
     },
     {
         "alias": "furniturerepair",
         "parents": [
             "localservices"
         ],
-        "title": "furniture repair"
+        "title": "Furniture Repair"
     },
     {
         "alias": "fuzhou",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "tw"
+            "HK",
+            "SG",
+            "TW"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "fuzhou"
+        "title": "Fuzhou"
     },
     {
         "alias": "galician",
         "country_whitelist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "galician"
+        "title": "Galician"
     },
     {
         "alias": "galleries",
@@ -4204,1057 +4204,1057 @@
             "arts",
             "shopping"
         ],
-        "title": "art galleries"
+        "title": "Art Galleries"
     },
     {
         "alias": "garage_door_services",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "no",
-            "ca",
-            "us",
-            "nz",
-            "br",
-            "fi",
-            "mx",
-            "es"
+            "BE",
+            "FR",
+            "NL",
+            "NO",
+            "CA",
+            "US",
+            "NZ",
+            "BR",
+            "FI",
+            "MX",
+            "ES"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "garage door services"
+        "title": "Garage Door Services"
     },
     {
         "alias": "gardeners",
         "parents": [
             "homeservices"
         ],
-        "title": "gardeners"
+        "title": "Gardeners"
     },
     {
         "alias": "gardening",
         "parents": [
             "homeandgarden"
         ],
-        "title": "nurseries & gardening"
+        "title": "Nurseries & Gardening"
     },
     {
         "alias": "gardens",
         "parents": [
             "arts"
         ],
-        "title": "botanical gardens"
+        "title": "Botanical Gardens"
     },
     {
         "alias": "gastroenterologist",
         "parents": [
             "physicians"
         ],
-        "title": "gastroenterologist"
+        "title": "Gastroenterologist"
     },
     {
         "alias": "gastropubs",
         "country_blacklist": [
-            "dk",
-            "it"
+            "DK",
+            "IT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "gastropubs"
+        "title": "Gastropubs"
     },
     {
         "alias": "gaybars",
         "parents": [
             "bars"
         ],
-        "title": "gay bars"
+        "title": "Gay Bars"
     },
     {
         "alias": "gelato",
         "country_whitelist": [
-            "au",
-            "it",
-            "us",
-            "pt"
+            "AU",
+            "IT",
+            "US",
+            "PT"
         ],
         "parents": [
             "food"
         ],
-        "title": "gelato"
+        "title": "Gelato"
     },
     {
         "alias": "general_litigation",
         "parents": [
             "lawyers"
         ],
-        "title": "general litigation"
+        "title": "General Litigation"
     },
     {
         "alias": "generaldentistry",
         "parents": [
             "dentists"
         ],
-        "title": "general dentistry"
+        "title": "General Dentistry"
     },
     {
         "alias": "generalfestivals",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at",
-            "pt"
+            "CH",
+            "DE",
+            "AT",
+            "PT"
         ],
         "parents": [
             "festivals"
         ],
-        "title": "general festivals"
+        "title": "General Festivals"
     },
     {
         "alias": "georgian",
         "country_whitelist": [
-            "pl"
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "georgian"
+        "title": "Georgian"
     },
     {
         "alias": "german",
         "parents": [
             "restaurants"
         ],
-        "title": "german"
+        "title": "German"
     },
     {
         "alias": "gerontologist",
         "parents": [
             "physicians"
         ],
-        "title": "gerontologists"
+        "title": "Gerontologists"
     },
     {
         "alias": "giblets",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "giblets"
+        "title": "Giblets"
     },
     {
         "alias": "giftshops",
         "country_blacklist": [
-            "sg",
-            "tr",
-            "pl"
+            "SG",
+            "TR",
+            "PL"
         ],
         "parents": [
             "flowers"
         ],
-        "title": "gift shops"
+        "title": "Gift Shops"
     },
     {
         "alias": "glassandmirrors",
         "country_blacklist": [
-            "nl",
-            "ca",
-            "tr",
-            "cz",
-            "ar",
-            "au",
-            "gb",
-            "ie",
-            "mx",
-            "pl"
+            "NL",
+            "CA",
+            "TR",
+            "CZ",
+            "AR",
+            "AU",
+            "GB",
+            "IE",
+            "MX",
+            "PL"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "glass & mirrors"
+        "title": "Glass & Mirrors"
     },
     {
         "alias": "gliding",
         "country_whitelist": [
-            "ch",
-            "at",
-            "pt",
-            "no",
-            "de",
-            "se"
+            "CH",
+            "AT",
+            "PT",
+            "NO",
+            "DE",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "gliding"
+        "title": "Gliding"
     },
     {
         "alias": "gluhwein",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at",
-            "se"
+            "CH",
+            "DE",
+            "AT",
+            "SE"
         ],
         "parents": [
             "food"
         ],
-        "title": "mulled wine"
+        "title": "Mulled Wine"
     },
     {
         "alias": "gluten_free",
         "parents": [
             "restaurants"
         ],
-        "title": "gluten-free"
+        "title": "Gluten-Free"
     },
     {
         "alias": "gokarts",
         "parents": [
             "active"
         ],
-        "title": "go karts"
+        "title": "Go Karts"
     },
     {
         "alias": "goldbuyers",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "ch",
-            "nl",
-            "pt",
-            "ca",
-            "de",
-            "it",
-            "us",
-            "at",
-            "br",
-            "se"
+            "ES",
+            "BE",
+            "FR",
+            "CH",
+            "NL",
+            "PT",
+            "CA",
+            "DE",
+            "IT",
+            "US",
+            "AT",
+            "BR",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "gold buyers"
+        "title": "Gold Buyers"
     },
     {
         "alias": "golf",
         "parents": [
             "active"
         ],
-        "title": "golf"
+        "title": "Golf"
     },
     {
         "alias": "golfequipment",
         "country_whitelist": [
-            "be",
-            "nl",
-            "au",
-            "ca",
-            "de",
-            "us"
+            "BE",
+            "NL",
+            "AU",
+            "CA",
+            "DE",
+            "US"
         ],
         "parents": [
             "sportgoods"
         ],
-        "title": "golf equipment"
+        "title": "Golf Equipment"
     },
     {
         "alias": "golfshops",
         "country_blacklist": [
-            "ie",
-            "ca",
-            "sg",
-            "nz",
-            "br"
+            "IE",
+            "CA",
+            "SG",
+            "NZ",
+            "BR"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "golf equipment shops"
+        "title": "Golf Equipment Shops"
     },
     {
         "alias": "gourmet",
         "parents": [
             "food"
         ],
-        "title": "specialty food"
+        "title": "Specialty Food"
     },
     {
         "alias": "gozleme",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "turkish"
         ],
-        "title": "gozleme"
+        "title": "Gozleme"
     },
     {
         "alias": "graphicdesign",
         "parents": [
             "professional"
         ],
-        "title": "graphic design"
+        "title": "Graphic Design"
     },
     {
         "alias": "greek",
         "parents": [
             "restaurants"
         ],
-        "title": "greek"
+        "title": "Greek"
     },
     {
         "alias": "grocery",
         "parents": [
             "food"
         ],
-        "title": "grocery"
+        "title": "Grocery"
     },
     {
         "alias": "groomer",
         "parents": [
             "petservices"
         ],
-        "title": "pet groomers"
+        "title": "Pet Groomers"
     },
     {
         "alias": "guesthouses",
         "country_blacklist": [
-            "sg",
-            "dk"
+            "SG",
+            "DK"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "guest houses"
+        "title": "Guest Houses"
     },
     {
         "alias": "guitarstores",
         "parents": [
             "musicinstrumentservices"
         ],
-        "title": "guitar stores"
+        "title": "Guitar Stores"
     },
     {
         "alias": "gun_ranges",
         "country_blacklist": [
-            "be",
-            "fr",
-            "ch",
-            "dk",
-            "de",
-            "at",
-            "br",
-            "sg"
+            "BE",
+            "FR",
+            "CH",
+            "DK",
+            "DE",
+            "AT",
+            "BR",
+            "SG"
         ],
         "parents": [
             "active"
         ],
-        "title": "gun/rifle ranges"
+        "title": "Gun/Rifle Ranges"
     },
     {
         "alias": "guns_and_ammo",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "guns & ammo"
+        "title": "Guns & Ammo"
     },
     {
         "alias": "gutterservices",
         "country_blacklist": [
-            "ar",
-            "mx",
-            "pt"
+            "AR",
+            "MX",
+            "PT"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "gutter services"
+        "title": "Gutter Services"
     },
     {
         "alias": "gymnastics",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "ca",
-            "us",
-            "nz",
-            "br",
-            "mx"
+            "DK",
+            "PT",
+            "NO",
+            "CA",
+            "US",
+            "NZ",
+            "BR",
+            "MX"
         ],
         "parents": [
             "active"
         ],
-        "title": "gymnastics"
+        "title": "Gymnastics"
     },
     {
         "alias": "gyms",
         "parents": [
             "fitness"
         ],
-        "title": "gyms"
+        "title": "Gyms"
     },
     {
         "alias": "gyudon",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "donburi"
         ],
-        "title": "gyudon"
+        "title": "Gyudon"
     },
     {
         "alias": "hair",
         "parents": [
             "beautysvc"
         ],
-        "title": "hair salons"
+        "title": "Hair Salons"
     },
     {
         "alias": "hair_extensions",
         "country_blacklist": [
-            "be",
-            "nl",
-            "cl",
-            "tr",
-            "it",
-            "cz",
-            "ar",
-            "es",
-            "hk",
-            "pl"
+            "BE",
+            "NL",
+            "CL",
+            "TR",
+            "IT",
+            "CZ",
+            "AR",
+            "ES",
+            "HK",
+            "PL"
         ],
         "parents": [
             "beautysvc",
             "hair"
         ],
-        "title": "hair extensions"
+        "title": "Hair Extensions"
     },
     {
         "alias": "hairloss",
         "parents": [
             "beautysvc"
         ],
-        "title": "hair loss centers"
+        "title": "Hair Loss Centers"
     },
     {
         "alias": "hairremoval",
         "parents": [
             "beautysvc"
         ],
-        "title": "hair removal"
+        "title": "Hair Removal"
     },
     {
         "alias": "hairstylists",
         "country_whitelist": [
-            "au",
-            "sg",
-            "se",
-            "us",
-            "pt"
+            "AU",
+            "SG",
+            "SE",
+            "US",
+            "PT"
         ],
         "parents": [
             "hair"
         ],
-        "title": "hair stylists"
+        "title": "Hair Stylists"
     },
     {
         "alias": "haitian",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "caribbean"
         ],
-        "title": "haitian"
+        "title": "Haitian"
     },
     {
         "alias": "hakka",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "tw"
+            "HK",
+            "SG",
+            "TW"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "hakka"
+        "title": "Hakka"
     },
     {
         "alias": "halal",
         "country_blacklist": [
-            "tr",
-            "pt"
+            "TR",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "halal"
+        "title": "Halal"
     },
     {
         "alias": "handrolls",
         "country_whitelist": [
-            "tw",
-            "br"
+            "TW",
+            "BR"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "hand rolls"
+        "title": "Hand Rolls"
     },
     {
         "alias": "handyman",
         "parents": [
             "homeservices"
         ],
-        "title": "handyman"
+        "title": "Handyman"
     },
     {
         "alias": "hanggliding",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt",
-            "it",
-            "us",
-            "nz",
-            "au",
-            "se"
+            "BE",
+            "FR",
+            "PT",
+            "IT",
+            "US",
+            "NZ",
+            "AU",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "hang gliding"
+        "title": "Hang Gliding"
     },
     {
         "alias": "hardware",
         "parents": [
             "homeandgarden"
         ],
-        "title": "hardware stores"
+        "title": "Hardware Stores"
     },
     {
         "alias": "hats",
         "country_blacklist": [
-            "ch",
-            "nl",
-            "cl",
-            "jp",
-            "tr",
-            "pl",
-            "cz",
-            "ar",
-            "at",
-            "hk",
-            "ie",
-            "se",
-            "gb"
+            "CH",
+            "NL",
+            "CL",
+            "JP",
+            "TR",
+            "PL",
+            "CZ",
+            "AR",
+            "AT",
+            "HK",
+            "IE",
+            "SE",
+            "GB"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "hats"
+        "title": "Hats"
     },
     {
         "alias": "hawaiian",
         "country_blacklist": [
-            "au",
-            "tr",
-            "dk",
-            "pt"
+            "AU",
+            "TR",
+            "DK",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "hawaiian"
+        "title": "Hawaiian"
     },
     {
         "alias": "hawkercentre",
         "country_whitelist": [
-            "hk",
-            "sg"
+            "HK",
+            "SG"
         ],
         "parents": [
             "food"
         ],
-        "title": "hawker centre"
+        "title": "Hawker Centre"
     },
     {
         "alias": "health",
         "parents": [
             null
         ],
-        "title": "health & medical"
+        "title": "Health & Medical"
     },
     {
         "alias": "healthinsurance",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "pt",
-            "de",
-            "mx"
+            "NZ",
+            "AU",
+            "BR",
+            "PT",
+            "DE",
+            "MX"
         ],
         "parents": [
             "health"
         ],
-        "title": "health insurance offices"
+        "title": "Health Insurance Offices"
     },
     {
         "alias": "healthmarkets",
         "parents": [
             "gourmet"
         ],
-        "title": "health markets"
+        "title": "Health Markets"
     },
     {
         "alias": "healthretreats",
         "country_blacklist": [
-            "ar",
-            "mx"
+            "AR",
+            "MX"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "health retreats"
+        "title": "Health Retreats"
     },
     {
         "alias": "healthtrainers",
         "parents": [
             "fitness"
         ],
-        "title": "trainers"
+        "title": "Trainers"
     },
     {
         "alias": "hearing_aids",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ch",
-            "dk",
-            "pt",
-            "no",
-            "de",
-            "at",
-            "br",
-            "fi"
+            "BE",
+            "FR",
+            "CH",
+            "DK",
+            "PT",
+            "NO",
+            "DE",
+            "AT",
+            "BR",
+            "FI"
         ],
         "parents": [
             "health"
         ],
-        "title": "hearing aids"
+        "title": "Hearing Aids"
     },
     {
         "alias": "hearingaidproviders",
         "country_blacklist": [
-            "es",
-            "nl",
-            "dk",
-            "hk",
-            "jp",
-            "tr",
-            "cz",
-            "nz",
-            "au",
-            "gb",
-            "se",
-            "ie",
-            "pl"
+            "ES",
+            "NL",
+            "DK",
+            "HK",
+            "JP",
+            "TR",
+            "CZ",
+            "NZ",
+            "AU",
+            "GB",
+            "SE",
+            "IE",
+            "PL"
         ],
         "parents": [
             "health"
         ],
-        "title": "hearing aid providers"
+        "title": "Hearing Aid Providers"
     },
     {
         "alias": "henghwa",
         "country_whitelist": [
-            "sg"
+            "SG"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "henghwa"
+        "title": "Henghwa"
     },
     {
         "alias": "herbsandspices",
         "parents": [
             "gourmet"
         ],
-        "title": "herbs & spices"
+        "title": "Herbs & Spices"
     },
     {
         "alias": "hessian",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "hessian"
+        "title": "Hessian"
     },
     {
         "alias": "heuriger",
         "country_whitelist": [
-            "at"
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "heuriger"
+        "title": "Heuriger"
     },
     {
         "alias": "hifi",
         "parents": [
             "shopping"
         ],
-        "title": "high fidelity audio equipment"
+        "title": "High Fidelity Audio Equipment"
     },
     {
         "alias": "highschools",
         "parents": [
             "education"
         ],
-        "title": "middle schools & high schools"
+        "title": "Middle Schools & High Schools"
     },
     {
         "alias": "hiking",
         "parents": [
             "active"
         ],
-        "title": "hiking"
+        "title": "Hiking"
     },
     {
         "alias": "himalayan",
         "parents": [
             "restaurants"
         ],
-        "title": "himalayan/nepalese"
+        "title": "Himalayan/Nepalese"
     },
     {
         "alias": "hindu_temples",
         "parents": [
             "religiousorgs"
         ],
-        "title": "hindu temples"
+        "title": "Hindu Temples"
     },
     {
         "alias": "historicaltours",
         "parents": [
             "tours"
         ],
-        "title": "historical tours"
+        "title": "Historical Tours"
     },
     {
         "alias": "hkcafe",
         "country_whitelist": [
-            "hk"
+            "HK"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "hong kong style cafe"
+        "title": "Hong Kong Style Cafe"
     },
     {
         "alias": "hobbyshops",
         "parents": [
             "shopping"
         ],
-        "title": "hobby shops"
+        "title": "Hobby Shops"
     },
     {
         "alias": "hokkien",
         "country_whitelist": [
-            "sg"
+            "SG"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "hokkien"
+        "title": "Hokkien"
     },
     {
         "alias": "home_inspectors",
         "parents": [
             "homeservices"
         ],
-        "title": "home inspectors"
+        "title": "Home Inspectors"
     },
     {
         "alias": "home_organization",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "home organization"
+        "title": "Home Organization"
     },
     {
         "alias": "homeandgarden",
         "parents": [
             "shopping"
         ],
-        "title": "home & garden"
+        "title": "Home & Garden"
     },
     {
         "alias": "homeappliancerepair",
         "parents": [
             "localservices"
         ],
-        "title": "appliances & repair"
+        "title": "Appliances & Repair"
     },
     {
         "alias": "homeautomation",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "home automation"
+        "title": "Home Automation"
     },
     {
         "alias": "homecleaning",
         "parents": [
             "homeservices"
         ],
-        "title": "home cleaning"
+        "title": "Home Cleaning"
     },
     {
         "alias": "homedecor",
         "parents": [
             "homeandgarden"
         ],
-        "title": "home decor"
+        "title": "Home Decor"
     },
     {
         "alias": "homehealthcare",
         "parents": [
             "health"
         ],
-        "title": "home health care"
+        "title": "Home Health Care"
     },
     {
         "alias": "homeservices",
         "parents": [
             null
         ],
-        "title": "home services"
+        "title": "Home Services"
     },
     {
         "alias": "homestaging",
         "country_blacklist": [
-            "ch",
-            "at",
-            "pt",
-            "br",
-            "de",
-            "it",
-            "es"
+            "CH",
+            "AT",
+            "PT",
+            "BR",
+            "DE",
+            "IT",
+            "ES"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "home staging"
+        "title": "Home Staging"
     },
     {
         "alias": "hometheatreinstallation",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "home theatre installation"
+        "title": "Home Theatre Installation"
     },
     {
         "alias": "homewindowtinting",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "home window tinting"
+        "title": "Home Window Tinting"
     },
     {
         "alias": "honey",
         "country_whitelist": [
-            "fr",
-            "fi",
-            "de",
-            "tr",
-            "it",
-            "se"
+            "FR",
+            "FI",
+            "DE",
+            "TR",
+            "IT",
+            "SE"
         ],
         "parents": [
             "food"
         ],
-        "title": "honey"
+        "title": "Honey"
     },
     {
         "alias": "hookah_bars",
         "country_blacklist": [
-            "au",
-            "pt",
-            "cl"
+            "AU",
+            "PT",
+            "CL"
         ],
         "parents": [
             "bars"
         ],
-        "title": "hookah bars"
+        "title": "Hookah Bars"
     },
     {
         "alias": "horse_boarding",
         "country_whitelist": [
-            "de",
-            "us"
+            "DE",
+            "US"
         ],
         "parents": [
             "pets"
         ],
-        "title": "horse boarding"
+        "title": "Horse Boarding"
     },
     {
         "alias": "horsebackriding",
         "parents": [
             "active"
         ],
-        "title": "horseback riding"
+        "title": "Horseback Riding"
     },
     {
         "alias": "horsequipment",
         "country_whitelist": [
-            "fr",
-            "nl",
-            "dk",
-            "no",
-            "de",
-            "it",
-            "es",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "FR",
+            "NL",
+            "DK",
+            "NO",
+            "DE",
+            "IT",
+            "ES",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "horse equipment shops"
+        "title": "Horse Equipment Shops"
     },
     {
         "alias": "horseracing",
         "country_whitelist": [
-            "ch",
-            "pt",
-            "no",
-            "de",
-            "jp",
-            "us",
-            "ar",
-            "au",
-            "at",
-            "fi",
-            "se"
+            "CH",
+            "PT",
+            "NO",
+            "DE",
+            "JP",
+            "US",
+            "AR",
+            "AU",
+            "AT",
+            "FI",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "horse racing"
+        "title": "Horse Racing"
     },
     {
         "alias": "horumon",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "horumon"
+        "title": "Horumon"
     },
     {
         "alias": "hospice",
         "parents": [
             "health"
         ],
-        "title": "hospice"
+        "title": "Hospice"
     },
     {
         "alias": "hospitals",
         "parents": [
             "health"
         ],
-        "title": "hospitals"
+        "title": "Hospitals"
     },
     {
         "alias": "hostels",
         "parents": [
             "hotelstravel"
         ],
-        "title": "hostels"
+        "title": "Hostels"
     },
     {
         "alias": "hot_air_balloons",
         "country_blacklist": [
-            "be",
-            "fr",
-            "nl",
-            "dk",
-            "ie",
-            "ca",
-            "nz",
-            "br",
-            "sg"
+            "BE",
+            "FR",
+            "NL",
+            "DK",
+            "IE",
+            "CA",
+            "NZ",
+            "BR",
+            "SG"
         ],
         "parents": [
             "active"
         ],
-        "title": "hot air balloons"
+        "title": "Hot Air Balloons"
     },
     {
         "alias": "hotdog",
         "parents": [
             "restaurants"
         ],
-        "title": "hot dogs"
+        "title": "Hot Dogs"
     },
     {
         "alias": "hotdogs",
         "parents": [
             "restaurants"
         ],
-        "title": "fast food"
+        "title": "Fast Food"
     },
     {
         "alias": "hotel_bar",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "fi",
-            "br",
-            "se"
+            "DK",
+            "PT",
+            "NO",
+            "FI",
+            "BR",
+            "SE"
         ],
         "parents": [
             "bars"
         ],
-        "title": "hotel bar"
+        "title": "Hotel bar"
     },
     {
         "alias": "hotels",
@@ -5262,280 +5262,280 @@
             "eventservices",
             "hotelstravel"
         ],
-        "title": "hotels"
+        "title": "Hotels"
     },
     {
         "alias": "hotelstravel",
         "parents": [
             null
         ],
-        "title": "hotels & travel"
+        "title": "Hotels & Travel"
     },
     {
         "alias": "hotpot",
         "country_whitelist": [
-            "hk",
-            "ca",
-            "jp",
-            "fr",
-            "us"
+            "HK",
+            "CA",
+            "JP",
+            "FR",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "hot pot"
+        "title": "Hot Pot"
     },
     {
         "alias": "hottubandpool",
         "parents": [
             "homeandgarden"
         ],
-        "title": "hot tub & pool"
+        "title": "Hot Tub & Pool"
     },
     {
         "alias": "hunan",
         "country_whitelist": [
-            "hk",
-            "fr",
-            "sg",
-            "tw"
+            "HK",
+            "FR",
+            "SG",
+            "TW"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "hunan"
+        "title": "Hunan"
     },
     {
         "alias": "hungarian",
         "country_blacklist": [
-            "dk",
-            "es",
-            "pt"
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "hungarian"
+        "title": "Hungarian"
     },
     {
         "alias": "hvac",
         "parents": [
             "homeservices"
         ],
-        "title": "heating & air conditioning/hvac"
+        "title": "Heating & Air Conditioning/HVAC"
     },
     {
         "alias": "hypnosis",
         "country_blacklist": [
-            "es",
-            "nl",
-            "cl",
-            "tr",
-            "cz",
-            "ar",
-            "au",
-            "gb",
-            "hk",
-            "ie",
-            "pl"
+            "ES",
+            "NL",
+            "CL",
+            "TR",
+            "CZ",
+            "AR",
+            "AU",
+            "GB",
+            "HK",
+            "IE",
+            "PL"
         ],
         "parents": [
             "health"
         ],
-        "title": "hypnosis/hypnotherapy"
+        "title": "Hypnosis/Hypnotherapy"
     },
     {
         "alias": "iberian",
         "country_whitelist": [
-            "ca",
-            "pt",
-            "us"
+            "CA",
+            "PT",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "iberian"
+        "title": "Iberian"
     },
     {
         "alias": "icecream",
         "parents": [
             "food"
         ],
-        "title": "ice cream & frozen yogurt"
+        "title": "Ice Cream & Frozen Yogurt"
     },
     {
         "alias": "immigrationlawyers",
         "parents": [
             "lawyers"
         ],
-        "title": "immigration law"
+        "title": "Immigration Law"
     },
     {
         "alias": "indonesian",
         "country_blacklist": [
-            "mx",
-            "es"
+            "MX",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "indonesian"
+        "title": "Indonesian"
     },
     {
         "alias": "indoor_playcenter",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "de",
-            "jp",
-            "it",
-            "nz",
-            "au",
-            "es",
-            "se"
+            "DK",
+            "PT",
+            "NO",
+            "DE",
+            "JP",
+            "IT",
+            "NZ",
+            "AU",
+            "ES",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "indoor playcentre"
+        "title": "Indoor Playcentre"
     },
     {
         "alias": "indpak",
         "parents": [
             "restaurants"
         ],
-        "title": "indian"
+        "title": "Indian"
     },
     {
         "alias": "insulationinstallation",
         "parents": [
             "homeservices"
         ],
-        "title": "insulation installation"
+        "title": "Insulation Installation"
     },
     {
         "alias": "insurance",
         "parents": [
             "financialservices"
         ],
-        "title": "insurance"
+        "title": "Insurance"
     },
     {
         "alias": "interiordesign",
         "parents": [
             "homeservices"
         ],
-        "title": "interior design"
+        "title": "Interior Design"
     },
     {
         "alias": "internalmed",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "internal medicine"
+        "title": "Internal Medicine"
     },
     {
         "alias": "international",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "pt",
-            "cl",
-            "de",
-            "hk",
-            "at",
-            "br",
-            "sg"
+            "FR",
+            "CH",
+            "PT",
+            "CL",
+            "DE",
+            "HK",
+            "AT",
+            "BR",
+            "SG"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "international"
+        "title": "International"
     },
     {
         "alias": "internetbooth",
         "country_whitelist": [
-            "cl",
-            "ar",
-            "mx",
-            "br",
-            "it"
+            "CL",
+            "AR",
+            "MX",
+            "BR",
+            "IT"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "internet booths & calling centers"
+        "title": "Internet Booths & Calling Centers"
     },
     {
         "alias": "internetcafe",
         "parents": [
             "food"
         ],
-        "title": "internet cafes"
+        "title": "Internet Cafes"
     },
     {
         "alias": "investing",
         "parents": [
             "financialservices"
         ],
-        "title": "investing"
+        "title": "Investing"
     },
     {
         "alias": "iplaw",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "lawyers"
         ],
-        "title": "ip & internet law"
+        "title": "IP & Internet Law"
     },
     {
         "alias": "irish",
         "parents": [
             "restaurants"
         ],
-        "title": "irish"
+        "title": "Irish"
     },
     {
         "alias": "irish_pubs",
         "country_blacklist": [
-            "cz",
-            "ar",
-            "cl",
-            "hk",
-            "ie",
-            "sg",
-            "mx"
+            "CZ",
+            "AR",
+            "CL",
+            "HK",
+            "IE",
+            "SG",
+            "MX"
         ],
         "parents": [
             "bars"
         ],
-        "title": "irish pub"
+        "title": "Irish Pub"
     },
     {
         "alias": "irrigation",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "irrigation"
+        "title": "Irrigation"
     },
     {
         "alias": "island_pub",
         "country_whitelist": [
-            "se"
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "island pub"
+        "title": "Island Pub"
     },
     {
         "alias": "isps",
@@ -5543,79 +5543,79 @@
             "professional",
             "homeservices"
         ],
-        "title": "internet service providers"
+        "title": "Internet Service Providers"
     },
     {
         "alias": "israeli",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "israeli"
+        "title": "Israeli"
     },
     {
         "alias": "italian",
         "parents": [
             "restaurants"
         ],
-        "title": "italian"
+        "title": "Italian"
     },
     {
         "alias": "itservices",
         "parents": [
             "localservices"
         ],
-        "title": "it services & computer repair"
+        "title": "IT Services & Computer Repair"
     },
     {
         "alias": "izakaya",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "tw",
-            "sg",
-            "jp",
-            "mx"
+            "NZ",
+            "AU",
+            "BR",
+            "TW",
+            "SG",
+            "JP",
+            "MX"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "izakaya"
+        "title": "Izakaya"
     },
     {
         "alias": "jaliscan",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "jaliscan"
+        "title": "Jaliscan"
     },
     {
         "alias": "japacurry",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "jp",
-            "tw"
+            "HK",
+            "SG",
+            "JP",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "japanese curry"
+        "title": "Japanese Curry"
     },
     {
         "alias": "japanese",
         "parents": [
             "restaurants"
         ],
-        "title": "japanese"
+        "title": "Japanese"
     },
     {
         "alias": "jazzandblues",
@@ -5623,852 +5623,852 @@
             "arts",
             "nightlife"
         ],
-        "title": "jazz & blues"
+        "title": "Jazz & Blues"
     },
     {
         "alias": "jetskis",
         "parents": [
             "active"
         ],
-        "title": "jet skis"
+        "title": "Jet Skis"
     },
     {
         "alias": "jewelry",
         "parents": [
             "shopping"
         ],
-        "title": "jewelry"
+        "title": "Jewelry"
     },
     {
         "alias": "jewelryrepair",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "pt",
-            "jp",
-            "ca",
-            "tr",
-            "it",
-            "us",
-            "cz",
-            "au",
-            "es",
-            "pl"
+            "BE",
+            "FR",
+            "NL",
+            "PT",
+            "JP",
+            "CA",
+            "TR",
+            "IT",
+            "US",
+            "CZ",
+            "AU",
+            "ES",
+            "PL"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "jewelry repair"
+        "title": "Jewelry Repair"
     },
     {
         "alias": "jewish",
         "country_whitelist": [
-            "de",
-            "it",
-            "pl"
+            "DE",
+            "IT",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "jewish"
+        "title": "Jewish"
     },
     {
         "alias": "jpsweets",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "food"
         ],
-        "title": "japanese sweets"
+        "title": "Japanese Sweets"
     },
     {
         "alias": "juicebars",
         "parents": [
             "food"
         ],
-        "title": "juice bars & smoothies"
+        "title": "Juice Bars & Smoothies"
     },
     {
         "alias": "junkremovalandhauling",
         "parents": [
             "localservices"
         ],
-        "title": "junk removal & hauling"
+        "title": "Junk Removal & Hauling"
     },
     {
         "alias": "kaiseki",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "kaiseki"
+        "title": "Kaiseki"
     },
     {
         "alias": "karaoke",
         "parents": [
             "nightlife"
         ],
-        "title": "karaoke"
+        "title": "Karaoke"
     },
     {
         "alias": "kebab",
         "country_blacklist": [
-            "ca",
-            "nl",
-            "gb",
-            "us",
-            "pt"
+            "CA",
+            "NL",
+            "GB",
+            "US",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "kebab"
+        "title": "Kebab"
     },
     {
         "alias": "kids_activities",
         "country_blacklist": [
-            "ca",
-            "sg"
+            "CA",
+            "SG"
         ],
         "parents": [
             "active"
         ],
-        "title": "kids activities"
+        "title": "Kids Activities"
     },
     {
         "alias": "kimonos",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "kimonos"
+        "title": "Kimonos"
     },
     {
         "alias": "kiosk",
         "country_blacklist": [
-            "be",
-            "fr",
-            "nl",
-            "cl",
-            "ie",
-            "ca",
-            "it",
-            "us",
-            "cz",
-            "nz",
-            "gb",
-            "br",
-            "hk",
-            "sg",
-            "mx"
+            "BE",
+            "FR",
+            "NL",
+            "CL",
+            "IE",
+            "CA",
+            "IT",
+            "US",
+            "CZ",
+            "NZ",
+            "GB",
+            "BR",
+            "HK",
+            "SG",
+            "MX"
         ],
         "parents": [
             "food",
             "shopping"
         ],
-        "title": "kiosk"
+        "title": "Kiosk"
     },
     {
         "alias": "kitchenandbath",
         "parents": [
             "homeandgarden"
         ],
-        "title": "kitchen & bath"
+        "title": "Kitchen & Bath"
     },
     {
         "alias": "kitchenincubators",
         "country_whitelist": [
-            "gb",
-            "us"
+            "GB",
+            "US"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "kitchen incubators"
+        "title": "Kitchen Incubators"
     },
     {
         "alias": "kiteboarding",
         "country_blacklist": [
-            "es",
-            "be",
-            "ch",
-            "cl",
-            "ca",
-            "it",
-            "cz",
-            "ar",
-            "at",
-            "br",
-            "hk",
-            "mx",
-            "pl",
-            "gb"
+            "ES",
+            "BE",
+            "CH",
+            "CL",
+            "CA",
+            "IT",
+            "CZ",
+            "AR",
+            "AT",
+            "BR",
+            "HK",
+            "MX",
+            "PL",
+            "GB"
         ],
         "parents": [
             "active"
         ],
-        "title": "kiteboarding"
+        "title": "Kiteboarding"
     },
     {
         "alias": "knifesharpening",
         "country_whitelist": [
-            "es",
-            "au",
-            "it",
-            "us"
+            "ES",
+            "AU",
+            "IT",
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "knife sharpening"
+        "title": "Knife Sharpening"
     },
     {
         "alias": "knittingsupplies",
         "parents": [
             "shopping"
         ],
-        "title": "knitting supplies"
+        "title": "Knitting Supplies"
     },
     {
         "alias": "korean",
         "parents": [
             "restaurants"
         ],
-        "title": "korean"
+        "title": "Korean"
     },
     {
         "alias": "kosher",
         "country_blacklist": [
-            "tr",
-            "pt"
+            "TR",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "kosher"
+        "title": "Kosher"
     },
     {
         "alias": "kurdish",
         "country_whitelist": [
-            "se",
-            "no"
+            "SE",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "kurdish"
+        "title": "Kurdish"
     },
     {
         "alias": "kushikatsu",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "kushikatsu"
+        "title": "Kushikatsu"
     },
     {
         "alias": "laboratorytesting",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt",
-            "it",
-            "us",
-            "au",
-            "br",
-            "mx"
+            "BE",
+            "FR",
+            "PT",
+            "IT",
+            "US",
+            "AU",
+            "BR",
+            "MX"
         ],
         "parents": [
             "diagnosticservices"
         ],
-        "title": "laboratory testing"
+        "title": "Laboratory Testing"
     },
     {
         "alias": "lactationservices",
         "country_whitelist": [
-            "be",
-            "fr",
-            "it",
-            "pt",
-            "us"
+            "BE",
+            "FR",
+            "IT",
+            "PT",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "lactation services"
+        "title": "Lactation Services"
     },
     {
         "alias": "lakes",
         "parents": [
             "active"
         ],
-        "title": "lakes"
+        "title": "Lakes"
     },
     {
         "alias": "landmarks",
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "landmarks & historical buildings"
+        "title": "Landmarks & Historical Buildings"
     },
     {
         "alias": "landscapearchitects",
         "parents": [
             "homeservices"
         ],
-        "title": "landscape architects"
+        "title": "Landscape Architects"
     },
     {
         "alias": "landscaping",
         "country_blacklist": [
-            "dk",
-            "es"
+            "DK",
+            "ES"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "landscaping"
+        "title": "Landscaping"
     },
     {
         "alias": "language_schools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "language schools"
+        "title": "Language Schools"
     },
     {
         "alias": "laos",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "laos"
+        "title": "Laos"
     },
     {
         "alias": "laotian",
         "parents": [
             "restaurants"
         ],
-        "title": "laotian"
+        "title": "Laotian"
     },
     {
         "alias": "laser_hair_removal",
         "country_blacklist": [
-            "dk",
-            "es"
+            "DK",
+            "ES"
         ],
         "parents": [
             "hairremoval"
         ],
-        "title": "laser hair removal"
+        "title": "Laser Hair Removal"
     },
     {
         "alias": "laserlasikeyes",
         "parents": [
             "health"
         ],
-        "title": "laser eye surgery/lasik"
+        "title": "Laser Eye Surgery/Lasik"
     },
     {
         "alias": "lasertag",
         "country_blacklist": [
-            "ie",
-            "br"
+            "IE",
+            "BR"
         ],
         "parents": [
             "active"
         ],
-        "title": "laser tag"
+        "title": "Laser Tag"
     },
     {
         "alias": "latin",
         "parents": [
             "restaurants"
         ],
-        "title": "latin american"
+        "title": "Latin American"
     },
     {
         "alias": "lawn_bowling",
         "country_whitelist": [
-            "nz",
-            "au",
-            "pt",
-            "no",
-            "fi",
-            "se"
+            "NZ",
+            "AU",
+            "PT",
+            "NO",
+            "FI",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "lawn bowling"
+        "title": "Lawn Bowling"
     },
     {
         "alias": "lawyers",
         "parents": [
             "professional"
         ],
-        "title": "lawyers"
+        "title": "Lawyers"
     },
     {
         "alias": "leather",
         "parents": [
             "fashion"
         ],
-        "title": "leather goods"
+        "title": "Leather Goods"
     },
     {
         "alias": "lebanese",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp"
+            "HK",
+            "AR",
+            "JP"
         ],
         "parents": [
             "mideastern"
         ],
-        "title": "lebanese"
+        "title": "Lebanese"
     },
     {
         "alias": "legalservices",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "pt",
-            "tr",
-            "it",
-            "us",
-            "nz",
-            "au",
-            "sg"
+            "BE",
+            "FR",
+            "NL",
+            "PT",
+            "TR",
+            "IT",
+            "US",
+            "NZ",
+            "AU",
+            "SG"
         ],
         "parents": [
             "professional"
         ],
-        "title": "legal services"
+        "title": "Legal Services"
     },
     {
         "alias": "leisure_centers",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "active"
         ],
-        "title": "leisure centers"
+        "title": "Leisure Centers"
     },
     {
         "alias": "libraries",
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "libraries"
+        "title": "Libraries"
     },
     {
         "alias": "liceservices",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "cl",
-            "fi",
-            "de",
-            "jp",
-            "mx"
+            "HK",
+            "AR",
+            "CL",
+            "FI",
+            "DE",
+            "JP",
+            "MX"
         ],
         "parents": [
             "health"
         ],
-        "title": "lice services"
+        "title": "Lice Services"
     },
     {
         "alias": "lifecoach",
         "parents": [
             "professional"
         ],
-        "title": "life coach"
+        "title": "Life Coach"
     },
     {
         "alias": "lighting",
         "parents": [
             "homeservices"
         ],
-        "title": "lighting fixtures & equipment"
+        "title": "Lighting Fixtures & Equipment"
     },
     {
         "alias": "ligurian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "ligurian"
+        "title": "Ligurian"
     },
     {
         "alias": "limos",
         "parents": [
             "transport"
         ],
-        "title": "limos"
+        "title": "Limos"
     },
     {
         "alias": "linens",
         "country_whitelist": [
-            "be",
-            "fr",
-            "it",
-            "pt"
+            "BE",
+            "FR",
+            "IT",
+            "PT"
         ],
         "parents": [
             "homeandgarden"
         ],
-        "title": "linens"
+        "title": "Linens"
     },
     {
         "alias": "lingerie",
         "parents": [
             "fashion"
         ],
-        "title": "lingerie"
+        "title": "Lingerie"
     },
     {
         "alias": "localflavor",
         "parents": [
             null
         ],
-        "title": "local flavor"
+        "title": "Local Flavor"
     },
     {
         "alias": "localservices",
         "parents": [
             null
         ],
-        "title": "local services"
+        "title": "Local Services"
     },
     {
         "alias": "locksmiths",
         "parents": [
             "homeservices"
         ],
-        "title": "keys & locksmiths"
+        "title": "Keys & Locksmiths"
     },
     {
         "alias": "lounges",
         "parents": [
             "bars"
         ],
-        "title": "lounges"
+        "title": "Lounges"
     },
     {
         "alias": "luggage",
         "parents": [
             "shopping"
         ],
-        "title": "luggage"
+        "title": "Luggage"
     },
     {
         "alias": "lumbard",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "lumbard"
+        "title": "Lumbard"
     },
     {
         "alias": "lyonnais",
         "country_whitelist": [
-            "be",
-            "fr"
+            "BE",
+            "FR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "lyonnais"
+        "title": "Lyonnais"
     },
     {
         "alias": "madeira",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "madeira"
+        "title": "Madeira"
     },
     {
         "alias": "magicians",
         "country_blacklist": [
-            "pl",
-            "se",
-            "no",
-            "fi",
-            "sg",
-            "tr",
-            "es"
+            "PL",
+            "SE",
+            "NO",
+            "FI",
+            "SG",
+            "TR",
+            "ES"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "magicians"
+        "title": "Magicians"
     },
     {
         "alias": "mags",
         "parents": [
             "media"
         ],
-        "title": "newspapers & magazines"
+        "title": "Newspapers & Magazines"
     },
     {
         "alias": "mahjong",
         "country_whitelist": [
-            "hk",
-            "jp"
+            "HK",
+            "JP"
         ],
         "parents": [
             "arts"
         ],
-        "title": "mah jong halls"
+        "title": "Mah Jong Halls"
     },
     {
         "alias": "mailboxcenters",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "mailbox centers"
+        "title": "Mailbox Centers"
     },
     {
         "alias": "makeupartists",
         "parents": [
             "beautysvc"
         ],
-        "title": "makeup artists"
+        "title": "Makeup Artists"
     },
     {
         "alias": "malaysian",
         "country_blacklist": [
-            "sg",
-            "tr",
-            "es",
-            "pt"
+            "SG",
+            "TR",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "malaysian"
+        "title": "Malaysian"
     },
     {
         "alias": "mamak",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "malaysian"
         ],
-        "title": "mamak"
+        "title": "Mamak"
     },
     {
         "alias": "marchingbands",
         "country_whitelist": [
-            "ch",
-            "pt",
-            "no",
-            "de",
-            "tr",
-            "at",
-            "se",
-            "gb"
+            "CH",
+            "PT",
+            "NO",
+            "DE",
+            "TR",
+            "AT",
+            "SE",
+            "GB"
         ],
         "parents": [
             "arts"
         ],
-        "title": "marching bands"
+        "title": "Marching Bands"
     },
     {
         "alias": "marketing",
         "parents": [
             "professional"
         ],
-        "title": "marketing"
+        "title": "Marketing"
     },
     {
         "alias": "markets",
         "parents": [
             "gourmet"
         ],
-        "title": "fruits & veggies"
+        "title": "Fruits & Veggies"
     },
     {
         "alias": "marketstalls",
         "country_whitelist": [
-            "ie",
-            "gb",
-            "pt"
+            "IE",
+            "GB",
+            "PT"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "market stalls"
+        "title": "Market Stalls"
     },
     {
         "alias": "martialarts",
         "parents": [
             "fitness"
         ],
-        "title": "martial arts"
+        "title": "Martial Arts"
     },
     {
         "alias": "masonry_concrete",
         "country_blacklist": [
-            "be",
-            "nz",
-            "nl",
-            "gb",
-            "br",
-            "ie",
-            "sg"
+            "BE",
+            "NZ",
+            "NL",
+            "GB",
+            "BR",
+            "IE",
+            "SG"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "masonry/concrete"
+        "title": "Masonry/Concrete"
     },
     {
         "alias": "massage",
         "parents": [
             "beautysvc"
         ],
-        "title": "massage"
+        "title": "Massage"
     },
     {
         "alias": "massage_schools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "massage schools"
+        "title": "Massage Schools"
     },
     {
         "alias": "massage_therapy",
         "country_whitelist": [
-            "br",
-            "it",
-            "us",
-            "pt"
+            "BR",
+            "IT",
+            "US",
+            "PT"
         ],
         "parents": [
             "health"
         ],
-        "title": "massage therapy"
+        "title": "Massage Therapy"
     },
     {
         "alias": "massmedia",
         "parents": [
             null
         ],
-        "title": "mass media"
+        "title": "Mass Media"
     },
     {
         "alias": "matchmakers",
         "country_whitelist": [
-            "us",
-            "fr",
-            "ca",
-            "pt",
-            "dk"
+            "US",
+            "FR",
+            "CA",
+            "PT",
+            "DK"
         ],
         "parents": [
             "professional"
         ],
-        "title": "matchmakers"
+        "title": "Matchmakers"
     },
     {
         "alias": "materialeelettrico",
         "country_whitelist": [
-            "cl",
-            "ar",
-            "mx",
-            "es",
-            "it"
+            "CL",
+            "AR",
+            "MX",
+            "ES",
+            "IT"
         ],
         "parents": [
             "homeandgarden"
         ],
-        "title": "materiale elettrico"
+        "title": "Materiale elettrico"
     },
     {
         "alias": "maternity",
         "parents": [
             "fashion"
         ],
-        "title": "maternity wear"
+        "title": "Maternity Wear"
     },
     {
         "alias": "mattresses",
         "parents": [
             "homeandgarden"
         ],
-        "title": "mattresses"
+        "title": "Mattresses"
     },
     {
         "alias": "meatballs",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "meatballs"
+        "title": "Meatballs"
     },
     {
         "alias": "meats",
         "parents": [
             "gourmet"
         ],
-        "title": "meat shops"
+        "title": "Meat Shops"
     },
     {
         "alias": "medcenters",
         "parents": [
             "health"
         ],
-        "title": "medical centers"
+        "title": "Medical Centers"
     },
     {
         "alias": "media",
         "parents": [
             "shopping"
         ],
-        "title": "books, mags, music & video"
+        "title": "Books, Mags, Music & Video"
     },
     {
         "alias": "medicalfoot",
         "country_whitelist": [
-            "ch",
-            "au",
-            "at",
-            "no",
-            "de",
-            "se"
+            "CH",
+            "AU",
+            "AT",
+            "NO",
+            "DE",
+            "SE"
         ],
         "parents": [
             "health"
         ],
-        "title": "medical foot care"
+        "title": "Medical Foot Care"
     },
     {
         "alias": "medicalspa",
@@ -6476,400 +6476,400 @@
             "health",
             "beautysvc"
         ],
-        "title": "medical spas"
+        "title": "Medical Spas"
     },
     {
         "alias": "medicalsupplies",
         "country_whitelist": [
-            "ch",
-            "dk",
-            "pt",
-            "no",
-            "ca",
-            "de",
-            "jp",
-            "it",
-            "us",
-            "at",
-            "es"
+            "CH",
+            "DK",
+            "PT",
+            "NO",
+            "CA",
+            "DE",
+            "JP",
+            "IT",
+            "US",
+            "AT",
+            "ES"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "medical supplies"
+        "title": "Medical Supplies"
     },
     {
         "alias": "medicaltransportation",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "pt",
-            "sg",
-            "it",
-            "us"
+            "BE",
+            "FR",
+            "AU",
+            "PT",
+            "SG",
+            "IT",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "medical transportation"
+        "title": "Medical Transportation"
     },
     {
         "alias": "meditationcenters",
         "country_blacklist": [
-            "ar",
-            "mx"
+            "AR",
+            "MX"
         ],
         "parents": [
             "fitness"
         ],
-        "title": "meditation centers"
+        "title": "Meditation Centers"
     },
     {
         "alias": "mediterranean",
         "parents": [
             "restaurants"
         ],
-        "title": "mediterranean"
+        "title": "Mediterranean"
     },
     {
         "alias": "menscloth",
         "parents": [
             "fashion"
         ],
-        "title": "men's clothing"
+        "title": "Men\'s Clothing"
     },
     {
         "alias": "menshair",
         "country_whitelist": [
-            "au",
-            "pt",
-            "us"
+            "AU",
+            "PT",
+            "US"
         ],
         "parents": [
             "hair"
         ],
-        "title": "men's hair salons"
+        "title": "Men\'s Hair Salons"
     },
     {
         "alias": "metalfabricators",
         "country_blacklist": [
-            "ar",
-            "mx",
-            "se"
+            "AR",
+            "MX",
+            "SE"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "metal fabricators"
+        "title": "Metal Fabricators"
     },
     {
         "alias": "mexican",
         "parents": [
             "restaurants"
         ],
-        "title": "mexican"
+        "title": "Mexican"
     },
     {
         "alias": "mideastern",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "middle eastern"
+        "title": "Middle Eastern"
     },
     {
         "alias": "midwives",
         "parents": [
             "health"
         ],
-        "title": "midwives"
+        "title": "Midwives"
     },
     {
         "alias": "milkbars",
         "country_whitelist": [
-            "au",
-            "pl"
+            "AU",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "milk bars"
+        "title": "Milk Bars"
     },
     {
         "alias": "milkshakebars",
         "country_whitelist": [
-            "gb"
+            "GB"
         ],
         "parents": [
             "food"
         ],
-        "title": "milkshake bars"
+        "title": "Milkshake Bars"
     },
     {
         "alias": "minho",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "minho"
+        "title": "Minho"
     },
     {
         "alias": "mini_golf",
         "country_blacklist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "active"
         ],
-        "title": "mini golf"
+        "title": "Mini Golf"
     },
     {
         "alias": "mobiledentrepair",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "mobile dent repair"
+        "title": "Mobile Dent Repair"
     },
     {
         "alias": "mobilehomes",
         "parents": [
             "realestate"
         ],
-        "title": "mobile home dealers"
+        "title": "Mobile Home Dealers"
     },
     {
         "alias": "mobilephonerepair",
         "country_blacklist": [
-            "ie"
+            "IE"
         ],
         "parents": [
             "itservices"
         ],
-        "title": "mobile phone repair"
+        "title": "Mobile Phone Repair"
     },
     {
         "alias": "mobilephones",
         "parents": [
             "shopping"
         ],
-        "title": "mobile phones"
+        "title": "Mobile Phones"
     },
     {
         "alias": "modern_australian",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "modern australian"
+        "title": "Modern Australian"
     },
     {
         "alias": "modern_european",
         "parents": [
             "restaurants"
         ],
-        "title": "modern european"
+        "title": "Modern European"
     },
     {
         "alias": "mohels",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "mohels"
+        "title": "Mohels"
     },
     {
         "alias": "mongolian",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "dk",
-            "es",
-            "pt"
+            "FI",
+            "TR",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "mongolian"
+        "title": "Mongolian"
     },
     {
         "alias": "moroccan",
         "country_blacklist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "moroccan"
+        "title": "Moroccan"
     },
     {
         "alias": "mortgagebrokers",
         "country_blacklist": [
-            "br",
-            "dk",
-            "es"
+            "BR",
+            "DK",
+            "ES"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "mortgage brokers"
+        "title": "Mortgage Brokers"
     },
     {
         "alias": "mosques",
         "parents": [
             "religiousorgs"
         ],
-        "title": "mosques"
+        "title": "Mosques"
     },
     {
         "alias": "motorcycle_rental",
         "country_whitelist": [
-            "fr",
-            "pt",
-            "no",
-            "it",
-            "us",
-            "nz",
-            "au",
-            "br",
-            "fi",
-            "sg",
-            "mx",
-            "es"
+            "FR",
+            "PT",
+            "NO",
+            "IT",
+            "US",
+            "NZ",
+            "AU",
+            "BR",
+            "FI",
+            "SG",
+            "MX",
+            "ES"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "motorcycle rental"
+        "title": "Motorcycle Rental"
     },
     {
         "alias": "motorcycledealers",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "auto"
         ],
-        "title": "motorcycle dealers"
+        "title": "Motorcycle Dealers"
     },
     {
         "alias": "motorcyclerepair",
         "parents": [
             "auto"
         ],
-        "title": "motorcycle repair"
+        "title": "Motorcycle Repair"
     },
     {
         "alias": "motorcyclinggear",
         "country_blacklist": [
-            "ca",
-            "ie",
-            "nz",
-            "br",
-            "gb"
+            "CA",
+            "IE",
+            "NZ",
+            "BR",
+            "GB"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "motorcycle gear"
+        "title": "Motorcycle Gear"
     },
     {
         "alias": "mountainbiking",
         "parents": [
             "active"
         ],
-        "title": "mountain biking"
+        "title": "Mountain Biking"
     },
     {
         "alias": "mountainhuts",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "cl",
-            "de",
-            "it",
-            "us",
-            "pl",
-            "cz",
-            "nz",
-            "ar",
-            "at",
-            "no",
-            "se"
+            "FR",
+            "CH",
+            "CL",
+            "DE",
+            "IT",
+            "US",
+            "PL",
+            "CZ",
+            "NZ",
+            "AR",
+            "AT",
+            "NO",
+            "SE"
         ],
         "parents": [
             "hotels"
         ],
-        "title": "mountain huts"
+        "title": "Mountain Huts"
     },
     {
         "alias": "movers",
         "parents": [
             "homeservices"
         ],
-        "title": "movers"
+        "title": "Movers"
     },
     {
         "alias": "movietheaters",
         "parents": [
             "arts"
         ],
-        "title": "cinema"
+        "title": "Cinema"
     },
     {
         "alias": "museums",
         "parents": [
             "arts"
         ],
-        "title": "museums"
+        "title": "Museums"
     },
     {
         "alias": "musicalinstrumentsandteachers",
         "parents": [
             "shopping"
         ],
-        "title": "musical instruments & teachers"
+        "title": "Musical Instruments & Teachers"
     },
     {
         "alias": "musicians",
         "country_blacklist": [
-            "dk",
-            "no",
-            "fi",
-            "sg",
-            "tr",
-            "es",
-            "pl"
+            "DK",
+            "NO",
+            "FI",
+            "SG",
+            "TR",
+            "ES",
+            "PL"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "musicians"
+        "title": "Musicians"
     },
     {
         "alias": "musicinstrumentservices",
         "parents": [
             "localservices"
         ],
-        "title": "musical instrument services"
+        "title": "Musical Instrument Services"
     },
     {
         "alias": "musicproduction",
         "parents": [
             "professional"
         ],
-        "title": "music production services"
+        "title": "Music Production Services"
     },
     {
         "alias": "musicvenues",
@@ -6877,1673 +6877,1673 @@
             "arts",
             "nightlife"
         ],
-        "title": "music venues"
+        "title": "Music Venues"
     },
     {
         "alias": "musicvideo",
         "parents": [
             "media"
         ],
-        "title": "music & dvds"
+        "title": "Music & DVDs"
     },
     {
         "alias": "nannys",
         "country_blacklist": [
-            "es",
-            "ca",
-            "cz",
-            "pl",
-            "br",
-            "fi",
-            "ie",
-            "se",
-            "gb"
+            "ES",
+            "CA",
+            "CZ",
+            "PL",
+            "BR",
+            "FI",
+            "IE",
+            "SE",
+            "GB"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "nanny services"
+        "title": "Nanny Services"
     },
     {
         "alias": "napoletana",
         "country_whitelist": [
-            "fr",
-            "it"
+            "FR",
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "napoletana"
+        "title": "Napoletana"
     },
     {
         "alias": "naturopathic",
         "parents": [
             "physicians"
         ],
-        "title": "naturopathic/holistic"
+        "title": "Naturopathic/Holistic"
     },
     {
         "alias": "neurologist",
         "parents": [
             "physicians"
         ],
-        "title": "neurologist"
+        "title": "Neurologist"
     },
     {
         "alias": "newamerican",
         "country_whitelist": [
-            "ie",
-            "gb",
-            "us"
+            "IE",
+            "GB",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "american (new)"
+        "title": "American (New)"
     },
     {
         "alias": "newcanadian",
         "country_whitelist": [
-            "ca"
+            "CA"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "canadian (new)"
+        "title": "Canadian (New)"
     },
     {
         "alias": "newzealand",
         "country_whitelist": [
-            "nz"
+            "NZ"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "new zealand"
+        "title": "New Zealand"
     },
     {
         "alias": "nicois",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "french"
         ],
-        "title": "nicoise"
+        "title": "Nicoise"
     },
     {
         "alias": "nightfood",
         "country_whitelist": [
-            "no",
-            "tr",
-            "dk",
-            "se",
-            "pl"
+            "NO",
+            "TR",
+            "DK",
+            "SE",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "night food"
+        "title": "Night Food"
     },
     {
         "alias": "nightlife",
         "parents": [
             null
         ],
-        "title": "nightlife"
+        "title": "Nightlife"
     },
     {
         "alias": "nonprofit",
         "parents": [
             "localservices"
         ],
-        "title": "community service/non-profit"
+        "title": "Community Service/Non-Profit"
     },
     {
         "alias": "norcinerie",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "norcinerie"
+        "title": "Norcinerie"
     },
     {
         "alias": "northeasternbrazilian",
         "country_whitelist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "brazilian"
         ],
-        "title": "northeastern brazilian"
+        "title": "Northeastern Brazilian"
     },
     {
         "alias": "northernbrazilian",
         "country_whitelist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "brazilian"
         ],
-        "title": "northern brazilian"
+        "title": "Northern Brazilian"
     },
     {
         "alias": "northerngerman",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "northern german"
+        "title": "Northern German"
     },
     {
         "alias": "northernmexican",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "northern mexican"
+        "title": "Northern Mexican"
     },
     {
         "alias": "norwegian",
         "country_whitelist": [
-            "fr",
-            "no"
+            "FR",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "traditional norwegian"
+        "title": "Traditional Norwegian"
     },
     {
         "alias": "notaries",
         "country_blacklist": [
-            "no"
+            "NO"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "notaries"
+        "title": "Notaries"
     },
     {
         "alias": "nudist",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "fi",
-            "de",
-            "se"
+            "DK",
+            "PT",
+            "NO",
+            "FI",
+            "DE",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "nudist"
+        "title": "Nudist"
     },
     {
         "alias": "nursepractitioner",
         "parents": [
             "health"
         ],
-        "title": "nurse practitioner"
+        "title": "Nurse Practitioner"
     },
     {
         "alias": "nursingschools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "nursing schools"
+        "title": "Nursing Schools"
     },
     {
         "alias": "nutritionists",
         "parents": [
             "health"
         ],
-        "title": "nutritionists"
+        "title": "Nutritionists"
     },
     {
         "alias": "nyonya",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "malaysian"
         ],
-        "title": "nyonya"
+        "title": "Nyonya"
     },
     {
         "alias": "oaxacan",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "oaxacan"
+        "title": "Oaxacan"
     },
     {
         "alias": "obgyn",
         "parents": [
             "physicians"
         ],
-        "title": "obstetricians & gynecologists"
+        "title": "Obstetricians & Gynecologists"
     },
     {
         "alias": "observatories",
         "parents": [
             "arts"
         ],
-        "title": "observatories"
+        "title": "Observatories"
     },
     {
         "alias": "occupationaltherapy",
         "country_whitelist": [
-            "au",
-            "gb",
-            "pt",
-            "ca",
-            "de",
-            "ie",
-            "us"
+            "AU",
+            "GB",
+            "PT",
+            "CA",
+            "DE",
+            "IE",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "occupational therapy"
+        "title": "Occupational Therapy"
     },
     {
         "alias": "oden",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "oden"
+        "title": "Oden"
     },
     {
         "alias": "officecleaning",
         "parents": [
             "professional"
         ],
-        "title": "office cleaning"
+        "title": "Office Cleaning"
     },
     {
         "alias": "officeequipment",
         "parents": [
             "shopping"
         ],
-        "title": "office equipment"
+        "title": "Office Equipment"
     },
     {
         "alias": "officiants",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "officiants"
+        "title": "Officiants"
     },
     {
         "alias": "oilchange",
         "country_blacklist": [
-            "ch",
-            "at",
-            "br",
-            "no",
-            "de",
-            "se"
+            "CH",
+            "AT",
+            "BR",
+            "NO",
+            "DE",
+            "SE"
         ],
         "parents": [
             "auto"
         ],
-        "title": "oil change stations"
+        "title": "Oil Change Stations"
     },
     {
         "alias": "okinawan",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "okinawan"
+        "title": "Okinawan"
     },
     {
         "alias": "okonomiyaki",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "okonomiyaki"
+        "title": "Okonomiyaki"
     },
     {
         "alias": "oncologist",
         "parents": [
             "physicians"
         ],
-        "title": "oncologist"
+        "title": "Oncologist"
     },
     {
         "alias": "onigiri",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "onigiri"
+        "title": "Onigiri"
     },
     {
         "alias": "opensandwiches",
         "country_whitelist": [
-            "tr",
-            "dk",
-            "se",
-            "no"
+            "TR",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "open sandwiches"
+        "title": "Open Sandwiches"
     },
     {
         "alias": "opera",
         "parents": [
             "arts"
         ],
-        "title": "opera & ballet"
+        "title": "Opera & Ballet"
     },
     {
         "alias": "opthamalogists",
         "parents": [
             "physicians"
         ],
-        "title": "ophthalmologists"
+        "title": "Ophthalmologists"
     },
     {
         "alias": "opticians",
         "parents": [
             "shopping"
         ],
-        "title": "eyewear & opticians"
+        "title": "Eyewear & Opticians"
     },
     {
         "alias": "optometrists",
         "parents": [
             "health"
         ],
-        "title": "optometrists"
+        "title": "Optometrists"
     },
     {
         "alias": "oralsurgeons",
         "parents": [
             "dentists"
         ],
-        "title": "oral surgeons"
+        "title": "Oral Surgeons"
     },
     {
         "alias": "organic_stores",
         "parents": [
             "food"
         ],
-        "title": "organic stores"
+        "title": "Organic Stores"
     },
     {
         "alias": "oriental",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "de",
-            "at",
-            "pt"
+            "FR",
+            "CH",
+            "DE",
+            "AT",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "oriental"
+        "title": "Oriental"
     },
     {
         "alias": "orthodontists",
         "parents": [
             "dentists"
         ],
-        "title": "orthodontists"
+        "title": "Orthodontists"
     },
     {
         "alias": "orthopedists",
         "parents": [
             "physicians"
         ],
-        "title": "orthopedists"
+        "title": "Orthopedists"
     },
     {
         "alias": "orthotics",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "no",
-            "ie",
-            "it",
-            "us",
-            "nz",
-            "au",
-            "gb",
-            "br",
-            "fi",
-            "sg",
-            "es"
+            "FR",
+            "DK",
+            "NO",
+            "IE",
+            "IT",
+            "US",
+            "NZ",
+            "AU",
+            "GB",
+            "BR",
+            "FI",
+            "SG",
+            "ES"
         ],
         "parents": [
             "health"
         ],
-        "title": "orthotics"
+        "title": "Orthotics"
     },
     {
         "alias": "osteopathicphysicians",
         "parents": [
             "physicians"
         ],
-        "title": "osteopathic physicians"
+        "title": "Osteopathic Physicians"
     },
     {
         "alias": "osteopaths",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "medcenters"
         ],
-        "title": "osteopaths"
+        "title": "Osteopaths"
     },
     {
         "alias": "othersalons",
         "parents": [
             "beautysvc"
         ],
-        "title": "nail salons"
+        "title": "Nail Salons"
     },
     {
         "alias": "outdoorgear",
         "parents": [
             "sportgoods"
         ],
-        "title": "outdoor gear"
+        "title": "Outdoor Gear"
     },
     {
         "alias": "outlet_stores",
         "parents": [
             "shopping"
         ],
-        "title": "outlet stores"
+        "title": "Outlet Stores"
     },
     {
         "alias": "oyakodon",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "donburi"
         ],
-        "title": "oyakodon"
+        "title": "Oyakodon"
     },
     {
         "alias": "pachinko",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "arts"
         ],
-        "title": "pachinko"
+        "title": "Pachinko"
     },
     {
         "alias": "paddleboarding",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "pt",
-            "no",
-            "ie",
-            "us",
-            "nz",
-            "au",
-            "fi",
-            "sg",
-            "es"
+            "FR",
+            "DK",
+            "PT",
+            "NO",
+            "IE",
+            "US",
+            "NZ",
+            "AU",
+            "FI",
+            "SG",
+            "ES"
         ],
         "parents": [
             "active"
         ],
-        "title": "paddleboarding"
+        "title": "Paddleboarding"
     },
     {
         "alias": "paintandsip",
         "country_whitelist": [
-            "hk",
-            "us"
+            "HK",
+            "US"
         ],
         "parents": [
             "arts"
         ],
-        "title": "paint & sip"
+        "title": "Paint & Sip"
     },
     {
         "alias": "paintball",
         "country_blacklist": [
-            "sg"
+            "SG"
         ],
         "parents": [
             "active"
         ],
-        "title": "paintball"
+        "title": "Paintball"
     },
     {
         "alias": "painters",
         "parents": [
             "homeservices"
         ],
-        "title": "painters"
+        "title": "Painters"
     },
     {
         "alias": "pakistani",
         "parents": [
             "restaurants"
         ],
-        "title": "pakistani"
+        "title": "Pakistani"
     },
     {
         "alias": "palatine",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "palatine"
+        "title": "Palatine"
     },
     {
         "alias": "panzerotti",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "food"
         ],
-        "title": "panzerotti"
+        "title": "Panzerotti"
     },
     {
         "alias": "parentingclasses",
         "parents": [
             "specialtyschools"
         ],
-        "title": "parenting classes"
+        "title": "Parenting Classes"
     },
     {
         "alias": "parking",
         "parents": [
             "auto"
         ],
-        "title": "parking"
+        "title": "Parking"
     },
     {
         "alias": "parks",
         "parents": [
             "active"
         ],
-        "title": "parks"
+        "title": "Parks"
     },
     {
         "alias": "parma",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "parma"
+        "title": "Parma"
     },
     {
         "alias": "partybikerentals",
         "country_whitelist": [
-            "be",
-            "nl",
-            "es",
-            "de",
-            "ie",
-            "us"
+            "BE",
+            "NL",
+            "ES",
+            "DE",
+            "IE",
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "party bike rentals"
+        "title": "Party Bike Rentals"
     },
     {
         "alias": "partybusrentals",
         "country_whitelist": [
-            "be",
-            "ch",
-            "nl",
-            "cl",
-            "de",
-            "tr",
-            "us",
-            "nz",
-            "ar",
-            "au",
-            "at",
-            "fi",
-            "sg",
-            "se",
-            "gb"
+            "BE",
+            "CH",
+            "NL",
+            "CL",
+            "DE",
+            "TR",
+            "US",
+            "NZ",
+            "AR",
+            "AU",
+            "AT",
+            "FI",
+            "SG",
+            "SE",
+            "GB"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "party bus rentals"
+        "title": "Party Bus Rentals"
     },
     {
         "alias": "partyequipmentrentals",
         "country_whitelist": [
-            "es",
-            "be",
-            "fr",
-            "pt",
-            "cl",
-            "tr",
-            "it",
-            "us",
-            "au",
-            "gb",
-            "sg",
-            "se"
+            "ES",
+            "BE",
+            "FR",
+            "PT",
+            "CL",
+            "TR",
+            "IT",
+            "US",
+            "AU",
+            "GB",
+            "SG",
+            "SE"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "party equipment rentals"
+        "title": "Party Equipment Rentals"
     },
     {
         "alias": "partysupplies",
         "parents": [
             "eventservices"
         ],
-        "title": "party supplies"
+        "title": "Party Supplies"
     },
     {
         "alias": "pastashops",
         "country_whitelist": [
-            "ar",
-            "it",
-            "us",
-            "cl"
+            "AR",
+            "IT",
+            "US",
+            "CL"
         ],
         "parents": [
             "gourmet"
         ],
-        "title": "pasta shops"
+        "title": "Pasta Shops"
     },
     {
         "alias": "patentlaw",
         "country_whitelist": [
-            "de",
-            "it"
+            "DE",
+            "IT"
         ],
         "parents": [
             "professional"
         ],
-        "title": "patent law"
+        "title": "Patent Law"
     },
     {
         "alias": "pawn",
         "country_blacklist": [
-            "tr",
-            "br"
+            "TR",
+            "BR"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "pawn shops"
+        "title": "Pawn Shops"
     },
     {
         "alias": "paydayloans",
         "country_blacklist": [
-            "nz",
-            "ch",
-            "dk",
-            "de",
-            "it",
-            "es",
-            "at"
+            "NZ",
+            "CH",
+            "DK",
+            "DE",
+            "IT",
+            "ES",
+            "AT"
         ],
         "parents": [
             "financialservices"
         ],
-        "title": "check cashing/pay-day loans"
+        "title": "Check Cashing/Pay-day Loans"
     },
     {
         "alias": "payroll",
         "country_whitelist": [
-            "be",
-            "nz",
-            "nl",
-            "au",
-            "sg",
-            "tr",
-            "us"
+            "BE",
+            "NZ",
+            "NL",
+            "AU",
+            "SG",
+            "TR",
+            "US"
         ],
         "parents": [
             "professional"
         ],
-        "title": "payroll services"
+        "title": "Payroll Services"
     },
     {
         "alias": "pediatric_dentists",
         "parents": [
             "dentists"
         ],
-        "title": "pediatric dentists"
+        "title": "Pediatric Dentists"
     },
     {
         "alias": "pediatricians",
         "parents": [
             "physicians"
         ],
-        "title": "pediatricians"
+        "title": "Pediatricians"
     },
     {
         "alias": "pedicabs",
         "country_whitelist": [
-            "se",
-            "us"
+            "SE",
+            "US"
         ],
         "parents": [
             "transport"
         ],
-        "title": "pedicabs"
+        "title": "Pedicabs"
     },
     {
         "alias": "pekinese",
         "country_whitelist": [
-            "hk",
-            "fr",
-            "tw",
-            "sg",
-            "jp",
-            "it"
+            "HK",
+            "FR",
+            "TW",
+            "SG",
+            "JP",
+            "IT"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "pekinese"
+        "title": "Pekinese"
     },
     {
         "alias": "pensions",
         "country_whitelist": [
-            "br",
-            "de",
-            "jp",
-            "at",
-            "es"
+            "BR",
+            "DE",
+            "JP",
+            "AT",
+            "ES"
         ],
         "parents": [
             "hotels"
         ],
-        "title": "pensions"
+        "title": "Pensions"
     },
     {
         "alias": "perfume",
         "country_blacklist": [
-            "nl",
-            "ca",
-            "tr",
-            "us",
-            "br",
-            "fi",
-            "sg",
-            "pl"
+            "NL",
+            "CA",
+            "TR",
+            "US",
+            "BR",
+            "FI",
+            "SG",
+            "PL"
         ],
         "parents": [
             "shopping",
             "beautysvc"
         ],
-        "title": "perfume"
+        "title": "Perfume"
     },
     {
         "alias": "periodontists",
         "parents": [
             "dentists"
         ],
-        "title": "periodontists"
+        "title": "Periodontists"
     },
     {
         "alias": "permanentmakeup",
         "country_blacklist": [
-            "dk",
-            "no",
-            "ie",
-            "ca",
-            "cz",
-            "nz",
-            "pl",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "DK",
+            "NO",
+            "IE",
+            "CA",
+            "CZ",
+            "NZ",
+            "PL",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "beautysvc"
         ],
-        "title": "permanent makeup"
+        "title": "Permanent Makeup"
     },
     {
         "alias": "persian",
         "parents": [
             "restaurants"
         ],
-        "title": "persian/iranian"
+        "title": "Persian/Iranian"
     },
     {
         "alias": "personal_injury",
         "parents": [
             "lawyers"
         ],
-        "title": "personal injury law"
+        "title": "Personal Injury Law"
     },
     {
         "alias": "personal_shopping",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "personal shopping"
+        "title": "Personal Shopping"
     },
     {
         "alias": "personalassistants",
         "country_whitelist": [
-            "pt",
-            "us"
+            "PT",
+            "US"
         ],
         "parents": [
             "professional"
         ],
-        "title": "personal assistants"
+        "title": "Personal Assistants"
     },
     {
         "alias": "personalchefs",
         "parents": [
             "eventservices"
         ],
-        "title": "personal chefs"
+        "title": "Personal Chefs"
     },
     {
         "alias": "peruvian",
         "country_blacklist": [
-            "fi",
-            "sg",
-            "tr",
-            "dk",
-            "pt"
+            "FI",
+            "SG",
+            "TR",
+            "DK",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "peruvian"
+        "title": "Peruvian"
     },
     {
         "alias": "pest_control",
         "parents": [
             "localservices"
         ],
-        "title": "pest control"
+        "title": "Pest Control"
     },
     {
         "alias": "pet_sitting",
         "country_blacklist": [
-            "br"
+            "BR"
         ],
         "parents": [
             "petservices"
         ],
-        "title": "pet boarding/pet sitting"
+        "title": "Pet Boarding/Pet Sitting"
     },
     {
         "alias": "pet_training",
         "parents": [
             "petservices"
         ],
-        "title": "pet training"
+        "title": "Pet Training"
     },
     {
         "alias": "petadoption",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "pets"
         ],
-        "title": "pet adoption"
+        "title": "Pet Adoption"
     },
     {
         "alias": "pets",
         "parents": [
             null
         ],
-        "title": "pets"
+        "title": "Pets"
     },
     {
         "alias": "petservices",
         "parents": [
             "pets"
         ],
-        "title": "pet services"
+        "title": "Pet Services"
     },
     {
         "alias": "petstore",
         "parents": [
             "pets"
         ],
-        "title": "pet stores"
+        "title": "Pet Stores"
     },
     {
         "alias": "pharmacy",
         "country_blacklist": [
-            "fi",
-            "us"
+            "FI",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "pharmacy"
+        "title": "Pharmacy"
     },
     {
         "alias": "photoboothrentals",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "cl",
-            "fi",
-            "jp",
-            "mx"
+            "HK",
+            "AR",
+            "CL",
+            "FI",
+            "JP",
+            "MX"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "photo booth rentals"
+        "title": "Photo Booth Rentals"
     },
     {
         "alias": "photographers",
         "parents": [
             "eventservices"
         ],
-        "title": "photographers"
+        "title": "Photographers"
     },
     {
         "alias": "photographystores",
         "parents": [
             "shopping"
         ],
-        "title": "photography stores & services"
+        "title": "Photography Stores & Services"
     },
     {
         "alias": "physicaltherapy",
         "parents": [
             "health"
         ],
-        "title": "physical therapy"
+        "title": "Physical Therapy"
     },
     {
         "alias": "physicians",
         "parents": [
             "health"
         ],
-        "title": "doctors"
+        "title": "Doctors"
     },
     {
         "alias": "piadina",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "food"
         ],
-        "title": "piadina"
+        "title": "Piadina"
     },
     {
         "alias": "pianobars",
         "country_blacklist": [
-            "es",
-            "ch",
-            "ie",
-            "cz",
-            "nz",
-            "au",
-            "at",
-            "br",
-            "fi",
-            "sg",
-            "pl"
+            "ES",
+            "CH",
+            "IE",
+            "CZ",
+            "NZ",
+            "AU",
+            "AT",
+            "BR",
+            "FI",
+            "SG",
+            "PL"
         ],
         "parents": [
             "nightlife"
         ],
-        "title": "piano bars"
+        "title": "Piano Bars"
     },
     {
         "alias": "pianoservices",
         "parents": [
             "musicinstrumentservices"
         ],
-        "title": "piano services"
+        "title": "Piano Services"
     },
     {
         "alias": "pianostores",
         "parents": [
             "musicinstrumentservices"
         ],
-        "title": "piano stores"
+        "title": "Piano Stores"
     },
     {
         "alias": "piemonte",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "piemonte"
+        "title": "Piemonte"
     },
     {
         "alias": "piercing",
         "parents": [
             "beautysvc"
         ],
-        "title": "piercing"
+        "title": "Piercing"
     },
     {
         "alias": "pierogis",
         "country_whitelist": [
-            "pl"
+            "PL"
         ],
         "parents": [
             "polish"
         ],
-        "title": "pierogis"
+        "title": "Pierogis"
     },
     {
         "alias": "pilates",
         "parents": [
             "fitness"
         ],
-        "title": "pilates"
+        "title": "Pilates"
     },
     {
         "alias": "pita",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "pita"
+        "title": "Pita"
     },
     {
         "alias": "pizza",
         "parents": [
             "restaurants"
         ],
-        "title": "pizza"
+        "title": "Pizza"
     },
     {
         "alias": "planetarium",
         "parents": [
             "arts"
         ],
-        "title": "planetarium"
+        "title": "Planetarium"
     },
     {
         "alias": "playgrounds",
         "parents": [
             "active"
         ],
-        "title": "playgrounds"
+        "title": "Playgrounds"
     },
     {
         "alias": "plumbing",
         "parents": [
             "homeservices"
         ],
-        "title": "plumbing"
+        "title": "Plumbing"
     },
     {
         "alias": "plus_size_fashion",
         "country_blacklist": [
-            "ch",
-            "cl",
-            "ie",
-            "jp",
-            "ca",
-            "tr",
-            "cz",
-            "ar",
-            "at",
-            "hk",
-            "sg",
-            "mx",
-            "pl",
-            "gb"
+            "CH",
+            "CL",
+            "IE",
+            "JP",
+            "CA",
+            "TR",
+            "CZ",
+            "AR",
+            "AT",
+            "HK",
+            "SG",
+            "MX",
+            "PL",
+            "GB"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "plus size fashion"
+        "title": "Plus Size Fashion"
     },
     {
         "alias": "podiatrists",
         "parents": [
             "physicians"
         ],
-        "title": "podiatrists"
+        "title": "Podiatrists"
     },
     {
         "alias": "poledancingclasses",
         "country_blacklist": [
-            "es",
-            "be",
-            "ch",
-            "pt",
-            "cl",
-            "ca",
-            "de",
-            "tr",
-            "cz",
-            "ar",
-            "at",
-            "ie",
-            "mx",
-            "pl",
-            "gb"
+            "ES",
+            "BE",
+            "CH",
+            "PT",
+            "CL",
+            "CA",
+            "DE",
+            "TR",
+            "CZ",
+            "AR",
+            "AT",
+            "IE",
+            "MX",
+            "PL",
+            "GB"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "pole dancing classes"
+        "title": "Pole Dancing Classes"
     },
     {
         "alias": "policedepartments",
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "police departments"
+        "title": "Police Departments"
     },
     {
         "alias": "polish",
         "country_blacklist": [
-            "fi",
-            "sg",
-            "dk",
-            "es",
-            "pt"
+            "FI",
+            "SG",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "polish"
+        "title": "Polish"
     },
     {
         "alias": "poolbilliards",
         "country_blacklist": [
-            "es",
-            "ch",
-            "no",
-            "de",
-            "cz",
-            "at",
-            "se",
-            "fi",
-            "pl"
+            "ES",
+            "CH",
+            "NO",
+            "DE",
+            "CZ",
+            "AT",
+            "SE",
+            "FI",
+            "PL"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "pool & billiards"
+        "title": "Pool & Billiards"
     },
     {
         "alias": "poolcleaners",
         "country_blacklist": [
-            "dk",
-            "no"
+            "DK",
+            "NO"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "pool cleaners"
+        "title": "Pool Cleaners"
     },
     {
         "alias": "poolhalls",
         "parents": [
             "nightlife"
         ],
-        "title": "pool halls"
+        "title": "Pool Halls"
     },
     {
         "alias": "poolservice",
         "parents": [
             "homeservices"
         ],
-        "title": "pool & hot tub service"
+        "title": "Pool & Hot Tub Service"
     },
     {
         "alias": "popupshops",
         "country_blacklist": [
-            "br",
-            "pt"
+            "BR",
+            "PT"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "pop-up shops"
+        "title": "Pop-up Shops"
     },
     {
         "alias": "portuguese",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "portuguese"
+        "title": "Portuguese"
     },
     {
         "alias": "postoffices",
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "post offices"
+        "title": "Post Offices"
     },
     {
         "alias": "potatoes",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "potatoes"
+        "title": "Potatoes"
     },
     {
         "alias": "poutineries",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "poutineries"
+        "title": "Poutineries"
     },
     {
         "alias": "powdercoating",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "powder coating"
+        "title": "Powder Coating"
     },
     {
         "alias": "preschools",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "education"
         ],
-        "title": "preschools"
+        "title": "Preschools"
     },
     {
         "alias": "pressurewashers",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "pressure washers"
+        "title": "Pressure Washers"
     },
     {
         "alias": "pretzels",
         "country_whitelist": [
-            "de",
-            "pt",
-            "us"
+            "DE",
+            "PT",
+            "US"
         ],
         "parents": [
             "food"
         ],
-        "title": "pretzels"
+        "title": "Pretzels"
     },
     {
         "alias": "printmedia",
         "parents": [
             "massmedia"
         ],
-        "title": "print media"
+        "title": "Print Media"
     },
     {
         "alias": "privateinvestigation",
         "parents": [
             "professional"
         ],
-        "title": "private investigation"
+        "title": "Private Investigation"
     },
     {
         "alias": "privateschools",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "pt",
-            "no",
-            "mx",
-            "se"
+            "NZ",
+            "AU",
+            "BR",
+            "PT",
+            "NO",
+            "MX",
+            "SE"
         ],
         "parents": [
             "education"
         ],
-        "title": "private schools"
+        "title": "Private Schools"
     },
     {
         "alias": "privatetutors",
         "parents": [
             "education"
         ],
-        "title": "private tutors"
+        "title": "Private Tutors"
     },
     {
         "alias": "proctologist",
         "parents": [
             "physicians"
         ],
-        "title": "proctologists"
+        "title": "Proctologists"
     },
     {
         "alias": "professional",
         "parents": [
             null
         ],
-        "title": "professional services"
+        "title": "Professional Services"
     },
     {
         "alias": "propane",
         "country_blacklist": [
-            "nz",
-            "ar",
-            "mx"
+            "NZ",
+            "AR",
+            "MX"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "propane"
+        "title": "Propane"
     },
     {
         "alias": "propertymgmt",
         "parents": [
             "realestate"
         ],
-        "title": "property management"
+        "title": "Property Management"
     },
     {
         "alias": "prosthetics",
         "country_whitelist": [
-            "es",
-            "au",
-            "it",
-            "us"
+            "ES",
+            "AU",
+            "IT",
+            "US"
         ],
         "parents": [
             "health"
         ],
-        "title": "prosthetics"
+        "title": "Prosthetics"
     },
     {
         "alias": "provencal",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "french"
         ],
-        "title": "provencal"
+        "title": "Provencal"
     },
     {
         "alias": "psychiatrists",
         "parents": [
             "physicians"
         ],
-        "title": "psychiatrists"
+        "title": "Psychiatrists"
     },
     {
         "alias": "psychic_astrology",
         "parents": [
             "arts"
         ],
-        "title": "psychics & astrologers"
+        "title": "Psychics & Astrologers"
     },
     {
         "alias": "psychoanalysts",
         "country_whitelist": [
-            "fr"
+            "FR"
         ],
         "parents": [
             "c_and_mh"
         ],
-        "title": "psychoanalysts"
+        "title": "Psychoanalysts"
     },
     {
         "alias": "psychologists",
         "country_blacklist": [
-            "pt",
-            "cl",
-            "ie",
-            "ca",
-            "jp",
-            "cz",
-            "ar",
-            "gb",
-            "hk",
-            "sg",
-            "mx",
-            "pl"
+            "PT",
+            "CL",
+            "IE",
+            "CA",
+            "JP",
+            "CZ",
+            "AR",
+            "GB",
+            "HK",
+            "SG",
+            "MX",
+            "PL"
         ],
         "parents": [
             "c_and_mh"
         ],
-        "title": "psychologists"
+        "title": "Psychologists"
     },
     {
         "alias": "psychotherapists",
         "country_whitelist": [
-            "fr",
-            "ch",
-            "dk",
-            "no",
-            "de",
-            "at",
-            "br",
-            "fi",
-            "sg"
+            "FR",
+            "CH",
+            "DK",
+            "NO",
+            "DE",
+            "AT",
+            "BR",
+            "FI",
+            "SG"
         ],
         "parents": [
             "c_and_mh"
         ],
-        "title": "psychotherapists"
+        "title": "Psychotherapists"
     },
     {
         "alias": "pubfood",
         "country_whitelist": [
-            "au"
+            "AU"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "pub food"
+        "title": "Pub Food"
     },
     {
         "alias": "publicplazas",
         "country_blacklist": [
-            "be",
-            "nl",
-            "ca",
-            "us",
-            "nz",
-            "au",
-            "gb",
-            "br",
-            "ie"
+            "BE",
+            "NL",
+            "CA",
+            "US",
+            "NZ",
+            "AU",
+            "GB",
+            "BR",
+            "IE"
         ],
         "parents": [
             "active"
         ],
-        "title": "public plazas"
+        "title": "Public Plazas"
     },
     {
         "alias": "publicrelations",
         "parents": [
             "professional"
         ],
-        "title": "public relations"
+        "title": "Public Relations"
     },
     {
         "alias": "publicservicesgovt",
         "parents": [
             null
         ],
-        "title": "public services & government"
+        "title": "Public Services & Government"
     },
     {
         "alias": "publictransport",
         "parents": [
             "transport"
         ],
-        "title": "public transportation"
+        "title": "Public Transportation"
     },
     {
         "alias": "pubs",
         "parents": [
             "bars"
         ],
-        "title": "pubs"
+        "title": "Pubs"
     },
     {
         "alias": "pueblan",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "pueblan"
+        "title": "Pueblan"
     },
     {
         "alias": "puertorican",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "caribbean"
         ],
-        "title": "puerto rican"
+        "title": "Puerto Rican"
     },
     {
         "alias": "pulmonologist",
         "parents": [
             "physicians"
         ],
-        "title": "pulmonologist"
+        "title": "Pulmonologist"
     },
     {
         "alias": "pumpkinpatches",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "homeandgarden"
         ],
-        "title": "pumpkin patches"
+        "title": "Pumpkin Patches"
     },
     {
         "alias": "racetracks",
         "country_blacklist": [
-            "ch",
-            "at",
-            "br",
-            "ie",
-            "ca",
-            "de",
-            "sg"
+            "CH",
+            "AT",
+            "BR",
+            "IE",
+            "CA",
+            "DE",
+            "SG"
         ],
         "parents": [
             "arts"
         ],
-        "title": "race tracks"
+        "title": "Race Tracks"
     },
     {
         "alias": "radiologists",
         "parents": [
             "physicians"
         ],
-        "title": "radiologists"
+        "title": "Radiologists"
     },
     {
         "alias": "radiostations",
         "parents": [
             "massmedia"
         ],
-        "title": "radio stations"
+        "title": "Radio Stations"
     },
     {
         "alias": "rafting",
         "parents": [
             "active"
         ],
-        "title": "rafting/kayaking"
+        "title": "Rafting/Kayaking"
     },
     {
         "alias": "ramen",
         "parents": [
             "japanese"
         ],
-        "title": "ramen"
+        "title": "Ramen"
     },
     {
         "alias": "raw_food",
         "parents": [
             "restaurants"
         ],
-        "title": "live/raw food"
+        "title": "Live/Raw Food"
     },
     {
         "alias": "realestate",
@@ -8551,1353 +8551,1353 @@
             null,
             "homeservices"
         ],
-        "title": "real estate"
+        "title": "Real Estate"
     },
     {
         "alias": "realestateagents",
         "parents": [
             "realestate"
         ],
-        "title": "real estate agents"
+        "title": "Real Estate Agents"
     },
     {
         "alias": "realestatelawyers",
         "parents": [
             "lawyers"
         ],
-        "title": "real estate law"
+        "title": "Real Estate Law"
     },
     {
         "alias": "realestatesvcs",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "realestate"
         ],
-        "title": "real estate services"
+        "title": "Real Estate Services"
     },
     {
         "alias": "record_labels",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at",
-            "pt"
+            "CH",
+            "DE",
+            "AT",
+            "PT"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "record labels"
+        "title": "Record Labels"
     },
     {
         "alias": "recording_studios",
         "parents": [
             "localservices"
         ],
-        "title": "recording & rehearsal studios"
+        "title": "Recording & Rehearsal Studios"
     },
     {
         "alias": "recreation",
         "parents": [
             "active"
         ],
-        "title": "recreation centers"
+        "title": "Recreation Centers"
     },
     {
         "alias": "recyclingcenter",
         "parents": [
             "localservices"
         ],
-        "title": "recycling center"
+        "title": "Recycling Center"
     },
     {
         "alias": "refinishing",
         "parents": [
             "homeservices"
         ],
-        "title": "refinishing services"
+        "title": "Refinishing Services"
     },
     {
         "alias": "reflexology",
         "country_blacklist": [
-            "dk",
-            "se",
-            "no",
-            "fi",
-            "tr",
-            "es",
-            "pl"
+            "DK",
+            "SE",
+            "NO",
+            "FI",
+            "TR",
+            "ES",
+            "PL"
         ],
         "parents": [
             "health"
         ],
-        "title": "reflexology"
+        "title": "Reflexology"
     },
     {
         "alias": "registrationservices",
         "country_whitelist": [
-            "br",
-            "it",
-            "us",
-            "pt"
+            "BR",
+            "IT",
+            "US",
+            "PT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "registration services"
+        "title": "Registration Services"
     },
     {
         "alias": "registry_office",
         "country_whitelist": [
-            "ch",
-            "dk",
-            "pt",
-            "fi",
-            "de",
-            "it",
-            "at"
+            "CH",
+            "DK",
+            "PT",
+            "FI",
+            "DE",
+            "IT",
+            "AT"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "registry office"
+        "title": "Registry Office"
     },
     {
         "alias": "rehabilitation_center",
         "country_whitelist": [
-            "pt",
-            "de",
-            "jp",
-            "it",
-            "us",
-            "es",
-            "fi",
-            "se"
+            "PT",
+            "DE",
+            "JP",
+            "IT",
+            "US",
+            "ES",
+            "FI",
+            "SE"
         ],
         "parents": [
             "health"
         ],
-        "title": "rehabilitation center"
+        "title": "Rehabilitation Center"
     },
     {
         "alias": "reiki",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "health"
         ],
-        "title": "reiki"
+        "title": "Reiki"
     },
     {
         "alias": "religiousorgs",
         "parents": [
             null
         ],
-        "title": "religious organizations"
+        "title": "Religious Organizations"
     },
     {
         "alias": "religiousschools",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "pt",
-            "mx",
-            "us"
+            "NZ",
+            "AU",
+            "BR",
+            "PT",
+            "MX",
+            "US"
         ],
         "parents": [
             "education"
         ],
-        "title": "religious schools"
+        "title": "Religious Schools"
     },
     {
         "alias": "residences",
         "country_whitelist": [
-            "sg",
-            "it",
-            "es"
+            "SG",
+            "IT",
+            "ES"
         ],
         "parents": [
             "hotels"
         ],
-        "title": "residences"
+        "title": "Residences"
     },
     {
         "alias": "resorts",
         "country_whitelist": [
-            "au",
-            "pt",
-            "us"
+            "AU",
+            "PT",
+            "US"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "resorts"
+        "title": "Resorts"
     },
     {
         "alias": "restaurants",
         "parents": [
             null
         ],
-        "title": "restaurants"
+        "title": "Restaurants"
     },
     {
         "alias": "reststops",
         "parents": [
             "hotels"
         ],
-        "title": "rest stops"
+        "title": "Rest Stops"
     },
     {
         "alias": "retirement_homes",
         "parents": [
             "health"
         ],
-        "title": "retirement homes"
+        "title": "Retirement Homes"
     },
     {
         "alias": "reupholstery",
         "parents": [
             "localservices"
         ],
-        "title": "furniture reupholstery"
+        "title": "Furniture Reupholstery"
     },
     {
         "alias": "rhematologists",
         "country_whitelist": [
-            "es",
-            "fr",
-            "it",
-            "us"
+            "ES",
+            "FR",
+            "IT",
+            "US"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "rheumatologists"
+        "title": "Rheumatologists"
     },
     {
         "alias": "rhinelandian",
         "country_whitelist": [
-            "de"
+            "DE"
         ],
         "parents": [
             "german"
         ],
-        "title": "rhinelandian"
+        "title": "Rhinelandian"
     },
     {
         "alias": "ribatejo",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "ribatejo"
+        "title": "Ribatejo"
     },
     {
         "alias": "riceshop",
         "country_whitelist": [
-            "jp",
-            "tr"
+            "JP",
+            "TR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "rice"
+        "title": "Rice"
     },
     {
         "alias": "robatayaki",
         "country_whitelist": [
-            "hk",
-            "jp",
-            "tw"
+            "HK",
+            "JP",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "robatayaki"
+        "title": "Robatayaki"
     },
     {
         "alias": "rock_climbing",
         "country_whitelist": [
-            "pt",
-            "no",
-            "jp",
-            "us",
-            "nz",
-            "ar",
-            "au",
-            "es",
-            "fi",
-            "se"
+            "PT",
+            "NO",
+            "JP",
+            "US",
+            "NZ",
+            "AR",
+            "AU",
+            "ES",
+            "FI",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "rock climbing"
+        "title": "Rock Climbing"
     },
     {
         "alias": "rodizios",
         "country_whitelist": [
-            "ar",
-            "br",
-            "pt"
+            "AR",
+            "BR",
+            "PT"
         ],
         "parents": [
             "brazilian"
         ],
-        "title": "rodizios"
+        "title": "Rodizios"
     },
     {
         "alias": "rolfing",
         "country_whitelist": [
-            "ca",
-            "pt",
-            "us"
+            "CA",
+            "PT",
+            "US"
         ],
         "parents": [
             "beautysvc"
         ],
-        "title": "rolfing"
+        "title": "Rolfing"
     },
     {
         "alias": "roman",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "roman"
+        "title": "Roman"
     },
     {
         "alias": "romanian",
         "country_whitelist": [
-            "be",
-            "fr"
+            "BE",
+            "FR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "romanian"
+        "title": "Romanian"
     },
     {
         "alias": "roofing",
         "parents": [
             "homeservices"
         ],
-        "title": "roofing"
+        "title": "Roofing"
     },
     {
         "alias": "rotisserie_chicken",
         "country_whitelist": [
-            "fr",
-            "cl",
-            "it",
-            "nz",
-            "ar",
-            "au",
-            "br",
-            "mx",
-            "es"
+            "FR",
+            "CL",
+            "IT",
+            "NZ",
+            "AR",
+            "AU",
+            "BR",
+            "MX",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "rotisserie chicken"
+        "title": "Rotisserie Chicken"
     },
     {
         "alias": "rugs",
         "country_blacklist": [
-            "ch",
-            "nl",
-            "cl",
-            "ca",
-            "de",
-            "jp",
-            "cz",
-            "ar",
-            "at",
-            "hk",
-            "ie",
-            "mx",
-            "pl"
+            "CH",
+            "NL",
+            "CL",
+            "CA",
+            "DE",
+            "JP",
+            "CZ",
+            "AR",
+            "AT",
+            "HK",
+            "IE",
+            "MX",
+            "PL"
         ],
         "parents": [
             "homeandgarden"
         ],
-        "title": "rugs"
+        "title": "Rugs"
     },
     {
         "alias": "rumanian",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "rumanian"
+        "title": "Rumanian"
     },
     {
         "alias": "russian",
         "parents": [
             "restaurants"
         ],
-        "title": "russian"
+        "title": "Russian"
     },
     {
         "alias": "rv_dealers",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "dk",
-            "no",
-            "ca",
-            "it",
-            "us",
-            "es",
-            "br",
-            "fi",
-            "se"
+            "BE",
+            "FR",
+            "NL",
+            "DK",
+            "NO",
+            "CA",
+            "IT",
+            "US",
+            "ES",
+            "BR",
+            "FI",
+            "SE"
         ],
         "parents": [
             "auto"
         ],
-        "title": "rv dealers"
+        "title": "RV Dealers"
     },
     {
         "alias": "rvparks",
         "country_whitelist": [
-            "es",
-            "fr",
-            "no",
-            "de",
-            "tr",
-            "it",
-            "us",
-            "cz",
-            "se",
-            "fi",
-            "pl"
+            "ES",
+            "FR",
+            "NO",
+            "DE",
+            "TR",
+            "IT",
+            "US",
+            "CZ",
+            "SE",
+            "FI",
+            "PL"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "rv parks"
+        "title": "RV Parks"
     },
     {
         "alias": "rvrental",
         "country_blacklist": [
-            "sg",
-            "dk",
-            "br"
+            "SG",
+            "DK",
+            "BR"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "rv rental"
+        "title": "RV Rental"
     },
     {
         "alias": "rvrepair",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "rv repair"
+        "title": "RV Repair"
     },
     {
         "alias": "sailing",
         "country_blacklist": [
-            "tr",
-            "pl",
-            "us"
+            "TR",
+            "PL",
+            "US"
         ],
         "parents": [
             "active"
         ],
-        "title": "sailing"
+        "title": "Sailing"
     },
     {
         "alias": "sakebars",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "bars"
         ],
-        "title": "sake bars"
+        "title": "Sake Bars"
     },
     {
         "alias": "salad",
         "parents": [
             "restaurants"
         ],
-        "title": "salad"
+        "title": "Salad"
     },
     {
         "alias": "salumerie",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "food"
         ],
-        "title": "salumerie"
+        "title": "Salumerie"
     },
     {
         "alias": "salvadoran",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "latin"
         ],
-        "title": "salvadoran"
+        "title": "Salvadoran"
     },
     {
         "alias": "sambaschools",
         "country_whitelist": [
-            "fi",
-            "it",
-            "br",
-            "se"
+            "FI",
+            "IT",
+            "BR",
+            "SE"
         ],
         "parents": [
             "specialtyschools"
         ],
-        "title": "samba schools"
+        "title": "Samba Schools"
     },
     {
         "alias": "sandwiches",
         "parents": [
             "restaurants"
         ],
-        "title": "sandwiches"
+        "title": "Sandwiches"
     },
     {
         "alias": "sardinian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "sardinian"
+        "title": "Sardinian"
     },
     {
         "alias": "saunas",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ch",
-            "pt",
-            "no",
-            "de",
-            "jp",
-            "it",
-            "cz",
-            "hk",
-            "at",
-            "fi",
-            "se"
+            "BE",
+            "FR",
+            "CH",
+            "PT",
+            "NO",
+            "DE",
+            "JP",
+            "IT",
+            "CZ",
+            "HK",
+            "AT",
+            "FI",
+            "SE"
         ],
         "parents": [
             "health"
         ],
-        "title": "saunas"
+        "title": "Saunas"
     },
     {
         "alias": "scandinavian",
         "country_blacklist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "scandinavian"
+        "title": "Scandinavian"
     },
     {
         "alias": "scandinaviandesign",
         "country_whitelist": [
-            "fi",
-            "dk",
-            "se",
-            "no"
+            "FI",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "scandinavian design"
+        "title": "Scandinavian Design"
     },
     {
         "alias": "scottish",
         "country_whitelist": [
-            "ch",
-            "at",
-            "ca",
-            "de",
-            "ie",
-            "us",
-            "gb"
+            "CH",
+            "AT",
+            "CA",
+            "DE",
+            "IE",
+            "US",
+            "GB"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "scottish"
+        "title": "Scottish"
     },
     {
         "alias": "screen_printing_tshirt_printing",
         "country_whitelist": [
-            "be",
-            "ch",
-            "nl",
-            "pt",
-            "de",
-            "jp",
-            "us",
-            "au",
-            "at"
+            "BE",
+            "CH",
+            "NL",
+            "PT",
+            "DE",
+            "JP",
+            "US",
+            "AU",
+            "AT"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "screen printing/t-shirt printing"
+        "title": "Screen Printing/T-Shirt Printing"
     },
     {
         "alias": "screenprinting",
         "parents": [
             "localservices"
         ],
-        "title": "screen printing"
+        "title": "Screen Printing"
     },
     {
         "alias": "scuba",
         "parents": [
             "diving"
         ],
-        "title": "scuba diving"
+        "title": "Scuba Diving"
     },
     {
         "alias": "seafood",
         "parents": [
             "restaurants"
         ],
-        "title": "seafood"
+        "title": "Seafood"
     },
     {
         "alias": "seafoodmarkets",
         "parents": [
             "gourmet"
         ],
-        "title": "seafood markets"
+        "title": "Seafood Markets"
     },
     {
         "alias": "security",
         "country_blacklist": [
-            "be",
-            "ca",
-            "nz",
-            "br"
+            "BE",
+            "CA",
+            "NZ",
+            "BR"
         ],
         "parents": [
             "professional"
         ],
-        "title": "security services"
+        "title": "Security Services"
     },
     {
         "alias": "securitysystems",
         "parents": [
             "homeservices"
         ],
-        "title": "security systems"
+        "title": "Security Systems"
     },
     {
         "alias": "selfstorage",
         "parents": [
             "localservices"
         ],
-        "title": "self storage"
+        "title": "Self Storage"
     },
     {
         "alias": "senegalese",
         "country_whitelist": [
-            "be",
-            "ca",
-            "fr",
-            "us",
-            "it"
+            "BE",
+            "CA",
+            "FR",
+            "US",
+            "IT"
         ],
         "parents": [
             "african"
         ],
-        "title": "senegalese"
+        "title": "Senegalese"
     },
     {
         "alias": "septicservices",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "septic services"
+        "title": "Septic Services"
     },
     {
         "alias": "serbocroatian",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ch",
-            "cl",
-            "de",
-            "it",
-            "pl",
-            "ar",
-            "at",
-            "se"
+            "BE",
+            "FR",
+            "CH",
+            "CL",
+            "DE",
+            "IT",
+            "PL",
+            "AR",
+            "AT",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "serbo croatian"
+        "title": "Serbo Croatian"
     },
     {
         "alias": "servicestations",
         "parents": [
             "auto"
         ],
-        "title": "gas & service stations"
+        "title": "Gas & Service Stations"
     },
     {
         "alias": "sessionphotography",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "pt",
-            "de",
-            "it",
-            "us",
-            "au"
+            "BE",
+            "FR",
+            "NL",
+            "PT",
+            "DE",
+            "IT",
+            "US",
+            "AU"
         ],
         "parents": [
             "photographers"
         ],
-        "title": "session photography"
+        "title": "Session Photography"
     },
     {
         "alias": "sewingalterations",
         "parents": [
             "localservices"
         ],
-        "title": "sewing & alterations"
+        "title": "Sewing & Alterations"
     },
     {
         "alias": "sextherapists",
         "parents": [
             "c_and_mh"
         ],
-        "title": "sex therapists"
+        "title": "Sex Therapists"
     },
     {
         "alias": "shanghainese",
         "country_whitelist": [
-            "be",
-            "fr",
-            "tw",
-            "jp",
-            "it",
-            "us",
-            "hk",
-            "au",
-            "sg",
-            "se"
+            "BE",
+            "FR",
+            "TW",
+            "JP",
+            "IT",
+            "US",
+            "HK",
+            "AU",
+            "SG",
+            "SE"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "shanghainese"
+        "title": "Shanghainese"
     },
     {
         "alias": "sharedofficespaces",
         "parents": [
             "realestate"
         ],
-        "title": "shared office spaces"
+        "title": "Shared Office Spaces"
     },
     {
         "alias": "shavedice",
         "country_whitelist": [
-            "ar",
-            "cl",
-            "sg",
-            "it",
-            "us",
-            "mx"
+            "AR",
+            "CL",
+            "SG",
+            "IT",
+            "US",
+            "MX"
         ],
         "parents": [
             "food"
         ],
-        "title": "shaved ice"
+        "title": "Shaved Ice"
     },
     {
         "alias": "shipping_centers",
         "country_blacklist": [
-            "se",
-            "no"
+            "SE",
+            "NO"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "shipping centers"
+        "title": "Shipping Centers"
     },
     {
         "alias": "shoerepair",
         "parents": [
             "localservices"
         ],
-        "title": "shoe repair"
+        "title": "Shoe Repair"
     },
     {
         "alias": "shoes",
         "parents": [
             "fashion"
         ],
-        "title": "shoe stores"
+        "title": "Shoe Stores"
     },
     {
         "alias": "shopping",
         "parents": [
             null
         ],
-        "title": "shopping"
+        "title": "Shopping"
     },
     {
         "alias": "shoppingcenters",
         "parents": [
             "shopping"
         ],
-        "title": "shopping centers"
+        "title": "Shopping Centers"
     },
     {
         "alias": "shredding",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "professional"
         ],
-        "title": "shredding services"
+        "title": "Shredding Services"
     },
     {
         "alias": "shrines",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "religiousorgs"
         ],
-        "title": "shrines"
+        "title": "Shrines"
     },
     {
         "alias": "shutters",
         "parents": [
             "homeservices"
         ],
-        "title": "shutters"
+        "title": "Shutters"
     },
     {
         "alias": "sicilian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "sicilian"
+        "title": "Sicilian"
     },
     {
         "alias": "signature_cuisine",
         "country_whitelist": [
-            "es",
-            "ar",
-            "pt",
-            "se",
-            "no"
+            "ES",
+            "AR",
+            "PT",
+            "SE",
+            "NO"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "signature cuisine"
+        "title": "Signature Cuisine"
     },
     {
         "alias": "signmaking",
         "country_whitelist": [
-            "be",
-            "fr",
-            "dk",
-            "it",
-            "us",
-            "nz",
-            "br",
-            "sg",
-            "se"
+            "BE",
+            "FR",
+            "DK",
+            "IT",
+            "US",
+            "NZ",
+            "BR",
+            "SG",
+            "SE"
         ],
         "parents": [
             "professional"
         ],
-        "title": "signmaking"
+        "title": "Signmaking"
     },
     {
         "alias": "singaporean",
         "country_blacklist": [
-            "dk",
-            "pt",
-            "fi",
-            "sg",
-            "tr",
-            "es"
+            "DK",
+            "PT",
+            "FI",
+            "SG",
+            "TR",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "singaporean"
+        "title": "Singaporean"
     },
     {
         "alias": "skate_parks",
         "parents": [
             "parks"
         ],
-        "title": "skate parks"
+        "title": "Skate Parks"
     },
     {
         "alias": "skateshops",
         "parents": [
             "sportgoods"
         ],
-        "title": "skate shops"
+        "title": "Skate Shops"
     },
     {
         "alias": "skatingrinks",
         "parents": [
             "active"
         ],
-        "title": "skating rinks"
+        "title": "Skating Rinks"
     },
     {
         "alias": "skiing",
         "country_whitelist": [
-            "es",
-            "ch",
-            "dk",
-            "pt",
-            "cl",
-            "ca",
-            "de",
-            "jp",
-            "no",
-            "nz",
-            "ar",
-            "at",
-            "fi",
-            "se"
+            "ES",
+            "CH",
+            "DK",
+            "PT",
+            "CL",
+            "CA",
+            "DE",
+            "JP",
+            "NO",
+            "NZ",
+            "AR",
+            "AT",
+            "FI",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "skiing"
+        "title": "Skiing"
     },
     {
         "alias": "skincare",
         "parents": [
             "beautysvc"
         ],
-        "title": "skin care"
+        "title": "Skin Care"
     },
     {
         "alias": "skiresorts",
         "country_blacklist": [
-            "sg",
-            "dk",
-            "br",
-            "mx"
+            "SG",
+            "DK",
+            "BR",
+            "MX"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "ski resorts"
+        "title": "Ski Resorts"
     },
     {
         "alias": "skischools",
         "parents": [
             "specialtyschools"
         ],
-        "title": "ski schools"
+        "title": "Ski Schools"
     },
     {
         "alias": "skishops",
         "country_blacklist": [
-            "dk",
-            "pt",
-            "ie",
-            "tw",
-            "tr",
-            "hk",
-            "gb",
-            "br",
-            "sg",
-            "mx"
+            "DK",
+            "PT",
+            "IE",
+            "TW",
+            "TR",
+            "HK",
+            "GB",
+            "BR",
+            "SG",
+            "MX"
         ],
         "parents": [
             "sportgoods"
         ],
-        "title": "ski & snowboard shops"
+        "title": "Ski & Snowboard Shops"
     },
     {
         "alias": "skydiving",
         "parents": [
             "active"
         ],
-        "title": "skydiving"
+        "title": "Skydiving"
     },
     {
         "alias": "sledding",
         "country_whitelist": [
-            "ch",
-            "pt",
-            "no",
-            "ca",
-            "de",
-            "tr",
-            "it",
-            "us",
-            "nz",
-            "at",
-            "fi"
+            "CH",
+            "PT",
+            "NO",
+            "CA",
+            "DE",
+            "TR",
+            "IT",
+            "US",
+            "NZ",
+            "AT",
+            "FI"
         ],
         "parents": [
             "active"
         ],
-        "title": "sledding"
+        "title": "Sledding"
     },
     {
         "alias": "sleepspecialists",
         "parents": [
             "health"
         ],
-        "title": "sleep specialists"
+        "title": "Sleep Specialists"
     },
     {
         "alias": "sleepwear",
         "country_whitelist": [
-            "au",
-            "pt"
+            "AU",
+            "PT"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "sleepwear"
+        "title": "Sleepwear"
     },
     {
         "alias": "slovakian",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ca",
-            "it",
-            "us",
-            "cz",
-            "au",
-            "gb",
-            "ie",
-            "pl"
+            "BE",
+            "FR",
+            "CA",
+            "IT",
+            "US",
+            "CZ",
+            "AU",
+            "GB",
+            "IE",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "slovakian"
+        "title": "Slovakian"
     },
     {
         "alias": "smog_check_stations",
         "country_blacklist": [
-            "fi",
-            "dk",
-            "se",
-            "no"
+            "FI",
+            "DK",
+            "SE",
+            "NO"
         ],
         "parents": [
             "auto"
         ],
-        "title": "smog check stations"
+        "title": "Smog Check Stations"
     },
     {
         "alias": "snowremoval",
         "country_blacklist": [
-            "hk",
-            "nz",
-            "mx",
-            "br"
+            "HK",
+            "NZ",
+            "MX",
+            "BR"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "snow removal"
+        "title": "Snow Removal"
     },
     {
         "alias": "soba",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "soba"
+        "title": "Soba"
     },
     {
         "alias": "social_clubs",
         "parents": [
             "arts"
         ],
-        "title": "social clubs"
+        "title": "Social Clubs"
     },
     {
         "alias": "softwaredevelopment",
         "parents": [
             "professional"
         ],
-        "title": "software development"
+        "title": "Software Development"
     },
     {
         "alias": "solarinstallation",
         "parents": [
             "homeservices"
         ],
-        "title": "solar installation"
+        "title": "Solar Installation"
     },
     {
         "alias": "soulfood",
         "country_whitelist": [
-            "es",
-            "nl",
-            "no",
-            "ca",
-            "us",
-            "gb",
-            "se",
-            "ie",
-            "pl"
+            "ES",
+            "NL",
+            "NO",
+            "CA",
+            "US",
+            "GB",
+            "SE",
+            "IE",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "soul food"
+        "title": "Soul Food"
     },
     {
         "alias": "soup",
         "parents": [
             "restaurants"
         ],
-        "title": "soup"
+        "title": "Soup"
     },
     {
         "alias": "southafrican",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "ca",
-            "it",
-            "us"
+            "BE",
+            "FR",
+            "AU",
+            "CA",
+            "IT",
+            "US"
         ],
         "parents": [
             "african"
         ],
-        "title": "south african"
+        "title": "South African"
     },
     {
         "alias": "southern",
         "country_whitelist": [
-            "nl",
-            "ca",
-            "tr",
-            "us",
-            "pl",
-            "cz",
-            "nz",
-            "gb",
-            "ie",
-            "se"
+            "NL",
+            "CA",
+            "TR",
+            "US",
+            "PL",
+            "CZ",
+            "NZ",
+            "GB",
+            "IE",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "southern"
+        "title": "Southern"
     },
     {
         "alias": "souvenirs",
         "country_blacklist": [
-            "ca",
-            "sg",
-            "pl"
+            "CA",
+            "SG",
+            "PL"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "souvenir shops"
+        "title": "Souvenir Shops"
     },
     {
         "alias": "spanish",
         "parents": [
             "restaurants"
         ],
-        "title": "spanish"
+        "title": "Spanish"
     },
     {
         "alias": "spas",
         "parents": [
             "beautysvc"
         ],
-        "title": "day spas"
+        "title": "Day Spas"
     },
     {
         "alias": "specialbikes",
         "country_whitelist": [
-            "dk",
-            "pt"
+            "DK",
+            "PT"
         ],
         "parents": [
             "bicycles"
         ],
-        "title": "special bikes"
+        "title": "Special Bikes"
     },
     {
         "alias": "specialed",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "education"
         ],
-        "title": "special education"
+        "title": "Special Education"
     },
     {
         "alias": "specialtyschools",
         "parents": [
             "education"
         ],
-        "title": "specialty schools"
+        "title": "Specialty Schools"
     },
     {
         "alias": "speech_therapists",
         "parents": [
             "health"
         ],
-        "title": "speech therapists"
+        "title": "Speech Therapists"
     },
     {
         "alias": "spiritual_shop",
         "country_whitelist": [
-            "be",
-            "fr",
-            "nl",
-            "dk",
-            "pt",
-            "cl",
-            "de",
-            "jp",
-            "it",
-            "no",
-            "ar",
-            "br",
-            "fi",
-            "mx"
+            "BE",
+            "FR",
+            "NL",
+            "DK",
+            "PT",
+            "CL",
+            "DE",
+            "JP",
+            "IT",
+            "NO",
+            "AR",
+            "BR",
+            "FI",
+            "MX"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "spiritual shop"
+        "title": "Spiritual Shop"
     },
     {
         "alias": "sport_equipment_hire",
         "country_whitelist": [
-            "au",
-            "pt"
+            "AU",
+            "PT"
         ],
         "parents": [
             "active"
         ],
-        "title": "sport equipment hire"
+        "title": "Sport Equipment Hire"
     },
     {
         "alias": "sportgoods",
         "parents": [
             "shopping"
         ],
-        "title": "sporting goods"
+        "title": "Sporting Goods"
     },
     {
         "alias": "sports_clubs",
         "parents": [
             "active"
         ],
-        "title": "sports clubs"
+        "title": "Sports Clubs"
     },
     {
         "alias": "sportsbars",
         "country_blacklist": [
-            "ch",
-            "at"
+            "CH",
+            "AT"
         ],
         "parents": [
             "bars"
         ],
-        "title": "sports bars"
+        "title": "Sports Bars"
     },
     {
         "alias": "sportsmed",
         "parents": [
             "physicians"
         ],
-        "title": "sports medicine"
+        "title": "Sports Medicine"
     },
     {
         "alias": "sportspsychologists",
         "country_whitelist": [
-            "nz",
-            "sg",
-            "it",
-            "us"
+            "NZ",
+            "SG",
+            "IT",
+            "US"
         ],
         "parents": [
             "c_and_mh"
         ],
-        "title": "sports psychologists"
+        "title": "Sports Psychologists"
     },
     {
         "alias": "sportsteams",
         "parents": [
             "arts"
         ],
-        "title": "professional sports teams"
+        "title": "Professional Sports Teams"
     },
     {
         "alias": "sportswear",
@@ -9905,49 +9905,49 @@
             "fashion",
             "sportgoods"
         ],
-        "title": "sports wear"
+        "title": "Sports Wear"
     },
     {
         "alias": "spraytanning",
         "country_blacklist": [
-            "cz",
-            "pl",
-            "br",
-            "ca",
-            "ie",
-            "se"
+            "CZ",
+            "PL",
+            "BR",
+            "CA",
+            "IE",
+            "SE"
         ],
         "parents": [
             "tanning"
         ],
-        "title": "spray tanning"
+        "title": "Spray Tanning"
     },
     {
         "alias": "squash",
         "country_blacklist": [
-            "nz",
-            "sg",
-            "br",
-            "pt"
+            "NZ",
+            "SG",
+            "BR",
+            "PT"
         ],
         "parents": [
             "active"
         ],
-        "title": "squash"
+        "title": "Squash"
     },
     {
         "alias": "srilankan",
         "parents": [
             "restaurants"
         ],
-        "title": "sri lankan"
+        "title": "Sri Lankan"
     },
     {
         "alias": "stadiumsarenas",
         "parents": [
             "arts"
         ],
-        "title": "stadiums & arenas"
+        "title": "Stadiums & Arenas"
     },
     {
         "alias": "stationery",
@@ -9956,218 +9956,218 @@
             "artsandcrafts",
             "flowers"
         ],
-        "title": "cards & stationery"
+        "title": "Cards & Stationery"
     },
     {
         "alias": "steak",
         "parents": [
             "restaurants"
         ],
-        "title": "steakhouses"
+        "title": "Steakhouses"
     },
     {
         "alias": "stereo_installation",
         "country_blacklist": [
-            "ch",
-            "at",
-            "dk"
+            "CH",
+            "AT",
+            "DK"
         ],
         "parents": [
             "auto"
         ],
-        "title": "car stereo installation"
+        "title": "Car Stereo Installation"
     },
     {
         "alias": "stockings",
         "country_whitelist": [
-            "cz",
-            "pt"
+            "CZ",
+            "PT"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "stockings"
+        "title": "Stockings"
     },
     {
         "alias": "streetart",
         "country_whitelist": [
-            "dk",
-            "pt",
-            "no",
-            "de",
-            "it",
-            "nz",
-            "au",
-            "br",
-            "mx",
-            "se"
+            "DK",
+            "PT",
+            "NO",
+            "DE",
+            "IT",
+            "NZ",
+            "AU",
+            "BR",
+            "MX",
+            "SE"
         ],
         "parents": [
             "arts"
         ],
-        "title": "street art"
+        "title": "Street Art"
     },
     {
         "alias": "streetvendors",
         "parents": [
             "food"
         ],
-        "title": "street vendors"
+        "title": "Street Vendors"
     },
     {
         "alias": "structuralengineers",
         "country_blacklist": [
-            "ar",
-            "mx"
+            "AR",
+            "MX"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "structural engineers"
+        "title": "Structural Engineers"
     },
     {
         "alias": "stucco",
         "parents": [
             "homeservices"
         ],
-        "title": "stucco services"
+        "title": "Stucco Services"
     },
     {
         "alias": "sud_ouest",
         "country_whitelist": [
-            "be",
-            "fr"
+            "BE",
+            "FR"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "french southwest"
+        "title": "French Southwest"
     },
     {
         "alias": "sugaring",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "hairremoval"
         ],
-        "title": "sugaring"
+        "title": "Sugaring"
     },
     {
         "alias": "sukiyaki",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "sukiyaki"
+        "title": "Sukiyaki"
     },
     {
         "alias": "summer_camps",
         "parents": [
             "active"
         ],
-        "title": "summer camps"
+        "title": "Summer Camps"
     },
     {
         "alias": "surfing",
         "country_whitelist": [
-            "fr",
-            "nl",
-            "dk",
-            "pt",
-            "de",
-            "jp",
-            "it",
-            "us",
-            "nz",
-            "es",
-            "br",
-            "se"
+            "FR",
+            "NL",
+            "DK",
+            "PT",
+            "DE",
+            "JP",
+            "IT",
+            "US",
+            "NZ",
+            "ES",
+            "BR",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "surfing"
+        "title": "Surfing"
     },
     {
         "alias": "surflifesaving",
         "country_whitelist": [
-            "nz",
-            "au",
-            "br",
-            "pt"
+            "NZ",
+            "AU",
+            "BR",
+            "PT"
         ],
         "parents": [
             "active"
         ],
-        "title": "surf lifesaving"
+        "title": "Surf Lifesaving"
     },
     {
         "alias": "surfshop",
         "country_blacklist": [
-            "be",
-            "fr",
-            "nl",
-            "no",
-            "ie",
-            "ca",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "BE",
+            "FR",
+            "NL",
+            "NO",
+            "IE",
+            "CA",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "fashion"
         ],
-        "title": "surf shop"
+        "title": "Surf Shop"
     },
     {
         "alias": "surgeons",
         "country_whitelist": [
-            "es",
-            "ch",
-            "at",
-            "pt",
-            "de",
-            "it",
-            "us"
+            "ES",
+            "CH",
+            "AT",
+            "PT",
+            "DE",
+            "IT",
+            "US"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "surgeons"
+        "title": "Surgeons"
     },
     {
         "alias": "sushi",
         "parents": [
             "restaurants"
         ],
-        "title": "sushi bars"
+        "title": "Sushi Bars"
     },
     {
         "alias": "swabian",
         "country_whitelist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "swabian"
+        "title": "Swabian"
     },
     {
         "alias": "swedish",
         "country_whitelist": [
-            "se"
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "swedish"
+        "title": "Swedish"
     },
     {
         "alias": "swimminglessons",
@@ -10175,1465 +10175,1485 @@
             "fitness",
             "specialtyschools"
         ],
-        "title": "swimming lessons/schools"
+        "title": "Swimming Lessons/Schools"
     },
     {
         "alias": "swimmingpools",
         "parents": [
             "active"
         ],
-        "title": "swimming pools"
+        "title": "Swimming Pools"
     },
     {
         "alias": "swimwear",
         "parents": [
             "fashion"
         ],
-        "title": "swimwear"
+        "title": "Swimwear"
     },
     {
         "alias": "swissfood",
         "country_whitelist": [
-            "ch",
-            "de"
+            "CH",
+            "DE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "swiss food"
+        "title": "Swiss Food"
     },
     {
         "alias": "synagogues",
         "parents": [
             "religiousorgs"
         ],
-        "title": "synagogues"
+        "title": "Synagogues"
     },
     {
         "alias": "szechuan",
         "country_whitelist": [
-            "fr",
-            "ie",
-            "tw",
-            "jp",
-            "us",
-            "hk",
-            "nz",
-            "au",
-            "gb",
-            "sg"
+            "FR",
+            "IE",
+            "TW",
+            "JP",
+            "US",
+            "HK",
+            "NZ",
+            "AU",
+            "GB",
+            "SG"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "szechuan"
+        "title": "Szechuan"
     },
     {
         "alias": "tabernas",
         "country_whitelist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "tabernas"
+        "title": "Tabernas"
     },
     {
         "alias": "tablaoflamenco",
         "country_whitelist": [
-            "es",
-            "pt"
+            "ES",
+            "PT"
         ],
         "parents": [
             "arts"
         ],
-        "title": "tablao flamenco"
+        "title": "Tablao Flamenco"
     },
     {
         "alias": "tableware",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt"
+            "BE",
+            "FR",
+            "PT"
         ],
         "parents": [
             "homeandgarden"
         ],
-        "title": "tableware"
+        "title": "Tableware"
     },
     {
         "alias": "tacos",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "tacos"
+        "title": "Tacos"
     },
     {
         "alias": "taichi",
         "parents": [
             "fitness"
         ],
-        "title": "tai chi"
+        "title": "Tai Chi"
     },
     {
         "alias": "taiwanese",
         "country_blacklist": [
-            "fi",
-            "tr",
-            "es",
-            "pt"
+            "FI",
+            "TR",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "taiwanese"
+        "title": "Taiwanese"
     },
     {
         "alias": "takoyaki",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "takoyaki"
+        "title": "Takoyaki"
     },
     {
         "alias": "talentagencies",
         "country_blacklist": [
-            "es",
-            "ch",
-            "cl",
-            "ie",
-            "ca",
-            "tr",
-            "cz",
-            "nz",
-            "au",
-            "at",
-            "hk",
-            "sg",
-            "pl",
-            "gb"
+            "ES",
+            "CH",
+            "CL",
+            "IE",
+            "CA",
+            "TR",
+            "CZ",
+            "NZ",
+            "AU",
+            "AT",
+            "HK",
+            "SG",
+            "PL",
+            "GB"
         ],
         "parents": [
             "professional"
         ],
-        "title": "talent agencies"
+        "title": "Talent Agencies"
     },
     {
         "alias": "tamales",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "tamales"
+        "title": "Tamales"
     },
     {
         "alias": "tanning",
         "parents": [
             "beautysvc"
         ],
-        "title": "tanning"
+        "title": "Tanning"
     },
     {
         "alias": "tanningbeds",
         "country_blacklist": [
-            "cz",
-            "br",
-            "pl",
-            "se",
-            "fi"
+            "CZ",
+            "BR",
+            "PL",
+            "SE",
+            "FI"
         ],
         "parents": [
             "tanning"
         ],
-        "title": "tanning beds"
+        "title": "Tanning Beds"
     },
     {
         "alias": "tapas",
         "country_blacklist": [
-            "fi",
-            "au",
-            "sg"
+            "FI",
+            "AU",
+            "SG"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "tapas bars"
+        "title": "Tapas Bars"
     },
     {
         "alias": "tapasmallplates",
         "parents": [
             "restaurants"
         ],
-        "title": "tapas/small plates"
+        "title": "Tapas/Small Plates"
     },
     {
         "alias": "tattoo",
         "parents": [
             "beautysvc"
         ],
-        "title": "tattoo"
+        "title": "Tattoo"
     },
     {
         "alias": "tattooremoval",
         "parents": [
             "physicians"
         ],
-        "title": "tattoo removal"
+        "title": "Tattoo Removal"
     },
     {
         "alias": "taxidermy",
         "country_blacklist": [
-            "nl",
-            "dk",
-            "no",
-            "ie",
-            "ca",
-            "nz",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "NL",
+            "DK",
+            "NO",
+            "IE",
+            "CA",
+            "NZ",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "professional"
         ],
-        "title": "taxidermy"
+        "title": "Taxidermy"
     },
     {
         "alias": "taxis",
         "parents": [
             "transport"
         ],
-        "title": "taxis"
+        "title": "Taxis"
     },
     {
         "alias": "taxlaw",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "br",
-            "de",
-            "sg",
-            "us"
+            "BE",
+            "FR",
+            "AU",
+            "BR",
+            "DE",
+            "SG",
+            "US"
         ],
         "parents": [
             "lawyers"
         ],
-        "title": "tax law"
+        "title": "Tax Law"
     },
     {
         "alias": "taxoffice",
         "country_blacklist": [
-            "es",
-            "ca",
-            "sg",
-            "pl",
-            "us"
+            "ES",
+            "CA",
+            "SG",
+            "PL",
+            "US"
         ],
         "parents": [
             "publicservicesgovt"
         ],
-        "title": "tax office"
+        "title": "Tax Office"
     },
     {
         "alias": "taxservices",
         "parents": [
             "financialservices"
         ],
-        "title": "tax services"
+        "title": "Tax Services"
     },
     {
         "alias": "tcm",
         "parents": [
             "health"
         ],
-        "title": "traditional chinese medicine"
+        "title": "Traditional Chinese Medicine"
     },
     {
         "alias": "tea",
         "parents": [
             "food"
         ],
-        "title": "tea rooms"
+        "title": "Tea Rooms"
     },
     {
         "alias": "telecommunications",
         "country_blacklist": [
-            "hk",
-            "ar",
-            "jp",
-            "mx",
-            "cl"
+            "HK",
+            "AR",
+            "JP",
+            "MX",
+            "CL"
         ],
         "parents": [
             "itservices"
         ],
-        "title": "telecommunications"
+        "title": "Telecommunications"
     },
     {
         "alias": "televisionserviceproviders",
         "parents": [
             "homeservices"
         ],
-        "title": "television service providers"
+        "title": "Television Service Providers"
     },
     {
         "alias": "televisionstations",
         "parents": [
             "massmedia"
         ],
-        "title": "television stations"
+        "title": "Television Stations"
     },
     {
         "alias": "tempura",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "tw"
+            "JP",
+            "SG",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "tempura"
+        "title": "Tempura"
     },
     {
         "alias": "tenantlaw",
         "parents": [
             "professional"
         ],
-        "title": "tenant and eviction law"
+        "title": "Tenant and Eviction Law"
     },
     {
         "alias": "tennis",
         "parents": [
             "active"
         ],
-        "title": "tennis"
+        "title": "Tennis"
     },
     {
         "alias": "teochew",
         "country_whitelist": [
-            "hk",
-            "sg",
-            "tw"
+            "HK",
+            "SG",
+            "TW"
         ],
         "parents": [
             "chinese"
         ],
-        "title": "teochew"
+        "title": "Teochew"
     },
     {
         "alias": "teppanyaki",
         "country_whitelist": [
-            "tw",
-            "jp",
-            "us",
-            "hk",
-            "nz",
-            "au",
-            "sg",
-            "mx"
+            "TW",
+            "JP",
+            "US",
+            "HK",
+            "NZ",
+            "AU",
+            "SG",
+            "MX"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "teppanyaki"
+        "title": "Teppanyaki"
     },
     {
         "alias": "testprep",
         "parents": [
             "education"
         ],
-        "title": "test preparation"
+        "title": "Test Preparation"
     },
     {
         "alias": "tex-mex",
         "country_blacklist": [
-            "au",
-            "dk",
-            "es",
-            "pt"
+            "AU",
+            "DK",
+            "ES",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "tex-mex"
+        "title": "Tex-Mex"
     },
     {
         "alias": "thai",
         "parents": [
             "restaurants"
         ],
-        "title": "thai"
+        "title": "Thai"
     },
     {
         "alias": "theater",
         "parents": [
             "arts"
         ],
-        "title": "performing arts"
+        "title": "Performing Arts"
     },
     {
         "alias": "thrift_stores",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "thrift stores"
+        "title": "Thrift Stores"
     },
     {
         "alias": "tickets",
         "country_whitelist": [
-            "ch",
-            "pt",
-            "no",
-            "de",
-            "pl",
-            "at",
-            "fi",
-            "se"
+            "CH",
+            "PT",
+            "NO",
+            "DE",
+            "PL",
+            "AT",
+            "FI",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "tickets"
+        "title": "Tickets"
     },
     {
         "alias": "ticketsales",
         "country_blacklist": [
-            "es",
-            "nl",
-            "ie",
-            "tr",
-            "cz",
-            "nz",
-            "pl",
-            "br",
-            "fi",
-            "sg",
-            "se",
-            "gb"
+            "ES",
+            "NL",
+            "IE",
+            "TR",
+            "CZ",
+            "NZ",
+            "PL",
+            "BR",
+            "FI",
+            "SG",
+            "SE",
+            "GB"
         ],
         "parents": [
             "arts"
         ],
-        "title": "ticket sales"
+        "title": "Ticket Sales"
     },
     {
         "alias": "tires",
         "parents": [
             "auto"
         ],
-        "title": "tires"
+        "title": "Tires"
     },
     {
         "alias": "tobaccoshops",
         "parents": [
             "shopping"
         ],
-        "title": "tobacco shops"
+        "title": "Tobacco Shops"
     },
     {
         "alias": "tofu",
         "country_whitelist": [
-            "jp"
+            "JP"
         ],
         "parents": [
             "gourmet"
         ],
-        "title": "tofu shops"
+        "title": "Tofu Shops"
     },
     {
         "alias": "tonkatsu",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "tw"
+            "JP",
+            "SG",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "tonkatsu"
+        "title": "Tonkatsu"
     },
     {
         "alias": "tours",
         "parents": [
             "hotelstravel"
         ],
-        "title": "tours"
+        "title": "Tours"
     },
     {
         "alias": "towing",
         "parents": [
             "auto"
         ],
-        "title": "towing"
+        "title": "Towing"
     },
     {
         "alias": "toys",
         "parents": [
             "shopping"
         ],
-        "title": "toy stores"
+        "title": "Toy Stores"
     },
     {
         "alias": "tradamerican",
         "parents": [
             "restaurants"
         ],
-        "title": "american (traditional)"
+        "title": "American (Traditional)"
     },
     {
         "alias": "tradefairs",
         "country_whitelist": [
-            "ch",
-            "nl",
-            "pt",
-            "no",
-            "jp",
-            "de",
-            "tr",
-            "it",
-            "nz",
-            "at",
-            "fi",
-            "mx"
+            "CH",
+            "NL",
+            "PT",
+            "NO",
+            "JP",
+            "DE",
+            "TR",
+            "IT",
+            "NZ",
+            "AT",
+            "FI",
+            "MX"
         ],
         "parents": [
             "festivals"
         ],
-        "title": "trade fairs"
+        "title": "Trade Fairs"
     },
     {
         "alias": "traditional_swedish",
         "country_whitelist": [
-            "se"
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "traditional swedish"
+        "title": "Traditional Swedish"
     },
     {
         "alias": "trains",
         "country_whitelist": [
-            "be",
-            "fr",
-            "dk",
-            "no",
-            "de",
-            "us",
-            "au",
-            "br",
-            "se"
+            "BE",
+            "FR",
+            "DK",
+            "NO",
+            "DE",
+            "US",
+            "AU",
+            "BR",
+            "SE"
         ],
         "parents": [
             "transport"
         ],
-        "title": "trains"
+        "title": "Trains"
     },
     {
         "alias": "trainstations",
         "parents": [
             "hotelstravel"
         ],
-        "title": "train stations"
+        "title": "Train Stations"
     },
     {
         "alias": "trampoline",
         "country_whitelist": [
-            "dk",
-            "ca",
-            "tr",
-            "it",
-            "us",
-            "cz",
-            "au",
-            "pl"
+            "DK",
+            "CA",
+            "TR",
+            "IT",
+            "US",
+            "CZ",
+            "AU",
+            "PL"
         ],
         "parents": [
             "active"
         ],
-        "title": "trampoline parks"
+        "title": "Trampoline Parks"
     },
     {
         "alias": "translationservices",
         "country_blacklist": [
-            "es",
-            "se"
+            "ES",
+            "SE"
         ],
         "parents": [
             "professional"
         ],
-        "title": "translation services"
+        "title": "Translation Services"
     },
     {
         "alias": "transport",
         "parents": [
             "hotelstravel"
         ],
-        "title": "transportation"
+        "title": "Transportation"
     },
     {
         "alias": "tras_os_montes",
         "country_whitelist": [
-            "pt"
+            "PT"
         ],
         "parents": [
             "portuguese"
         ],
-        "title": "tras-os-montes"
+        "title": "Tras-os-Montes"
     },
     {
         "alias": "trattorie",
         "country_whitelist": [
-            "fr",
-            "it"
+            "FR",
+            "IT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "trattorie"
+        "title": "Trattorie"
     },
     {
         "alias": "travelservices",
         "parents": [
             "hotelstravel"
         ],
-        "title": "travel services"
+        "title": "Travel Services"
     },
     {
         "alias": "treeservices",
         "parents": [
             "homeservices"
         ],
-        "title": "tree services"
+        "title": "Tree Services"
     },
     {
         "alias": "trinidadian",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "caribbean"
         ],
-        "title": "trinidadian"
+        "title": "Trinidadian"
     },
     {
         "alias": "triviahosts",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "trivia hosts"
+        "title": "Trivia Hosts"
     },
     {
         "alias": "trophyshops",
         "country_blacklist": [
-            "dk",
-            "no",
-            "ca",
-            "tr",
-            "nz",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "DK",
+            "NO",
+            "CA",
+            "TR",
+            "NZ",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "trophy shops"
+        "title": "Trophy Shops"
     },
     {
         "alias": "truck_rental",
         "country_whitelist": [
-            "fr",
-            "au",
-            "pt",
-            "ca",
-            "de",
-            "it",
-            "us"
+            "FR",
+            "AU",
+            "PT",
+            "CA",
+            "DE",
+            "IT",
+            "US"
         ],
         "parents": [
             "auto"
         ],
-        "title": "truck rental"
+        "title": "Truck Rental"
     },
     {
         "alias": "tubing",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "active"
         ],
-        "title": "tubing"
+        "title": "Tubing"
     },
     {
         "alias": "turkish",
         "country_blacklist": [
-            "es"
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "turkish"
+        "title": "Turkish"
     },
     {
         "alias": "turkishravioli",
         "country_whitelist": [
-            "tr"
+            "TR"
         ],
         "parents": [
             "turkish"
         ],
-        "title": "turkish ravioli"
+        "title": "Turkish Ravioli"
     },
     {
         "alias": "tuscan",
         "country_whitelist": [
-            "fr",
-            "it"
+            "FR",
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "tuscan"
+        "title": "Tuscan"
     },
     {
         "alias": "tutoring",
         "parents": [
             "education"
         ],
-        "title": "tutoring centers"
+        "title": "Tutoring Centers"
     },
     {
         "alias": "udon",
         "country_whitelist": [
-            "hk",
-            "fi",
-            "dk",
-            "no",
-            "tw",
-            "jp",
-            "se"
+            "HK",
+            "FI",
+            "DK",
+            "NO",
+            "TW",
+            "JP",
+            "SE"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "udon"
+        "title": "Udon"
     },
     {
         "alias": "ukrainian",
         "country_blacklist": [
-            "tr",
-            "dk",
-            "es"
+            "TR",
+            "DK",
+            "ES"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "ukrainian"
+        "title": "Ukrainian"
     },
     {
         "alias": "unagi",
         "country_whitelist": [
-            "tw",
-            "jp"
+            "TW",
+            "JP"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "unagi"
+        "title": "Unagi"
     },
     {
         "alias": "uniforms",
         "country_blacklist": [
-            "ch",
-            "nl",
-            "dk",
-            "cl",
-            "jp",
-            "tr",
-            "pl",
-            "cz",
-            "ar",
-            "at",
-            "ie",
-            "se"
+            "CH",
+            "NL",
+            "DK",
+            "CL",
+            "JP",
+            "TR",
+            "PL",
+            "CZ",
+            "AR",
+            "AT",
+            "IE",
+            "SE"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "uniforms"
+        "title": "Uniforms"
     },
     {
         "alias": "university_housing",
         "parents": [
             "realestate"
         ],
-        "title": "university housing"
+        "title": "University Housing"
     },
     {
         "alias": "urgent_care",
         "parents": [
             "health"
         ],
-        "title": "urgent care"
+        "title": "Urgent Care"
     },
     {
         "alias": "urologists",
         "country_whitelist": [
-            "be",
-            "fr",
-            "ch",
-            "pt",
-            "ca",
-            "de",
-            "jp",
-            "it",
-            "us",
-            "at",
-            "fi",
-            "ie",
-            "gb"
+            "BE",
+            "FR",
+            "CH",
+            "PT",
+            "CA",
+            "DE",
+            "JP",
+            "IT",
+            "US",
+            "AT",
+            "FI",
+            "IE",
+            "GB"
         ],
         "parents": [
             "physicians"
         ],
-        "title": "urologists"
+        "title": "Urologists"
     },
     {
         "alias": "usedbooks",
         "country_blacklist": [
-            "be",
-            "nl",
-            "cl",
-            "ie",
-            "jp",
-            "ca",
-            "tr",
-            "us",
-            "cz",
-            "ar",
-            "au",
-            "gb",
-            "hk",
-            "sg"
+            "BE",
+            "NL",
+            "CL",
+            "IE",
+            "JP",
+            "CA",
+            "TR",
+            "US",
+            "CZ",
+            "AR",
+            "AU",
+            "GB",
+            "HK",
+            "SG"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "used bookstore"
+        "title": "Used Bookstore"
     },
     {
         "alias": "utilities",
         "country_whitelist": [
-            "au",
-            "gb",
-            "pt",
-            "sg",
-            "it",
-            "us"
+            "AU",
+            "GB",
+            "PT",
+            "SG",
+            "IT",
+            "US"
         ],
         "parents": [
             "homeservices"
         ],
-        "title": "utilities"
+        "title": "Utilities"
     },
     {
         "alias": "uzbek",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "uzbek"
+        "title": "Uzbek"
     },
     {
         "alias": "vacation_rentals",
         "country_blacklist": [
-            "be",
-            "sg",
-            "at",
-            "nl"
+            "BE",
+            "SG",
+            "AT",
+            "NL"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "vacation rentals"
+        "title": "Vacation Rentals"
     },
     {
         "alias": "vacationrentalagents",
         "country_blacklist": [
-            "sg",
-            "es"
+            "SG",
+            "ES"
         ],
         "parents": [
             "hotelstravel"
         ],
-        "title": "vacation rental agents"
+        "title": "Vacation Rental Agents"
     },
     {
         "alias": "valetservices",
         "country_whitelist": [
-            "tr",
-            "br",
-            "us"
+            "TR",
+            "BR",
+            "US"
         ],
         "parents": [
             "eventservices"
         ],
-        "title": "valet services"
+        "title": "Valet Services"
     },
     {
         "alias": "vapeshops",
         "country_blacklist": [
-            "hk"
+            "HK"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "vape shops"
+        "title": "Vape Shops"
     },
     {
         "alias": "vegan",
         "parents": [
             "restaurants"
         ],
-        "title": "vegan"
+        "title": "Vegan"
     },
     {
         "alias": "vegetarian",
         "parents": [
             "restaurants"
         ],
-        "title": "vegetarian"
+        "title": "Vegetarian"
     },
     {
         "alias": "vehicleshipping",
         "parents": [
             "auto"
         ],
-        "title": "vehicle shipping"
+        "title": "Vehicle Shipping"
     },
     {
         "alias": "venetian",
         "country_whitelist": [
-            "it"
+            "IT"
         ],
         "parents": [
             "italian"
         ],
-        "title": "venetian"
+        "title": "Venetian"
     },
     {
         "alias": "venezuelan",
         "country_whitelist": [
-            "ca",
-            "us"
+            "CA",
+            "US"
         ],
         "parents": [
             "latin"
         ],
-        "title": "venezuelan"
+        "title": "Venezuelan"
     },
     {
         "alias": "venison",
         "country_whitelist": [
-            "it",
-            "pl"
+            "IT",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "venison"
+        "title": "Venison"
     },
     {
         "alias": "venues",
         "parents": [
             "eventservices"
         ],
-        "title": "venues & event spaces"
+        "title": "Venues & Event Spaces"
     },
     {
         "alias": "vet",
         "parents": [
             "pets"
         ],
-        "title": "veterinarians"
+        "title": "Veterinarians"
     },
     {
         "alias": "videoandgames",
         "parents": [
             "media"
         ],
-        "title": "videos & video game rental"
+        "title": "Videos & Video Game Rental"
     },
     {
         "alias": "videofilmproductions",
         "parents": [
             "professional"
         ],
-        "title": "video/film production"
+        "title": "Video/Film Production"
     },
     {
         "alias": "videogamestores",
         "parents": [
             "media"
         ],
-        "title": "video game stores"
+        "title": "Video Game Stores"
     },
     {
         "alias": "videographers",
         "parents": [
             "eventservices"
         ],
-        "title": "videographers"
+        "title": "Videographers"
     },
     {
         "alias": "vietnamese",
         "parents": [
             "restaurants"
         ],
-        "title": "vietnamese"
+        "title": "Vietnamese"
     },
     {
         "alias": "vintage",
         "parents": [
             "fashion"
         ],
-        "title": "used, vintage & consignment"
+        "title": "Used, Vintage & Consignment"
     },
     {
         "alias": "vinyl_records",
         "country_blacklist": [
-            "dk"
+            "DK"
         ],
         "parents": [
             "media"
         ],
-        "title": "vinyl records"
+        "title": "Vinyl Records"
     },
     {
         "alias": "vocation",
         "parents": [
             "specialtyschools"
         ],
-        "title": "vocational & technical school"
+        "title": "Vocational & Technical School"
     },
     {
         "alias": "volleyball",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "no",
-            "de",
-            "jp",
-            "nz",
-            "au",
-            "at",
-            "br",
-            "fi",
-            "sg",
-            "se"
+            "FR",
+            "DK",
+            "NO",
+            "DE",
+            "JP",
+            "NZ",
+            "AU",
+            "AT",
+            "BR",
+            "FI",
+            "SG",
+            "SE"
         ],
         "parents": [
             "active"
         ],
-        "title": "volleyball"
+        "title": "Volleyball"
     },
     {
         "alias": "walkinclinics",
         "country_whitelist": [
-            "be",
-            "ca",
-            "au",
-            "fr",
-            "it"
+            "BE",
+            "CA",
+            "AU",
+            "FR",
+            "IT"
         ],
         "parents": [
             "medcenters"
         ],
-        "title": "walk-in clinics"
+        "title": "Walk-in Clinics"
     },
     {
         "alias": "walkingtours",
         "parents": [
             "tours"
         ],
-        "title": "walking tours"
+        "title": "Walking Tours"
     },
     {
         "alias": "watch_repair",
         "parents": [
             "localservices"
         ],
-        "title": "watch repair"
+        "title": "Watch Repair"
     },
     {
         "alias": "watches",
         "parents": [
             "shopping"
         ],
-        "title": "watches"
+        "title": "Watches"
     },
     {
         "alias": "waterdelivery",
         "country_whitelist": [
-            "hk",
-            "br",
-            "us"
+            "HK",
+            "BR",
+            "US"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "water delivery"
+        "title": "Water Delivery"
     },
     {
         "alias": "waterpurification",
         "parents": [
             "homeservices"
         ],
-        "title": "water purification services"
+        "title": "Water Purification Services"
     },
     {
         "alias": "watertaxis",
         "country_whitelist": [
-            "nz",
-            "au"
+            "NZ",
+            "AU"
         ],
         "parents": [
             "transport"
         ],
-        "title": "water taxis"
+        "title": "Water Taxis"
     },
     {
         "alias": "waxing",
         "parents": [
             "hairremoval"
         ],
-        "title": "waxing"
+        "title": "Waxing"
     },
     {
         "alias": "web_design",
         "parents": [
             "professional"
         ],
-        "title": "web design"
+        "title": "Web Design"
     },
     {
         "alias": "wedding_planning",
         "parents": [
             "eventservices"
         ],
-        "title": "wedding planning"
+        "title": "Wedding Planning"
     },
     {
         "alias": "weightlosscenters",
         "parents": [
             "health"
         ],
-        "title": "weight loss centers"
+        "title": "Weight Loss Centers"
     },
     {
         "alias": "westernjapanese",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "tw"
+            "JP",
+            "SG",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "western style japanese food"
+        "title": "Western Style Japanese Food"
     },
     {
         "alias": "wheelrimrepair",
         "country_whitelist": [
-            "it",
-            "us",
-            "pt"
+            "IT",
+            "US",
+            "PT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "wheel & rim repair"
+        "title": "Wheel & Rim Repair"
     },
     {
         "alias": "wholesale_stores",
         "parents": [
             "shopping"
         ],
-        "title": "wholesale stores"
+        "title": "Wholesale Stores"
     },
     {
         "alias": "wigs",
         "country_whitelist": [
-            "be",
-            "fr",
-            "pt",
-            "no",
-            "ca",
-            "de",
-            "it",
-            "us",
-            "au",
-            "fi",
-            "mx",
-            "es"
+            "BE",
+            "FR",
+            "PT",
+            "NO",
+            "CA",
+            "DE",
+            "IT",
+            "US",
+            "AU",
+            "FI",
+            "MX",
+            "ES"
         ],
         "parents": [
             "shopping"
         ],
-        "title": "wigs"
+        "title": "Wigs"
     },
     {
         "alias": "wildlifehunting",
         "country_whitelist": [
-            "us"
+            "US"
         ],
         "parents": [
             "active"
         ],
-        "title": "wildlife hunting ranges"
+        "title": "Wildlife Hunting Ranges"
     },
     {
         "alias": "windowsinstallation",
         "parents": [
             "homeservices"
         ],
-        "title": "windows installation"
+        "title": "Windows Installation"
     },
     {
         "alias": "windowwashing",
         "parents": [
             "homeservices"
         ],
-        "title": "window washing"
+        "title": "Window Washing"
     },
     {
         "alias": "windshieldinstallrepair",
         "country_blacklist": [
-            "ch",
-            "de",
-            "at"
+            "CH",
+            "DE",
+            "AT"
         ],
         "parents": [
             "auto"
         ],
-        "title": "windshield installation & repair"
+        "title": "Windshield Installation & Repair"
     },
     {
         "alias": "wine_bars",
         "parents": [
             "bars"
         ],
-        "title": "wine bars"
+        "title": "Wine Bars"
     },
     {
         "alias": "wineries",
         "country_blacklist": [
-            "fi"
+            "FI"
         ],
         "parents": [
             "arts",
             "food"
         ],
-        "title": "wineries"
+        "title": "Wineries"
     },
     {
         "alias": "winetours",
         "parents": [
             "tours"
         ],
-        "title": "wine tours"
+        "title": "Wine Tours"
     },
     {
         "alias": "wok",
         "country_blacklist": [
-            "cz",
-            "ie",
-            "jp",
-            "ca",
-            "tr",
-            "it",
-            "us",
-            "hk",
-            "nz",
-            "ar",
-            "au",
-            "gb",
-            "br",
-            "sg",
-            "pl"
+            "CZ",
+            "IE",
+            "JP",
+            "CA",
+            "TR",
+            "IT",
+            "US",
+            "HK",
+            "NZ",
+            "AR",
+            "AU",
+            "GB",
+            "BR",
+            "SG",
+            "PL"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "wok"
+        "title": "Wok"
     },
     {
         "alias": "womenscloth",
         "parents": [
             "fashion"
         ],
-        "title": "women's clothing"
+        "title": "Women\'s Clothing"
     },
     {
         "alias": "wraps",
         "country_whitelist": [
-            "no",
-            "dk",
-            "se",
-            "pt"
+            "NO",
+            "DK",
+            "SE",
+            "PT"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "wraps"
+        "title": "Wraps"
     },
     {
         "alias": "xmasmarkets",
         "country_blacklist": [
-            "be",
-            "nl",
-            "ie",
-            "ca",
-            "tr",
-            "us",
-            "nz",
-            "br",
-            "sg"
+            "BE",
+            "NL",
+            "IE",
+            "CA",
+            "TR",
+            "US",
+            "NZ",
+            "BR",
+            "SG"
         ],
         "parents": [
             "festivals"
         ],
-        "title": "christmas markets"
+        "title": "Christmas Markets"
     },
     {
         "alias": "yakiniku",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "tw"
+            "JP",
+            "SG",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "yakiniku"
+        "title": "Yakiniku"
     },
     {
         "alias": "yakitori",
         "country_whitelist": [
-            "jp",
-            "sg",
-            "tw"
+            "JP",
+            "SG",
+            "TW"
         ],
         "parents": [
             "japanese"
         ],
-        "title": "yakitori"
+        "title": "Yakitori"
     },
     {
         "alias": "yelpevents",
         "parents": [
             "localflavor"
         ],
-        "title": "yelp events"
+        "title": "Yelp Events"
     },
     {
         "alias": "yoga",
         "parents": [
             "fitness"
         ],
-        "title": "yoga"
+        "title": "Yoga"
     },
     {
         "alias": "youth_club",
         "country_whitelist": [
-            "fr",
-            "dk",
-            "pt",
-            "no",
-            "fi",
-            "it",
-            "se"
+            "FR",
+            "DK",
+            "PT",
+            "NO",
+            "FI",
+            "IT",
+            "SE"
         ],
         "parents": [
             "localservices"
         ],
-        "title": "youth club"
+        "title": "Youth Club"
     },
     {
         "alias": "yucatan",
         "country_whitelist": [
-            "mx"
+            "MX"
         ],
         "parents": [
             "mexican"
         ],
-        "title": "yucatan"
+        "title": "Yucatan"
     },
     {
         "alias": "yugoslav",
         "country_whitelist": [
-            "be",
-            "fr",
-            "au",
-            "pt",
-            "it",
-            "se"
+            "BE",
+            "FR",
+            "AU",
+            "PT",
+            "IT",
+            "SE"
         ],
         "parents": [
             "restaurants"
         ],
-        "title": "yugoslav"
+        "title": "Yugoslav"
     },
     {
         "alias": "zapiekanka",
         "country_whitelist": [
-            "pl"
+            "PL"
         ],
         "parents": [
             "food"
         ],
-        "title": "zapiekanka"
+        "title": "Zapiekanka"
     },
     {
         "alias": "zoos",
         "parents": [
             "active"
         ],
-        "title": "zoos"
+        "title": "Zoos"
     },
     {
         "alias": "zorbing",
         "country_whitelist": [
-            "nz",
-            "pt"
+            "NZ",
+            "PT"
         ],
         "parents": [
             "active"
         ],
-        "title": "zorbing"
+        "title": "Zorbing"
     }
-]
+];
+
+
+var roots = ['health & medical', 'bicycles', 'hotels & travel', 'automotive', 'pets', 'shopping', 'real estate', 'public services & government', 'mass media', 'local services', 'active life', 'local flavor', 'home services', 'nightlife', 'restaurants', 'event planning & services', 'food', 'education', 'beauty & spas', 'arts & entertainment', 'financial services', 'religious organizations', 'professional services'];
+
+var i;
+for (i = 0; i < roots.length; i++) {
+	document.write(roots[i] + '<br/>');
+}
+
+
+// var i;
+// for (i = 0; i < 10; i++) {
+// 	document.write(category_list[i]['title']+'<br/>');
+// 	// console.log(category_list[i]['title']);
+// }
+
+
+
+
+// var myJsonObj = JSON.parse(text);
