@@ -45,3 +45,13 @@ except:
 for business in businesses:
 	print(business['id'])
 ~~~
+
+
+## Basic Categories
+
+	'active life',
+	'food',
+	'hotels & travel',
+	'nightlife',
+	'restaurants',
+	'shopping'

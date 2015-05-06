@@ -74,14 +74,26 @@ while par_nodes:
 	par_nodes = children_nodes
 
 
-
-
-def dfs_print_nodes(cat_nodes, indent):
+def dfs_print_nodes_as_indented_blocks(cat_nodes, indent):
 	if not cat_nodes:
 		return 
 	for cat_node in cat_nodes:
 		print("{}{}".format(indent*" ", cat_node))
 		dfs_print_nodes(cat_node.sub_categories, indent+4)
 
+
+def dfs_print_nodes_as_nested_lists(cat_nodes, indent):
+	if not cat_nodes:
+		return 
+
+	indent_block = " " * indent
+	print(indent_block + "<ul> \\")
+	for cat_node in cat_nodes:
+		print(indent_block + "  <li> \\")
+		print(indent_block + "  {} \\".format(cat_node))
+		dfs_print_nodes_as_nested_lists(cat_node.sub_categories, indent+4)
+		print(indent_block + "  </li> \\")
+	print(indent_block + "</ul> \\")
+
 par_nodes = root_node.sub_categories
-dfs_print_nodes(par_nodes, 0)
+dfs_print_nodes_as_nested_lists(par_nodes, 0)
