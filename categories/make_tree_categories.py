@@ -13,8 +13,9 @@ import json
 
 
 class CategoryNode:
-	def __init__(self, title):
+	def __init__(self, title, alias):
 		self.title = title
+		self.alias = alias
 		self.sub_categories = []
 
 	def __str__(self):
@@ -59,21 +60,6 @@ def index_title_in_cat_nodes(title, cat_nodes):
 	return -1
 
 
-category_levels = []
-root_node = CategoryNode(None)
-par_nodes = [root_node]
-while par_nodes:
-	children_nodes = []
-	for cat in data_categories:
-		for cat_par in cat['parents']:
-			index = index_title_in_cat_nodes(cat_par, par_nodes)
-			if index != -1:
-				new_node = CategoryNode(cat['title'])
-				children_nodes.append(new_node)
-				par_nodes[index].sub_categories.append(new_node)
-	par_nodes = children_nodes
-
-
 def dfs_print_nodes_as_indented_blocks(cat_nodes, indent):
 	if not cat_nodes:
 		return 
@@ -95,5 +81,50 @@ def dfs_print_nodes_as_nested_lists(cat_nodes, indent):
 		print(indent_block + "  </li> \\")
 	print(indent_block + "</ul> \\")
 
-par_nodes = root_node.sub_categories
-dfs_print_nodes_as_nested_lists(par_nodes, 0)
+
+def remake_json_with_level(cat_nodes, indent):
+	if not cat_nodes:
+		return 
+
+	indent_block = " " * indent
+	print(indent_block + "<ul> \\")
+	for cat_node in cat_nodes:
+		print(indent_block + "  <li> \\")
+		print(indent_block + "  {} \\".format(cat_node))
+		dfs_print_nodes_as_nested_lists(cat_node.sub_categories, indent+4)
+		print(indent_block + "  </li> \\")
+	print(indent_block + "</ul> \\")
+
+def printNodesAliases(nodes):
+	for node in nodes:
+		print(node.alias)
+
+
+
+
+if "__name__" == "__main__":
+	category_levels = []
+	root_node = CategoryNode(None, None)
+	par_nodes = [root_node]
+	while par_nodes:
+		children_nodes = []
+		for cat in data_categories:
+			for cat_par in cat['parents']:
+				index = index_title_in_cat_nodes(cat_par, par_nodes)
+				if index != -1:
+					new_node = CategoryNode(cat['title'], cat['alias'])
+					children_nodes.append(new_node)
+					par_nodes[index].sub_categories.append(new_node)
+		par_nodes = children_nodes
+
+
+	# par_nodes = root_node.sub_categories
+	dfs_print_nodes_as_nested_lists(par_nodes, 0)
+
+
+
+	# printNodesAliases(par_nodes)
+
+
+
+

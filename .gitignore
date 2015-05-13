@@ -1,6 +1,7 @@
 out.txt
 test*
 categories/images/
+backup/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
