@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>random title</title>
+	<title>categories</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootlint/0.12.0/bootlint.min.js"></script>
 </head>
 <body>
-<script src="js/category_display.js"></script>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+
+<div class="btn-group">
+	<button type="button" class="btn btn-warning" data-toggle="tooltip" title data-original-title="Active Life" data-placement="bottom" data-container="body">
+		<i class="fa fa-child"></i>
+	</button>
+	<button type="button" class="btn btn-success" data-toggle="tooltip" title data-original-title="Food" data-placement="bottom" data-container="body">
+		<i class="fa fa-cutlery"></i>
+	</button>
+	<button type="button" class="btn btn-danger" data-toggle="tooltip" title data-original-title="Hotels" data-placement="bottom" data-container="body">
+		<i class="fa fa-bed"></i>
+	</button>
+	<button type="button" class="btn btn-primary" data-toggle="tooltip" title data-original-title="Night Life" data-placement="bottom" data-container="body">
+		<i class="fa fa-moon-o"></i>
+	</button>
+	<button type="button" class="btn btn-default" data-toggle="tooltip" title data-original-title="Shopping" data-placement="bottom" data-container="body">
+		<i class="fa fa-shopping-cart"></i>
+	</button>
+</div>
+
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
 </body>
 </html>
