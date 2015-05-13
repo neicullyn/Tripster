@@ -25,34 +25,6 @@ class CategoryNode:
 		return self.title
 
 
-
-'''
-preprocess json file
-make all letters to lower case
-'''
-with open('categories.json', 'r') as fin:
-	s = fin.read().lower()
-
-with open('categories.json', 'w') as fout:
-	fout.write(s)
-
-
-
-
-with open("categories.json", 'r') as fin:
-	data_categories = json.load(fin)
-
-
-all_keys = set()
-
-roots = set()
-
-for i, d in enumerate(data_categories):
-	if not d['parents'][0]:
-		roots.add(d['title'].lower())
-
-
-
 def index_title_in_cat_nodes(title, cat_nodes):
 	for i, cat_node in enumerate(cat_nodes):
 		if title == cat_node.title:
@@ -64,8 +36,8 @@ def dfs_print_nodes_as_indented_blocks(cat_nodes, indent):
 	if not cat_nodes:
 		return 
 	for cat_node in cat_nodes:
-		print("{}{}".format(indent*" ", cat_node))
-		dfs_print_nodes(cat_node.sub_categories, indent+4)
+		print("{}{}: {}".format(indent*" ", cat_node, cat_node.alias))
+		dfs_print_nodes_as_indented_blocks(cat_node.sub_categories, indent+4)
 
 
 def dfs_print_nodes_as_nested_lists(cat_nodes, indent):
@@ -102,7 +74,34 @@ def printNodesAliases(nodes):
 
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
+	'''
+	preprocess json file
+	make all letters to lower case
+	'''
+	with open('categories.json', 'r') as fin:
+		s = fin.read().lower()
+
+	with open('categories.json', 'w') as fout:
+		fout.write(s)
+
+
+
+
+	with open("categories.json", 'r') as fin:
+		data_categories = json.load(fin)
+
+
+	all_keys = set()
+
+	roots = set()
+
+	for i, d in enumerate(data_categories):
+		if not d['parents'][0]:
+			roots.add(d['title'].lower())
+
+
+
 	category_levels = []
 	root_node = CategoryNode(None, None)
 	par_nodes = [root_node]
@@ -118,8 +117,9 @@ if "__name__" == "__main__":
 		par_nodes = children_nodes
 
 
-	# par_nodes = root_node.sub_categories
-	dfs_print_nodes_as_nested_lists(par_nodes, 0)
+	par_nodes = root_node.sub_categories
+	# dfs_print_nodes_as_nested_lists(par_nodes, 0)
+	dfs_print_nodes_as_indented_blocks(par_nodes, 0)
 
 
 

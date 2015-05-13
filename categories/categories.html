@@ -22,20 +22,36 @@
 
 <div class="container">
 
-<div class="btn-group">
-	<button type="button" id="btn-active-life" class="btn btn-default" data-toggle="tooltip" title data-original-title="Active Life" data-placement="bottom" data-container="body">
-		<i class="fa fa-child"></i>
-	</button>
-	<button type="button" class="btn btn-default" data-toggle="tooltip" title data-original-title="Food" data-placement="bottom" data-container="body">
+<div id="categories" class="btn-group">
+
+	<div class="btn-group">
+		<button type="button" id="btn-active-life" class="btn btn-default dropdown-toggle" data-toggle="tooltip" aria-expanded="false" data-original-title="Active Life" data-placement="bottom" data-container="body">
+			<i class="fa fa-child"></i>
+		</button>
+		
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here more over</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+		
+	</div>
+
+
+
+
+	<button type="button" id="btn-restaurants" class="btn btn-default" data-toggle="tooltip" title data-original-title="Food" data-placement="bottom" data-container="body">
 		<i class="fa fa-cutlery"></i>
 	</button>
-	<button type="button" class="btn btn-default" data-toggle="tooltip" title data-original-title="Hotels" data-placement="bottom" data-container="body">
+	<button type="button" id="btn-hotels" class="btn btn-default" data-toggle="tooltip" title data-original-title="Hotels" data-placement="bottom" data-container="body">
 		<i class="fa fa-bed"></i>
 	</button>
-	<button type="button" class="btn btn-default" data-toggle="tooltip" title data-original-title="Night Life" data-placement="bottom" data-container="body">
+	<button type="button" id="btn-night-life" class="btn btn-default" data-toggle="tooltip" title data-original-title="Night Life" data-placement="bottom" data-container="body">
 		<i class="fa fa-moon-o"></i>
 	</button>
-	<button type="button" class="btn btn-default" data-toggle="tooltip" title data-original-title="Shopping" data-placement="bottom" data-container="body">
+	<button type="button" id="btn-shopping" class="btn btn-default" data-toggle="tooltip" title data-original-title="Shopping" data-placement="bottom" data-container="body">
 		<i class="fa fa-shopping-cart"></i>
 	</button>
 </div>
@@ -48,18 +64,48 @@
 </div>
 
 
-<div class="btn-group hidden" id="test-action">
+<div class="btn-group" id="test-action">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Action
   </button>
-  <ul class="dropdown-menu" role="menu">
+  <ul class="dropdown-menu" role="menu" style="width: ">
     <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Something else here more over</a></li>
     <li class="divider"></li>
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+
+<script type="text/javascript">
+$(".dropdown-menu").mouseleave(function(){
+	$(this.parentNode).click();	
+});
+
+function showDropdown() {
+	this.setAttribute("data-toggle", "dropdown");
+	$(this).tooltip("hide");
+}
+
+
+btn_active_life = document.getElementById("btn-active-life");
+btn_active_life.addEventListener("click", showDropdown, false);
+
+
+
+// $(".dropdown-menu").mouseleave(function() {
+// 	console.log(this);
+// 	$(this).animate({opacity: 'hide'}, 'fast');
+//    // $('ul.menu', this).animate({opacity: 'hide'}, 'fast');
+//   });
+// $("#btn-active-life").mouseenter(function() {
+// 	console.log(this);
+// 	$(this).dropdown().show();
+// 	// $(this).animate({opacity: 'show'}, 'fast');
+//    // $('ul.menu', this).animate({opacity: 'hide'}, 'fast');
+//   });
+	
+</script>
 
 
 <script type="text/javascript" src="js/add_subcategories.js"></script>

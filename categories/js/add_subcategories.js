@@ -1,20 +1,25 @@
-function showSubcategory(e) {
-	this_category = this.getAttribute("id").split("-").slice(1).join(" ");
-	console.log(this_category);
-
-	var dude = document.getElementById("dude");
-	$("#dude").show();
-
-	test_action = document.getElementById("test-action");
-	console.log(test_action.getAttribute("id"));
-	$("#"+test_action.getAttribute("id")).removeClass("hidden");
-}
+// function showSubcategory(e) {
+// 	target = e.target;
+// 	if (target.getAttribute("class").indexOf("btn") == -1) {
+// 		target = target.parentNode;
+// 	}
 
 
-btn_active_life = document.getElementById("btn-active-life");
+// 	this_category = target.getAttribute("id").split("-").slice(1).join(" ");
+// 	console.log(this_category);
 
 
-btn_active_life.addEventListener("click", showSubcategory, false);
+
+
+// 	test_action = document.getElementById("test-action");
+// 	$("#"+test_action.getAttribute("id")).removeClass("hidden");
+
+// }
+
+
+
+// group_categories = document.getElementById("categories");
+// group_categories.addEventListener("click", showSubcategory, false);
 
 
 
