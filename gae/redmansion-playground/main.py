@@ -8,7 +8,10 @@ import subprocess
 
 import google_maps
 import route_boxes
+import YelpQueryConcurrent
 import json
+
+import time
 
 from google.appengine.api import users
 from google.appengine.ext import ndb
@@ -36,6 +39,16 @@ DEFAULT_GUESTBOOK_NAME = 'default_guestbook'
 # in the same entity group. Queries across the single entity group
 # will be consistent.  However, the write rate should be limited to
 # ~1/second.
+
+class Timer:
+    def __init__(self):
+        self.start = 0
+    
+    def tic(self):
+        self.start = time.time()
+    
+    def toc(self):
+        return time.time() - self.start
 
 def guestbook_key(guestbook_name=DEFAULT_GUESTBOOK_NAME):
     """Constructs a Datastore key for a Guestbook entity.
@@ -118,31 +131,71 @@ class Guestbook(webapp2.RequestHandler):
 
         greeting.content = self.request.get('content')
         greeting.put()
-
         query_params = {'guestbook_name': guestbook_name}
         self.redirect('/?' + urllib.urlencode(query_params))
         
     
 class GoogleMapsPage(webapp2.RedirectHandler):
     def get(self):
+        timer = Timer()
+        
+        timer.tic()
+        
         q = google_maps.GoogleQuery()
+        
         routes = q.query('pasadena', 'lax')
         
-        data_per_route = [{} for route in routes]
-        
+        data_per_route = [{} for route in routes]        
         
         self.response.write('Runing\n')
+        
+        rtns = []
         for idx, route in enumerate(routes):
             self.response.write('Route {}\n'.format(idx))
-            boxes = route_boxes.route_boxes(route, 0.01)            
-            data_per_route[idx]['restaurants, All'] = boxes.query('restaurants, All')
+            boxes = route_boxes.route_boxes(route, 0.01, 10)            
+#             data_per_route[idx]['restaurants, All'] = boxes.query('restaurants, All')
+            rtns.append(boxes.query('restaurants, All'))
             
-        content = json.dumps(data_per_route, sort_keys=True, indent=4)
+        time = timer.toc()
+        
+        content = str(time)
+        
+#         content += json.dumps(data_per_route, sort_keys=True, indent=4)
+        content += json.dumps(rtns, sort_keys=True, indent=4)
         self.response.write(str(content))
         
+class YelpQueryConcurrentPage(webapp2.RedirectHandler):
+    def get(self):
+        q = YelpQueryConcurrent.YelpQueryConcurrent()
+
+        query_list = []
+        
+        timer = Timer()
+        
+        timer.tic()
+        
+        
+        for i in xrange(10):
+            query_list.append(((34.1561, -118.1319), 4000, 0, "restaurants, All", 20))        
+        
+        response = q.query_by_ll(query_list)        
+        
+        
+        time  = timer.toc()
+        
+        text = str(time) + '    '
+        text += str(len(response))
+        
+#         content = json.dumps(response, sort_keys=True, indent=4)
+        self.response.write(text)        
+
+#         sys.stdout = gae_stdout
+     
+
 #         sys.stdout = gae_stdout
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
+    ('/', YelpQueryConcurrentPage),
     ('/sign', Guestbook),
-    ('/google_maps', GoogleMapsPage)
+    ('/google_maps', GoogleMapsPage),
+    ('/yelp', YelpQueryConcurrentPage)
 ], debug=True)

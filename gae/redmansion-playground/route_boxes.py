@@ -5,7 +5,11 @@ import struct
 import itertools
 import google_maps
 import copy
-import yelp_query
+import YelpQueryConcurrent as yqcc
+import time
+import math
+import random
+# from multiprocessing import dummy
 
 
 # import matplotlib.pyplot as plt
@@ -16,7 +20,7 @@ def xfrange(start, stop, step):
         start += step
         
 class route_boxes:
-    def __init__(self, route, box_size):
+    def __init__(self, route, box_size, K):
         # Generate Boxes       
         
         self.route = route
@@ -28,10 +32,16 @@ class route_boxes:
         self.lat_min = min(self.lat) - 3 * box_size
         self.lon_max = max(self.lon) + 2 * box_size 
         self.lon_min = min(self.lon) - 3 * box_size
+        
+        self.K = K
+        
+        
         self.generate_boxes()
         self.color_boxes()
         self.extend_color_boxes()
-        self.merge_boxes()
+        self.K_means()
+        
+#         self.merge_boxes()
             
     def generate_boxes(self):        
         self.lat_space = [val for val in xfrange(self.lat_min, self.lat_max, self.box_size)]
@@ -139,7 +149,7 @@ class route_boxes:
         while len(stack) > 0:
             i, j = stack.pop()
             visited.add((i, j))
-            offset_dict = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
+            offset_dict = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1), (-2, 0), (2, 0), (0, 2), (0, -2)] # 
             for offset in offset_dict:
                 vi = i + offset[0]
                 vj = j + offset[1]
@@ -229,52 +239,118 @@ class route_boxes:
                     k += 1
                 self.row_merge_list.append((begin, end)) 
                 
+    def get_dist1(self, box0, box1):
+        return math.sqrt((box0[0] - box1[0]) ** 2 + (box0[1] - box1[1]) ** 2) 
+    
+    def get_dist2(self, box0, box1):
+        R = 6371000
+        ph0 = ((box0[0] + 0.5) * self.box_size + self.lat_min) / 180 * math.pi
+        ph1 = ((box1[0] + 0.5) * self.box_size + self.lat_min) / 180 * math.pi
+        lam = ((box0[1] - box1[1]) * self.box_size) / 180 * math.pi
+        a = math.sin((ph0 - ph1) / 2)  ** 2 + math.cos(ph0) * math.cos(ph1) * (math.sin(lam / 2) ** 2)
+        c = 2 * math.atan2(math.sqrt(a), math.  sqrt(1-a))
+        d = R * c
+        return d
+    
+    def K_means(self):
+        boxes_list = []
+        for i, row in enumerate(self.color):
+            for j, e in enumerate(row):
+                if e == True:
+                    boxes_list.append((i, j))
+                    
+        boxes_flag_list = [-1 for box in boxes_list]                 
+        centers = [boxes_list[i * len(boxes_list) / self.K] for i in xrange(self.K)]
+#         centers = random.sample(boxes_list, self.K)
+        
+        flag = True
+        i_iter = 0
+        try:
+            while flag == True:
+                i_iter += 1
+                print i_iter
+                flag = False
+                for i, box in enumerate(boxes_list):
+    #                 dist_centers = [1.0 * (box[0] - cen[0]) * (box[0] - cen[0]) + (box[1] - cen[1]) * (box[1] - cen[1]) for cen in centers]
+#                     beta = 2
+#                     dist_centers = [pow(abs(box[0] - cen[0]), beta) + pow(abs(box[1] - cen[1]), beta) for cen in centers]
+                    dist_centers = [self.get_dist2(box, cen) for cen in centers]
+                    new_center = min([(dist, j) for j, dist in enumerate(dist_centers)])[1]
+                    if boxes_flag_list[i] != new_center:
+                        flag = True
+                    boxes_flag_list[i] = new_center
+                    
+                for i in xrange(len(centers)):
+    #                 print i
+                    index = [j for j in xrange(len(boxes_list)) if boxes_flag_list[j] == i]
+                    x = 1.0 * sum([boxes_list[j][0] for j in index]) / len(index)
+                    y = 1.0 * sum([boxes_list[j][1] for j in index]) / len(index)
+                    centers[i] = x, y
+        except ZeroDivisionError:
+            print "The number of centers is too large. K-means fails."
+        
+        k = 0.8
+        
+        dists = []
+        for i, c1 in enumerate(centers):
+            dist = min([self.get_dist1(c1, c2) for j , c2 in enumerate(centers) if i != j])
+            dists.append(dist)
+        radius1 = k * max(dists)
+        
+        dists = []
+        for i, c1 in enumerate(centers):
+            dist = min([self.get_dist2(c1, c2) for j , c2 in enumerate(centers) if i != j])
+            dists.append(dist)            
+        radius2 = k * max(dists)  
+            
+        self.radius1 = radius1
+        self.radius2 = radius2
+        self.centers = centers
+        
     def box_num_to_ll(self, box_num):
         return (box_num[0] * self.box_size + self.lat_min, box_num[1] * self.box_size + self.lon_min)
     
     def box_num_to_ll2(self, box_num):
         return (box_num[0] * self.box_size + self.lat_min + self.box_size, box_num[1] * self.box_size + self.lon_min + self.box_size)
+
+    def box_num_to_ll3(self, box_num):
+        return (box_num[0] * self.box_size + self.lat_min + 0.5 * self.box_size, box_num[1] * self.box_size + self.lon_min + 0.5 * self.box_size)
     
-    def _query_func(self, sw, ne, catagory):
-        d = {}
-        
-        q = yelp_query.YelpQuery()            
-        
-        rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, term=catagory);
-        
-        for x in rst['businesses']:
-            d[x['id']] = x
-            
-        if rst['total'] > 20:
-            rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, offset=20, term=catagory);
-            for x in rst['businesses']:
-                d[x['id']] = x
-                
-        return d
+#     def _query_func(self, sw, ne, catagory):
+#         d = {}
+#         
+#         q = yelp_query.YelpQuery()            
+#         
+#         rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, term=catagory);
+#         
+#         for x in rst['businesses']:
+#             d[x['id']] = x
+#             
+#         if rst['total'] > 20:
+#             rst = q.query_by_bounds(sw[0], sw[1], ne[0], ne[1], limit = 20, offset=20, term=catagory);
+#             for x in rst['businesses']:
+#                 d[x['id']] = x
+#                 
+#         return d
     
     def query(self, catagory):
-        if len(self.row_merge_list) < len(self.col_merge_list):
-            l = self.row_merge_list
-        else:
-            l = self.col_merge_list
-        
         para_list = []
         
-        for ll in l:   
-            sw, ne = ll
-            sw = self.box_num_to_ll(sw)
-            ne = self.box_num_to_ll2(ne)
-            para_list.append((sw, ne, catagory))
+        q = yqcc.YelpQueryConcurrent()
         
-        rtn = map(lambda x:self._query_func(*x), para_list)
+        for cen in self.centers:   
+            ll = self.box_num_to_ll2(cen)
+            para_list.append((ll, self.radius2, 0,catagory, 20))
+            para_list.append((ll, self.radius2, 20,catagory, 20))
+        
+        rtns = q.query_by_ll(para_list)
 
         d = {}
-        for sub_d in rtn:
-            d.update(sub_d)
+        for rtn in rtns:
+            b = rtn['businesses']
+            for entry in b:
+                d[entry['id']] = entry
         return d
-            
-            
-        
         
         
     def draw_boxes(self, gca, method=0):
@@ -332,6 +408,13 @@ class route_boxes:
                 y_size = end[0] - begin[0] + 1
                 x_size = end[1] - begin[1] + 1
                 gca.add_patch(plt.Rectangle((begin_box[1], begin_box[0]), x_size * self.box_size, y_size * self.box_size, fill=True))
+        
+        if method == 7:
+            for box in self.centers:
+                y = (box[0] + 0.5) * self.box_size + self.lat_min
+                x = (box[1] + 0.5) * self.box_size + self.lon_min
+                circle = plt.Circle((x, y), self.radius1 * self.box_size, fill=False)
+                gca.add_patch(circle)
     
     def draw_route(self, gca):
         gca.plot(self.lon, self.lat, 'ro-')
@@ -368,11 +451,18 @@ if __name__ == "__main__":
     
 #     print route
 # 
-    boxes = route_boxes(route, box_size)
-    d = boxes.query('restaurants, All')
-    print len(d)
-    for key, val in d.items():
-        print key
+    boxes = route_boxes(route, box_size, 15)
+    
+    
+    start = time.time()
+#     d = boxes.query('restaurants, All')
+    print time.time() - start
+    
+    print boxes.radius1
+    print boxes.radius2
+#     print len(d)
+#     for key, val in d.items():
+#         print key
 
 #     plt.figure()
 #     boxes.draw_boxes(plt.gca(), method=6)    
@@ -394,7 +484,7 @@ if __name__ == "__main__":
 #     plt.figure()    
 #     boxes.draw_route(plt.gca())
 #     boxes.adjust_axis(plt.gca())
-#     boxes.draw_boxes(plt.gca(), 2)
+#     boxes.draw_boxes(plt.gca(), 1)
 #     
 #     plt.figure()    
 #     boxes.draw_route(plt.gca())
@@ -405,11 +495,16 @@ if __name__ == "__main__":
 #     boxes.draw_route(plt.gca())
 #     boxes.adjust_axis(plt.gca())
 #     boxes.draw_boxes(plt.gca(), 6)
+
+#     plt.figure()    
+#     boxes.draw_route(plt.gca())
+#     boxes.adjust_axis(plt.gca())
+#     boxes.draw_boxes(plt.gca(), 7)
         
 #     print "col_merge:{}".format(len(boxes.col_merge_list))
 #     print "row_merge:{}".format(len(boxes.row_merge_list))
 
-    plt.show()
+#     plt.show()
 
 
     

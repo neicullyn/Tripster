@@ -1,6 +1,4 @@
 from google.appengine.api import urlfetch
-from google.appengine.api import apiproxy_stub_map 
-
 import json
 
 class GoogleQuery:
@@ -9,7 +7,8 @@ class GoogleQuery:
         pass
     
     def query(self, origin, dest):
-        api_key = 'AIzaSyA_184La6d9B8IR4STZljUmYqcci6RLt50'
+#         api_key = 'AIzaSyA_184La6d9B8IR4STZljUmYqcci6RLt50'
+        api_key = 'AIzaSyCTRofF3hWYbBB-ubiS0yvvh_EXeKbNduY'
         base_url = 'https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={dest}&key={key}&alternatives=true'
         url = base_url.format(origin=origin, dest=dest, key=api_key)
         url = url.replace(' ', '+')
@@ -22,11 +21,20 @@ class GoogleQuery:
             data = json.loads(data_str)
             routes = data['routes']
             for route in routes:
-                route = routes[0]
                 points_raw = route['overview_polyline']['points']
                 points = points_decode(points_raw)
-                return_list.append(points)
-        
+                
+                rtn = {}
+                
+                bounds_ne = route['bounds']['northeast']['lat'], route['bounds']['northeast']['lng']
+                bounds_sw = route['bounds']['southwest']['lat'], route['bounds']['southwest']['lng']
+                rtn['bounds'] = bounds_sw, bounds_ne
+                
+                rtn['distance'] = sum([float(leg['distance']['value']) for leg in route['legs']])
+                 
+                rtn['points'] = points
+#                 
+                return_list.append(rtn)        
         return return_list
    
 def points_decode(points_str):
