@@ -155,7 +155,6 @@ class route_boxes:
         try:
             while flag == True:
                 i_iter += 1
-                print i_iter
                 flag = False
                 for i, box in enumerate(boxes_list):
     #                 dist_centers = [1.0 * (box[0] - cen[0]) * (box[0] - cen[0]) + (box[1] - cen[1]) * (box[1] - cen[1]) for cen in centers]

@@ -46,9 +46,10 @@ class MainHandler(webapp2.RequestHandler):
 #         self.response.write('number of routes:' + str(len(routes)))
 #         self.response.write('<br/>')
         
-#         for route in routes:
-        if True:
-            route = routes[0]
+        clusters_routes = []
+        for route in routes:
+#         if True:
+#             route = routes[0]
             tmr = Timer()
             tmr.tic()            
             
@@ -87,10 +88,11 @@ class MainHandler(webapp2.RequestHandler):
                 rtn = boxes.query(cat)
                 businesses.update(rtn)
             
+            
             clusters = business_entry.business_cluster(businesses, 10)
 #             self.response.write('--' + str(tmr.toc()) + '--<br/>')
-#             
-            self.response.write(json.dumps(clusters))
+            clusters_routes.append(clusters)  
+        self.response.write(json.dumps(clusters_routes))
 #              
 #             for key in businesses:
 #                 self.response.write(key)
