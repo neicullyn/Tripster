@@ -46,8 +46,9 @@ class MainHandler(webapp2.RequestHandler):
 #         self.response.write('number of routes:' + str(len(routes)))
 #         self.response.write('<br/>')
         
-        for route in routes:
-                    
+#         for route in routes:
+        if True:
+            route = routes[0]
             tmr = Timer()
             tmr.tic()            
             
