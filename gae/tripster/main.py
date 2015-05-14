@@ -21,6 +21,7 @@ import time
 
 import google_maps
 import route_boxes
+import business_entry
 
 class Timer:
     def __init__(self):
@@ -84,17 +85,20 @@ class MainHandler(webapp2.RequestHandler):
             for cat in catagories:
                 rtn = boxes.query(cat)
                 businesses.update(rtn)
-                
+            
+            clusters = business_entry.business_cluster(businesses, 10)
             self.response.write('--' + str(tmr.toc()) + '--<br/>')
-             
-            for key in businesses:
-                self.response.write(key)
-                self.response.write(json.dumps(businesses[key].__dict__).replace('\n', '<br/>'))
-                self.response.write('<br/')
-                self.response.write('<br/>')
-                
-            self.response.write('--' + str(tmr.toc()) + '--<br/>')
-                 
+            
+            self.response.write(json.dumps(clusters).replace('\n', '<br/>'))
+#              
+#             for key in businesses:
+#                 self.response.write(key)
+#                 self.response.write(json.dumps(businesses[key].__dict__).replace('\n', '<br/>'))
+#                 self.response.write('<br/')
+#                 self.response.write('<br/>')
+#                 
+#             self.response.write('--' + str(tmr.toc()) + '--<br/>')
+#                  
         
 app = webapp2.WSGIApplication([
     (r'/main.*', MainHandler)
