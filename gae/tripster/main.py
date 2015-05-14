@@ -43,15 +43,15 @@ class MainHandler(webapp2.RequestHandler):
         google_map_query = google_maps.GoogleQuery()
         routes = google_map_query.query(origin, dest)       
         
-        self.response.write('number of routes:' + str(len(routes)))
-        self.response.write('<br/>')
+#         self.response.write('number of routes:' + str(len(routes)))
+#         self.response.write('<br/>')
         
         for route in routes:
                     
             tmr = Timer()
             tmr.tic()            
             
-            self.response.write('-------------------------<br/>')
+#             self.response.write('-------------------------<br/>')
             
             sw, ne = route['bounds']
             distance = route['distance']
@@ -70,26 +70,26 @@ class MainHandler(webapp2.RequestHandler):
             # number of centers
             k = int(math.ceil(distance / l))
             
-            self.response.write('box_size: ' + str(box_size) + '<br/>')
-            self.response.write('l: ' + str(l) + '<br/>')
-            self.response.write('k: ' + str(k) + '<br/>')  
+#             self.response.write('box_size: ' + str(box_size) + '<br/>')
+#             self.response.write('l: ' + str(l) + '<br/>')
+#             self.response.write('k: ' + str(k) + '<br/>')  
             
             boxes = route_boxes.route_boxes(points, box_size, k)
             
-            self.response.write('r: ' + str(boxes.radius2) + '<br/>')  
+#             self.response.write('r: ' + str(boxes.radius2) + '<br/>')  
              
             businesses = {}
             
-            self.response.write('--' + str(tmr.toc()) + '--<br/>')
+#             self.response.write('--' + str(tmr.toc()) + '--<br/>')
              
             for cat in catagories:
                 rtn = boxes.query(cat)
                 businesses.update(rtn)
             
             clusters = business_entry.business_cluster(businesses, 10)
-            self.response.write('--' + str(tmr.toc()) + '--<br/>')
-            
-            self.response.write(json.dumps(clusters).replace('\n', '<br/>'))
+#             self.response.write('--' + str(tmr.toc()) + '--<br/>')
+#             
+            self.response.write(json.dumps(clusters))
 #              
 #             for key in businesses:
 #                 self.response.write(key)
