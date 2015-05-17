@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+/*	.btn:focus {
+		outline: none;
+	}*/
+</style>
+
 	<title>categories</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,15 +30,98 @@
 
 <div id="categories" class="btn-group">
 
+	<button type="button" id="btn-active" class="btn btn-default" 	data-toggle="tooltip" data-original-title="active life" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-child"></i>
+	</button>
+	<button type="button" id="btn-arts" class="btn btn-default" 	data-toggle="tooltip" data-original-title="arts &amp; entertainment" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-paint-brush"></i>
+	</button>
+	<button type="button" id="btn-hotelstravel" class="btn btn-default" 	data-toggle="tooltip" data-original-title="hotels &amp; travel" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-bed"></i>
+	</button>
+	<button type="button" id="btn-localflavor" class="btn btn-default" 	data-toggle="tooltip" data-original-title="local flavor" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-map-marker"></i>
+	</button>
+	<button type="button" id="btn-localservices" class="btn btn-default" 	data-toggle="tooltip" data-original-title="local services" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-map-marker"></i>
+	</button>
+
 	<div class="btn-group">
+	<button style="margin:0;" type="button" id="btn-nightlife" class="btn btn-default" 	data-toggle="tooltip" data-original-title="nightlife" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-moon-o"></i>
+	</button>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
+	<li><a href="#">adult entertainment</a></li>
+	<li><a href="#">bars</a></li>
+	<li><a href="#">beer gardens</a></li>
+	<li><a href="#">coffeeshops</a></li>
+	<li><a href="#">comedy clubs</a></li>
+	<li><a href="#">country dance halls</a></li>
+	<li><a href="#">dance clubs</a></li>
+	<li><a href="#">dance restaurants</a></li>
+	<li><a href="#">fasil music</a></li>
+	<li><a href="#">jazz &amp; blues</a></li>
+	<li><a href="#">karaoke</a></li>
+	<li><a href="#">music venues</a></li>
+	<li><a href="#">piano bars</a></li>
+	<li><a href="#">pool halls</a></li>
+	</ul>
+
+	</div>
+
+
+	<div class="btn-group">
+	<button type="button" id="btn-restaurants" class="btn btn-default" 	data-toggle="tooltip" data-original-title="restaurants" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-cutlery"></i>
+	</button>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
+	<li><a href="#">african</a></li>
+	<li><a href="#">arabian</a></li>
+	<li><a href="#">armenian</a></li>
+	<li><a href="#">asian fusion</a></li>
+	<li><a href="#">breakfast &amp; brunch</a></li>
+	<li><a href="#">buffets</a></li>
+	<li><a href="#">chinese</a></li>
+	<li><a href="#">cuban</a></li>
+	<li><a href="#">french</a></li>
+	<li><a href="#">german</a></li>
+	<li><a href="#">gluten-free</a></li>
+	<li><a href="#">greek</a></li>
+	<li><a href="#">italian</a></li>
+	<li><a href="#">japanese</a></li>
+	<li><a href="#">mexican</a></li>
+	<li><a href="#">night food</a></li>
+	<li><a href="#">seafood</a></li>
+	<li><a href="#">spanish</a></li>
+	<li><a href="#">thai</a></li>
+	</ul>
+
+	</div>
+
+
+	<div class="btn-group">
+	<button type="button" id="btn-shopping" class="btn btn-default" 	data-toggle="tooltip" data-original-title="shopping" data-placement="bottom" 	data-container="body">
+	<i class="fa fa-shopping-cart"></i>
+	</button>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
+	<li><a href="#">adult</a></li>
+	<li><a href="#">cosmetics &amp; beauty supply</a></li>
+	<li><a href="#">electronics</a></li>
+	<li><a href="#">fashion</a></li>
+	<li><a href="#">outlet stores</a></li>
+	</ul>
+
+	</div>
+
+<!-- 	<div class="btn-group">
 		<button type="button" id="btn-active-life" class="btn btn-default dropdown-toggle" data-toggle="tooltip" aria-expanded="false" data-original-title="Active Life" data-placement="bottom" data-container="body">
 			<i class="fa fa-child"></i>
 		</button>
 		
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here more over</a></li>
+			<li><a href="#">active</a></li>
+			<li><a href="#">hiking</a></li>
+			<li><a href="#">go putty</a></li>
 			<li class="divider"></li>
 			<li><a href="#">Separated link</a></li>
 		</ul>
@@ -53,43 +142,52 @@
 	</button>
 	<button type="button" id="btn-shopping" class="btn btn-default" data-toggle="tooltip" title data-original-title="Shopping" data-placement="bottom" data-container="body">
 		<i class="fa fa-shopping-cart"></i>
-	</button>
+	</button> -->
 </div>
 
 </div>
 
 
-<div class="container">
-<p id="dude" hidden>Hey dude</p>
-</div>
 
-
-<div class="btn-group" id="test-action">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-    Action
-  </button>
-  <ul class="dropdown-menu" role="menu" style="width: ">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here more over</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
 
 <script type="text/javascript">
-$(".dropdown-menu").mouseleave(function(){
-	$(this.parentNode).click();	
-});
 
-function showDropdown() {
-	this.setAttribute("data-toggle", "dropdown");
-	$(this).tooltip("hide");
+function selectBtn(e) {
+	if (this.getAttribute("class") == "btn btn-default") {
+		this.setAttribute("class", "btn btn-success");
+	} else {
+		this.setAttribute("class", "btn btn-default");
+	}
 }
 
 
-btn_active_life = document.getElementById("btn-active-life");
-btn_active_life.addEventListener("click", showDropdown, false);
+function showDropdown(e) {
+	var target = e.target;
+	if (target.getAttribute("class").indexOf("btn") == -1) {
+		target = target.parentNode;
+	}
+
+	target.setAttribute("data-toggle", "dropdown");
+	$(target).tooltip("hide");
+	
+
+	dropdown = target.parentNode.getElementsByClassName("dropdown-menu")[0];
+	$(dropdown).show();
+}
+
+
+var category_group = document.getElementById("categories");
+var category_btn_groups = category_group.getElementsByClassName("btn-group");
+$(category_btn_groups).mouseenter(showDropdown);
+$(category_btn_groups).mouseleave(function() {
+	dropdown = this.getElementsByClassName("dropdown-menu")[0];
+	$(dropdown).hide();
+});
+
+
+var category_btns= category_group.getElementsByTagName("button");
+$(category_btns).click(selectBtn);
+
 
 
 
@@ -108,7 +206,7 @@ btn_active_life.addEventListener("click", showDropdown, false);
 </script>
 
 
-<script type="text/javascript" src="js/add_subcategories.js"></script>
+<!-- <script type="text/javascript" src="js/add_subcategories.js"></script> -->
 
 
 <script type="text/javascript" src="js/showToolTip_jQuery.js"></script>
