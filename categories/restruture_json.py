@@ -69,9 +69,11 @@ def generate_dropdown_html():
 		out_html += '\n</button>'
 
 		if node.children:
-			out_html += '\n<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">\n'
+			out_html += '\n<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">\n'
+			out_html += '<li id="li-{}"><a href="#">All</a></li>\n'.format(node.alias)
+			out_html += '<li class="divider" style="margin:0;"></li>\n'
 			for child in node.children:
-				out_html += '<li><a href="#">{}</a></li>\n'.format(child.title)
+				out_html += '<li id="li-{}"><a href="#">{}</a></li>\n'.format(child.alias, child.title)
 			out_html += '</ul>\n'
 
 			out_html += '\n</div>\n'

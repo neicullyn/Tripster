@@ -2,6 +2,9 @@
 <html>
 <head>
 <style type="text/css">
+/*.dropdown-menu li:hover {
+	cursor: pointer;
+}*/
 /*	.btn:focus {
 		outline: none;
 	}*/
@@ -30,6 +33,7 @@
 
 <div id="categories" class="btn-group">
 
+
 	<button type="button" id="btn-active" class="btn btn-default" 	data-toggle="tooltip" data-original-title="active life" data-placement="bottom" 	data-container="body">
 	<i class="fa fa-child"></i>
 	</button>
@@ -42,29 +46,28 @@
 	<button type="button" id="btn-localflavor" class="btn btn-default" 	data-toggle="tooltip" data-original-title="local flavor" data-placement="bottom" 	data-container="body">
 	<i class="fa fa-map-marker"></i>
 	</button>
-	<button type="button" id="btn-localservices" class="btn btn-default" 	data-toggle="tooltip" data-original-title="local services" data-placement="bottom" 	data-container="body">
-	<i class="fa fa-map-marker"></i>
-	</button>
 
 	<div class="btn-group">
-	<button style="margin:0;" type="button" id="btn-nightlife" class="btn btn-default" 	data-toggle="tooltip" data-original-title="nightlife" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-nightlife" class="btn btn-default" 	data-toggle="tooltip" data-original-title="nightlife" data-placement="bottom" 	data-container="body">
 	<i class="fa fa-moon-o"></i>
 	</button>
-	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
-	<li><a href="#">adult entertainment</a></li>
-	<li><a href="#">bars</a></li>
-	<li><a href="#">beer gardens</a></li>
-	<li><a href="#">coffeeshops</a></li>
-	<li><a href="#">comedy clubs</a></li>
-	<li><a href="#">country dance halls</a></li>
-	<li><a href="#">dance clubs</a></li>
-	<li><a href="#">dance restaurants</a></li>
-	<li><a href="#">fasil music</a></li>
-	<li><a href="#">jazz &amp; blues</a></li>
-	<li><a href="#">karaoke</a></li>
-	<li><a href="#">music venues</a></li>
-	<li><a href="#">piano bars</a></li>
-	<li><a href="#">pool halls</a></li>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
+	<li id="li-nightlife"><a href="#">All</a></li>
+	<li class="divider" style="margin:0;"></li>
+	<li id="li-adultentertainment"><a href="#">adult entertainment</a></li>
+	<li id="li-bars"><a href="#">bars</a></li>
+	<li id="li-beergardens"><a href="#">beer gardens</a></li>
+	<li id="li-coffeeshops"><a href="#">coffeeshops</a></li>
+	<li id="li-comedyclubs"><a href="#">comedy clubs</a></li>
+	<li id="li-countrydancehalls"><a href="#">country dance halls</a></li>
+	<li id="li-danceclubs"><a href="#">dance clubs</a></li>
+	<li id="li-dancerestaurants"><a href="#">dance restaurants</a></li>
+	<li id="li-fasil"><a href="#">fasil music</a></li>
+	<li id="li-jazzandblues"><a href="#">jazz &amp; blues</a></li>
+	<li id="li-karaoke"><a href="#">karaoke</a></li>
+	<li id="li-musicvenues"><a href="#">music venues</a></li>
+	<li id="li-pianobars"><a href="#">piano bars</a></li>
+	<li id="li-poolhalls"><a href="#">pool halls</a></li>
 	</ul>
 
 	</div>
@@ -74,26 +77,28 @@
 	<button type="button" id="btn-restaurants" class="btn btn-default" 	data-toggle="tooltip" data-original-title="restaurants" data-placement="bottom" 	data-container="body">
 	<i class="fa fa-cutlery"></i>
 	</button>
-	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
-	<li><a href="#">african</a></li>
-	<li><a href="#">arabian</a></li>
-	<li><a href="#">armenian</a></li>
-	<li><a href="#">asian fusion</a></li>
-	<li><a href="#">breakfast &amp; brunch</a></li>
-	<li><a href="#">buffets</a></li>
-	<li><a href="#">chinese</a></li>
-	<li><a href="#">cuban</a></li>
-	<li><a href="#">french</a></li>
-	<li><a href="#">german</a></li>
-	<li><a href="#">gluten-free</a></li>
-	<li><a href="#">greek</a></li>
-	<li><a href="#">italian</a></li>
-	<li><a href="#">japanese</a></li>
-	<li><a href="#">mexican</a></li>
-	<li><a href="#">night food</a></li>
-	<li><a href="#">seafood</a></li>
-	<li><a href="#">spanish</a></li>
-	<li><a href="#">thai</a></li>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
+	<li id="li-restaurants"><a href="#">All</a></li>
+	<li class="divider" style="margin:0;"></li>
+	<li id="li-african"><a href="#">african</a></li>
+	<li id="li-arabian"><a href="#">arabian</a></li>
+	<li id="li-armenian"><a href="#">armenian</a></li>
+	<li id="li-asianfusion"><a href="#">asian fusion</a></li>
+	<li id="li-breakfast_brunch"><a href="#">breakfast &amp; brunch</a></li>
+	<li id="li-buffets"><a href="#">buffets</a></li>
+	<li id="li-chinese"><a href="#">chinese</a></li>
+	<li id="li-cuban"><a href="#">cuban</a></li>
+	<li id="li-french"><a href="#">french</a></li>
+	<li id="li-german"><a href="#">german</a></li>
+	<li id="li-gluten_free"><a href="#">gluten-free</a></li>
+	<li id="li-greek"><a href="#">greek</a></li>
+	<li id="li-italian"><a href="#">italian</a></li>
+	<li id="li-japanese"><a href="#">japanese</a></li>
+	<li id="li-mexican"><a href="#">mexican</a></li>
+	<li id="li-nightfood"><a href="#">night food</a></li>
+	<li id="li-seafood"><a href="#">seafood</a></li>
+	<li id="li-spanish"><a href="#">spanish</a></li>
+	<li id="li-thai"><a href="#">thai</a></li>
 	</ul>
 
 	</div>
@@ -103,15 +108,19 @@
 	<button type="button" id="btn-shopping" class="btn btn-default" 	data-toggle="tooltip" data-original-title="shopping" data-placement="bottom" 	data-container="body">
 	<i class="fa fa-shopping-cart"></i>
 	</button>
-	<ul class="dropdown-menu" role="menu" style="margin: 0; position: absolute; z-index: 100;">
-	<li><a href="#">adult</a></li>
-	<li><a href="#">cosmetics &amp; beauty supply</a></li>
-	<li><a href="#">electronics</a></li>
-	<li><a href="#">fashion</a></li>
-	<li><a href="#">outlet stores</a></li>
+	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
+	<li id="li-shopping"><a href="#">All</a></li>
+	<li class="divider" style="margin:0;"></li>
+	<li id="li-adult"><a href="#">adult</a></li>
+	<li id="li-cosmetics"><a href="#">cosmetics &amp; beauty supply</a></li>
+	<li id="li-electronics"><a href="#">electronics</a></li>
+	<li id="li-fashion"><a href="#">fashion</a></li>
+	<li id="li-outlet_stores"><a href="#">outlet stores</a></li>
 	</ul>
 
 	</div>
+
+
 
 <!-- 	<div class="btn-group">
 		<button type="button" id="btn-active-life" class="btn btn-default dropdown-toggle" data-toggle="tooltip" aria-expanded="false" data-original-title="Active Life" data-placement="bottom" data-container="body">
@@ -152,11 +161,43 @@
 
 <script type="text/javascript">
 
+
+
+function clearSubCategory(btn) {
+	active_subs = btn.parentNode.getElementsByClassName("active");
+	$(active_subs).removeAttr("class");
+}
+
 function selectBtn(e) {
 	if (this.getAttribute("class") == "btn btn-default") {
 		this.setAttribute("class", "btn btn-success");
+		if (this.parentNode.getAttribute("id") != "categories") {
+			sub_all = this.parentNode.getElementsByTagName("li")[0];
+			sub_all.setAttribute("class", "active");
+		}
 	} else {
 		this.setAttribute("class", "btn btn-default");
+		if (this.parentNode.getAttribute("id") != "categories") {
+			clearSubCategory(this);
+		}
+	}
+}
+
+
+
+function selectSubCategory(e) {
+	if (this.getAttribute("class") == "active") {
+		this.removeAttribute("class");
+	} else {
+		this_btn = this.parentNode.parentNode.getElementsByTagName("button")[0];
+		this_btn.setAttribute("class", "btn btn-success");
+
+		if (this.textContent == "All") {
+			clearSubCategory(this_btn);
+		} else {
+			this.parentNode.getElementsByTagName("li")[0].removeAttribute("class");
+		}
+		this.setAttribute("class", "active");
 	}
 }
 
@@ -185,9 +226,13 @@ $(category_btn_groups).mouseleave(function() {
 });
 
 
+// toggle btn-success option when clicking the main buttons
 var category_btns= category_group.getElementsByTagName("button");
 $(category_btns).click(selectBtn);
 
+// toggle active state when clicking the sub categories
+var sub_categories = category_group.getElementsByTagName("li");
+$(sub_categories).click(selectSubCategory);
 
 
 
