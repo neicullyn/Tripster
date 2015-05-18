@@ -26,7 +26,7 @@ class CatgoryNode:
 
 def generate_dropdown_html():
 
-	catgory_file_name = "test.txt"
+	catgory_file_name = "filter_categories.txt"
 
 	main_categories = []
 	cur_main = None
@@ -63,8 +63,8 @@ def generate_dropdown_html():
 			out_html += '\n<div class="btn-group">\n'
 
 		out_html += '<button type="button" id="btn-{}" class="btn btn-default" \
-	data-toggle="tooltip" data-original-title="{}" data-placement="bottom" \
-	data-container="body">\n'.format(node.alias, node.title)
+data-toggle="tooltip" data-original-title="{}" data-placement="top" \
+data-container="body" style="border-radius: 0;">\n'.format(node.alias, node.title)
 		out_html += category_image_look_up[node.alias]
 		out_html += '\n</button>'
 

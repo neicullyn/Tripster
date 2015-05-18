@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-/*.dropdown-menu li:hover {
-	cursor: pointer;
-}*/
-/*	.btn:focus {
-		outline: none;
-	}*/
-</style>
-
 	<title>categories</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +11,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootlint/0.12.0/bootlint.min.js"></script>
+
+
+<style type="text/css">
+.btn {
+	border-radius: 0;
+}
+/*button {
+	border-radius: 0;
+}*/
+/*.dropdown-menu li:hover {
+	cursor: pointer;
+}*/
+/*	.btn:focus {
+		outline: none;
+	}*/
+</style>
 </head>
 <body>
 
@@ -34,21 +41,22 @@
 <div id="categories" class="btn-group">
 
 
-	<button type="button" id="btn-active" class="btn btn-default" 	data-toggle="tooltip" data-original-title="active life" data-placement="bottom" 	data-container="body">
+
+	<button type="button" id="btn-active" class="btn btn-default" data-toggle="tooltip" data-original-title="active life" data-placement="top" data-container="body">
 	<i class="fa fa-child"></i>
 	</button>
-	<button type="button" id="btn-arts" class="btn btn-default" 	data-toggle="tooltip" data-original-title="arts &amp; entertainment" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-arts" class="btn btn-default" data-toggle="tooltip" data-original-title="arts &amp; entertainment" data-placement="top" data-container="body">
 	<i class="fa fa-paint-brush"></i>
 	</button>
-	<button type="button" id="btn-hotelstravel" class="btn btn-default" 	data-toggle="tooltip" data-original-title="hotels &amp; travel" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-hotelstravel" class="btn btn-default" data-toggle="tooltip" data-original-title="hotels &amp; travel" data-placement="top" data-container="body">
 	<i class="fa fa-bed"></i>
 	</button>
-	<button type="button" id="btn-localflavor" class="btn btn-default" 	data-toggle="tooltip" data-original-title="local flavor" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-localflavor" class="btn btn-default" data-toggle="tooltip" data-original-title="local flavor" data-placement="top" data-container="body">
 	<i class="fa fa-map-marker"></i>
 	</button>
 
 	<div class="btn-group">
-	<button type="button" id="btn-nightlife" class="btn btn-default" 	data-toggle="tooltip" data-original-title="nightlife" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-nightlife" class="btn btn-default" data-toggle="tooltip" data-original-title="nightlife" data-placement="top" data-container="body">
 	<i class="fa fa-moon-o"></i>
 	</button>
 	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
@@ -74,7 +82,7 @@
 
 
 	<div class="btn-group">
-	<button type="button" id="btn-restaurants" class="btn btn-default" 	data-toggle="tooltip" data-original-title="restaurants" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-restaurants" class="btn btn-default" data-toggle="tooltip" data-original-title="restaurants" data-placement="top" data-container="body">
 	<i class="fa fa-cutlery"></i>
 	</button>
 	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
@@ -105,7 +113,7 @@
 
 
 	<div class="btn-group">
-	<button type="button" id="btn-shopping" class="btn btn-default" 	data-toggle="tooltip" data-original-title="shopping" data-placement="bottom" 	data-container="body">
+	<button type="button" id="btn-shopping" class="btn btn-default" data-toggle="tooltip" data-original-title="shopping" data-placement="top" data-container="body">
 	<i class="fa fa-shopping-cart"></i>
 	</button>
 	<ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
@@ -209,7 +217,7 @@ function showDropdown(e) {
 	}
 
 	target.setAttribute("data-toggle", "dropdown");
-	$(target).tooltip("hide");
+	// $(target).tooltip("hide");
 	
 
 	dropdown = target.parentNode.getElementsByClassName("dropdown-menu")[0];

@@ -1,0 +1,45 @@
+active life: active
+arts & entertainment: arts
+hotels & travel: hotelstravel
+local flavor: localflavor
+nightlife: nightlife
+    adult entertainment: adultentertainment
+    bars: bars
+    beer gardens: beergardens
+    coffeeshops: coffeeshops
+    comedy clubs: comedyclubs
+    country dance halls: countrydancehalls
+    dance clubs: danceclubs
+    dance restaurants: dancerestaurants
+    fasil music: fasil
+    jazz & blues: jazzandblues
+    karaoke: karaoke
+    music venues: musicvenues
+    piano bars: pianobars
+    pool halls: poolhalls
+restaurants: restaurants
+    african: african
+    arabian: arabian
+    armenian: armenian
+    asian fusion: asianfusion
+    breakfast & brunch: breakfast_brunch
+    buffets: buffets
+    chinese: chinese
+    cuban: cuban
+    french: french
+    german: german
+    gluten-free: gluten_free
+    greek: greek
+    italian: italian
+    japanese: japanese
+    mexican: mexican
+    night food: nightfood
+    seafood: seafood
+    spanish: spanish
+    thai: thai
+shopping: shopping
+    adult: adult
+    cosmetics & beauty supply: cosmetics
+    electronics: electronics
+    fashion: fashion
+    outlet stores: outlet_stores
