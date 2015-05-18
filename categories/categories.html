@@ -165,8 +165,6 @@
 </div>
 
 
-
-
 <script type="text/javascript">
 
 
@@ -215,10 +213,8 @@ function showDropdown(e) {
 	if (target.getAttribute("class").indexOf("btn") == -1) {
 		target = target.parentNode;
 	}
-
 	target.setAttribute("data-toggle", "dropdown");
 	// $(target).tooltip("hide");
-	
 
 	dropdown = target.parentNode.getElementsByClassName("dropdown-menu")[0];
 	$(dropdown).show();
@@ -227,6 +223,9 @@ function showDropdown(e) {
 
 var category_group = document.getElementById("categories");
 var category_btn_groups = category_group.getElementsByClassName("btn-group");
+
+
+// fold/unfold dropdown
 $(category_btn_groups).mouseenter(showDropdown);
 $(category_btn_groups).mouseleave(function() {
 	dropdown = this.getElementsByClassName("dropdown-menu")[0];
@@ -241,6 +240,17 @@ $(category_btns).click(selectBtn);
 // toggle active state when clicking the sub categories
 var sub_categories = category_group.getElementsByTagName("li");
 $(sub_categories).click(selectSubCategory);
+
+
+
+// update the user selections
+function updateSelections() {
+	;
+}
+
+var selected_items = [];
+
+
 
 
 
