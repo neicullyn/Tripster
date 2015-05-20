@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title> Google Map in test </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <style>
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <style type="text/css">
+
+      #banner {
+        font-style: normal;
+        position: absolute;
+        color:#686868;
+        z-index: -10000;
+        height: 40px;
+        width: 100%;
+      }
+
+     #banner-content {
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+     #banner-content img{
+        position: absolute;
+        z-index: 1;
+        height:20px;
+        weight:90px;
+        top:2px;
+        right: -20px;
+      }
+
+      #explore_random_trip button{
+        font-family: 'Open Sans';
+        font-style: bold;
+        font-size: 16px;
+        z-index: 1;
+        position: absolute;
+        top:7px;
+        background-color: #f2b34d;
+        border-radius: 3px;
+        border:1px solid #c89438;
+        cursor: pointer;
+        color:#FFFFFF;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+        padding: 8px 10px;
+        right: 90px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
+
+      }
+
+      #explore_random_trip button:hover{
+        background:linear-gradient(to bottom, #ECB368 5%);
+        background-color: #ECB368;
+      }
+
+      #signin button{
+        font-family: 'Open Sans';
+        z-index: 1;
+        position: absolute;
+        top:16px;
+        background-color: #FFFFFF;
+        border-radius: 8px 0px 0px 8px;
+        right: 265px;
+        border: none;
+        border-right: 1px solid #505050;
+        cursor: pointer;
+        color:#002733;
+        padding: 3px 8px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
+      }
+
+      #signup button{
+        font-family: 'Open Sans';
+        z-index: 1;
+        position: absolute;
+        top:16px;
+        background-color: #FFFFFF;
+        border-radius: 0px 8px 8px 0px;
+        right: 210px;
+        border:none;
+        border-left: 1px solid #505050;
+        cursor: pointer;
+        color:#ECB368;
+        padding: 3px 8px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
+      }
+
+      #panel {
+        font-style: normal;
+        position: absolute;
+        z-index: 1;
+        height: 52px;
+        width: 300px;
+        top:10px;
+        left:10px;
+        margin:0px;
+        border-radius: 5px;
+        background-color:#FFFFFF;
+        padding:10px;
+        border:0px;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.22);
+      }
+
+      #panel input[type ="text"]{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        outline: none;
+        display: block;
+        width:100%;
+        border: none;
+        border-bottom: 1px solid #F0F0F0;
+        background: transparent;
+      }
+
+      #panel button[type ="submit"]{
+        font-family: 'Open Sans';
+        position:absolute;
+        right:-99999px;
+      }
+
+      #preference_selection {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 14px;
+        position:absolute;
+        top:120px;
+        left:10px;
+        border-radius: 5px;
+        z-index:2;
+        background-color:#FFFFFF;
+        font-family: 'Open Sans',arial, sans;
+        color:#686868;
+        padding:10px;
+        width: 450px;
+        height: 200px;
+        border-top:1px solid #ddd;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.22);
+      }
+
+      .myaccordion{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 14px;
+        position:absolute;
+        color:#686868;
+        border-radius: 5px;
+        top:91px;
+        left:10px;
+        background-color:#FFFFFF;
+        margin:0px;
+        z-index:2;
+        padding:10px;
+        width: 300px;
+        display:inline-block;
+        border-top:1px solid #ddd;
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.22);
+      }
+
+      .myaccordion h2{
+        font-family: 'Open Sans';
+        font-style: normal;
+        border-bottom: 1px solid #F0F0F0;
+        color:#686868;
+        background-color:#FFFFFF;
+        font-size: 14px;
+      }
+
+      .myaccordion #check1 {
+      position: absolute;
+      padding:5px;
+      margin:3px;
+      left: 0px;
+      }
+
+
+      .myaccordion #check2 {
+      position: absolute;
+      margin:3px;
+      padding:5px;
+      left: 150px;
+      }
+
+      .myaccordion #check3 {
+      position: absolute;
+      left: 300px;
+      padding:5px;
+      margin:3px;
+      }
+
+      .myaccordion button[type ="submit"]{
+        font-family: 'Open Sans';
+        font-style: normal;
+      }
+
+      .myaccordion button[type ="submit"]:hover{
+        background:linear-gradient(to bottom, #339966 5%);
+        background-color: #339966;
+      }
+
+      label {
+          padding-left: 15px;
+          text-indent: -15px;
+      }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script src="js/search.js"></script>
+
+  </head>
+  <body>
+
+<div id="banner-content">
+  <a href="http://google.com"> <img src="logo_new_new.png" alt="Tripster" style="width:130px;height:45px"></a>
+</div>
+
+<div id = "explore_random_trip">
+  <button> Save Route</button>
+</div>
+
+<div id = "signin">
+  <button> Sign In </button>
+</div>
+
+<div id = "signup">
+  <button> Sign up </button>
+</div>
+
+
+<form id = "myForm" action = "http://localhost:9080/main" method="get">
+
+<div id = "panel">
+  <input type = "text" id = 'start_var' name = "origin" placeholder = 'From'>
+  <p><input type = "text" id = 'end_var' name = "dest" placeholder = 'To'></p>
+</div>
+
+<div class="myaccordion"
+<h2>
+  <center>Point of interests
+  </center>
+</h2>
+
+
+<div style="overflow-y: scroll; height:200px;">
+  <label><input type="checkbox" name="category" value="naturemuseum" checked>  Nature Museum</label>
+  <label><input type="checkbox" name="category" value="shoppingmall" checked>  Shopping Mall</label>
+  <label><input type="checkbox" name="category" value="chinesefood" checked>  Chinese Food<br></label>
+  <label><input type="checkbox" name="category" value="italianfood" checked>  Italian Food</label>
+  <label><input type="checkbox" name="category" value="hikingsite" checked>  Hiking Sites</label>
+  <label><input type="checkbox" name="category" value="historymuseum" checked>  History Museum<br></label>
+  <label><input type="checkbox" name="category" value="piers" checked>  Piers</label>
+  <label><input type="checkbox" name="category" value="watersports" checked>  Water Sports</label>
+  <label><input type="checkbox" name="category" value="childrenfriengly" checked>  Children Friendly<br></label>
+  <label><input type="checkbox" name="category" value="petfriendly" checked>  Pet Friendly</label>
+  <label><input type="checkbox" name="category" value="beaches" checked>  Beaches</label>
+  <label><input type="checkbox" name="category" value="artmuseum" checked>  Arts Museum<br></label>
+  <label><input type="checkbox" name="category" value="naturemuseum" checked>  Nature Museum</label>
+  <label><input type="checkbox" name="category" value="shoppingmall" checked>  Shopping Mall</label>
+  <label><input type="checkbox" name="category" value="chinesefood" checked>  Chinese Food<br></label>
+  <label><input type="checkbox" name="category" value="petfriendly" checked>  Pet Friendly</label>
+  <label><input type="checkbox" name="category" value="beaches" checked>  Beaches</label>
+  <label><input type="checkbox" name="category" value="artmuseum" checked>  Arts Museum<br></label>
+  <p><button type = "submit" value = "submit">Submit Preference</button></p>
+</div>
+</div>
+</form>
+
+<div id="map-canvas"></div>
+
+<script>
+
+
+  $(function(){
+    $(".selector").accordion({
+      animate: 200
+    });
+
+    $(".myaccordion").accordion(
+      {collapsible:true,
+        alwaysOpen: false});
+    })
+
+</script>
+
+  </body>
+</html>
