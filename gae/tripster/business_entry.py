@@ -100,6 +100,12 @@ def business_cluster(businesses, K):
         d['businesses'] = [businesses_list[j].__dict__ for j in index]
         clusters.append(d)       
         
+    for clst in clusters:
+        cen = clst['center']
+        dist = [distance_center_business2(cen, b) for b in clst['businesses']]
+        avg_dist = sum(dist) / len(dist)
+        index = [j for j, d in enumerate(dist) if d < 3 * avg_dist]
+        clst['businesses'] = [clst['businesses'][j] for j in index]        
             
     for clst in clusters:
         cen = clst['center']
