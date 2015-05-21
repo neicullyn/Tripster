@@ -46,7 +46,7 @@ def distance_center_business(center, b):
         ph1 = b.latitude / 180 * math.pi
         lam = (center[1] - b.longitude) / 180 * math.pi
         a = math.sin((ph0 - ph1) / 2)  ** 2 + math.cos(ph0) * math.cos(ph1) * (math.sin(lam / 2) ** 2)
-        c = 2 * math.atan2(math.sqrt(a), math.  sqrt(1-a))
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
         d = R * c
         return d
     
@@ -56,7 +56,7 @@ def distance_center_business2(center, b):
         ph1 = b['latitude'] / 180 * math.pi
         lam = (center[1] - b['longitude']) / 180 * math.pi
         a = math.sin((ph0 - ph1) / 2)  ** 2 + math.cos(ph0) * math.cos(ph1) * (math.sin(lam / 2) ** 2)
-        c = 2 * math.atan2(math.sqrt(a), math.  sqrt(1-a))
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
         d = R * c
         return d
         

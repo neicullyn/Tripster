@@ -209,16 +209,18 @@ class route_boxes:
         
         for cen in self.centers:   
             ll = self.box_num_to_ll2(cen)
-            para_list.append((ll, self.radius2, 0,catagory, 20))
+            para_list.append((ll, self.radius2, 0, catagory, 20))
 #             para_list.append((ll, self.radius2, 20,catagory, 20))
         
         rtns = q.query_by_ll(para_list)
 
         d = {}
-        for rtn in rtns:
+        for cen, rtn in zip(self.centers, rtns):
             b = rtn['businesses']
             for entry in b:
-                d[entry['id']] = business_entry.business_entry(entry, rtn['region']['center']['latitude'], rtn['region']['center']['longitude'])
+                bsne = business_entry.business_entry(entry, rtn['region']['center']['latitude'], rtn['region']['center']['longitude'])
+                if(business_entry.distance_center_business(cen, bsne) < self.radius2):
+                    d[entry['id']] = bsne
         return d
 
 if __name__ == "__main__":
