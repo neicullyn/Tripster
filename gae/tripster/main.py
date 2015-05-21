@@ -38,7 +38,7 @@ class MainHandler(webapp2.RequestHandler):
         
         origin = self.request.get('origin')
         dest = self.request.get('dest')
-        catagories = self.request.get('categories').split(',')
+        catagories = self.request.get_all('categories')
         
         google_map_query = google_maps.GoogleQuery()
         routes = google_map_query.query(origin, dest)       

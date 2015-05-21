@@ -1,5 +1,5 @@
 import math
-
+import logging
 def get(d, key):
     if d is not None and d.has_key(key):
         return d[key]
@@ -48,6 +48,7 @@ def distance_center_business(center, b):
         a = math.sin((ph0 - ph1) / 2)  ** 2 + math.cos(ph0) * math.cos(ph1) * (math.sin(lam / 2) ** 2)
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
         d = R * c
+        
         return d
     
 def distance_center_business2(center, b):

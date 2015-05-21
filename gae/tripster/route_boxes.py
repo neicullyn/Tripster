@@ -2,6 +2,7 @@ import json
 import time
 import math
 import business_entry
+import logging
 
 import google_maps
 import yelp_query
@@ -218,9 +219,18 @@ class route_boxes:
         for cen, rtn in zip(self.centers, rtns):
             b = rtn['businesses']
             for entry in b:
-                bsne = business_entry.business_entry(entry, rtn['region']['center']['latitude'], rtn['region']['center']['longitude'])
-                if(business_entry.distance_center_business(cen, bsne) < self.radius2):
+                ll = self.box_num_to_ll2(cen)
+                bsne = business_entry.business_entry(entry, rtn['region']['center']['latitude'], rtn['region']['center']['longitude'])               
+                
+                
+                if business_entry.distance_center_business(ll, bsne) < self.radius2:
                     d[entry['id']] = bsne
+                else:
+                    logging.info(str(business_entry.distance_center_business(ll, bsne)) + '  ' + str(self.radius2))
+                    logging.info('ABNORMAL\n')
+                    logging.info('{} {}'.format(ll[0], ll[1]))
+                    logging.info(json.dumps(entry))
+                    
         return d
 
 if __name__ == "__main__":

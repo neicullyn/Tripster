@@ -21,6 +21,7 @@ This program requires the Python oauth2 library, which you can install via:
 import json
 import urllib
 import business_entry
+import logging
 
 import oauth2
 from google.appengine.api import urlfetch
@@ -119,7 +120,7 @@ class YelpQueryConcurrent:
             ll, radius, offset, term, limit = para
             url_params = {
                 'sort': 2,
-                'term': term.replace(' ', '+'),
+                'category_filter': term.replace(' ', '+'),
                 'll': '{},{}'.format(*ll),
                 'limit': limit,
                 'radius_filter': radius,
@@ -131,6 +132,7 @@ class YelpQueryConcurrent:
         
         for url in url_list:
             rpc = urlfetch.create_rpc(deadline=10)
+            rpc.url = url
             urlfetch.make_fetch_call(rpc, url)
             rpc_list.append(rpc)
             
@@ -143,5 +145,11 @@ class YelpQueryConcurrent:
             result = rpc.get_result()
             if result.status_code == 200:
                 response.append(json.loads(result.content))
-                            
+            else:
+                logging.error('Yelp Query Fails')
+                logging.error(result.content)
+                logging.error(rpc.url)
+                
+        logging.info('response: {}\n'.format(len(response)))
+        
         return response     
