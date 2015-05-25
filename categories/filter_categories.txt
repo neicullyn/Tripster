@@ -3,7 +3,6 @@ arts & entertainment: arts
 hotels & travel: hotelstravel
 local flavor: localflavor
 nightlife: nightlife
-    adult entertainment: adultentertainment
     bars: bars
     beer gardens: beergardens
     coffeeshops: coffeeshops
@@ -38,7 +37,6 @@ restaurants: restaurants
     spanish: spanish
     thai: thai
 shopping: shopping
-    adult: adult
     cosmetics & beauty supply: cosmetics
     electronics: electronics
     fashion: fashion
