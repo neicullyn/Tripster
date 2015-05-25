@@ -7,7 +7,7 @@ def get(d, key):
         return ''
     
 class business_entry(object):
-    def __init__(self, business_d, lat, lng):
+    def __init__(self, business_d, cata):
         self.id = business_d['id']
         
         self.name = get(business_d, 'name')
@@ -18,7 +18,8 @@ class business_entry(object):
         
         self.image_url = get(business_d, 'img_url')
         
-        self.categories = get(business_d, 'categories')        
+#         self.categories = get(business_d, 'categories')        
+        self.categories = cata
         
         self.snippet_text = get(business_d, 'snippet_text')
         
@@ -84,11 +85,11 @@ def business_cluster(businesses, K):
                     flag = True
                 flag_list[i] = new_center
         
-        for i in xrange(len(centers)):
-            index = [j for j in xrange(len(businesses_list)) if flag_list[j] == i]
-            x = 1.0 * sum([businesses_list[j].latitude for j in index]) / len(index)
-            y = 1.0 * sum([businesses_list[j].longitude for j in index]) / len(index)
-            centers[i] = x,y
+            for i in xrange(len(centers)):
+                index = [j for j in xrange(len(businesses_list)) if flag_list[j] == i]
+                x = 1.0 * sum([businesses_list[j].latitude for j in index]) / len(index)
+                y = 1.0 * sum([businesses_list[j].longitude for j in index]) / len(index)
+                centers[i] = x,y
     except ZeroDivisionError:
         print "The number of centers is too large. K-means fails."
     

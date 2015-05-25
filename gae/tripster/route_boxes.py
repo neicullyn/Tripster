@@ -220,16 +220,17 @@ class route_boxes:
             b = rtn['businesses']
             for entry in b:
                 ll = self.box_num_to_ll2(cen)
-                bsne = business_entry.business_entry(entry, rtn['region']['center']['latitude'], rtn['region']['center']['longitude'])               
+                bsne = business_entry.business_entry(entry, catagory)               
                 
                 
                 if business_entry.distance_center_business(ll, bsne) < self.radius2:
                     d[entry['id']] = bsne
                 else:
-                    logging.info(str(business_entry.distance_center_business(ll, bsne)) + '  ' + str(self.radius2))
-                    logging.info('ABNORMAL\n')
-                    logging.info('{} {}'.format(ll[0], ll[1]))
-                    logging.info(json.dumps(entry))
+                    pass
+#                     logging.info(str(business_entry.distance_center_business(ll, bsne)) + '  ' + str(self.radius2))
+#                     logging.info('ABNORMAL\n')
+#                     logging.info('{} {}'.format(ll[0], ll[1]))
+#                     logging.info(json.dumps(entry))
                     
         return d
 
