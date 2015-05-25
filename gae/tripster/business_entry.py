@@ -111,7 +111,10 @@ def business_cluster(businesses, K):
     for clst in clusters:
         cen = clst['center']
         dist = [distance_center_business2(cen, b) for b in clst['businesses']]
-        clst['radius'] = max(dist)
+        if (len(dist) > 0):
+            clst['radius'] = max(dist)
+        else:
+            clusters.remove(clst)
         
     return clusters
                 
