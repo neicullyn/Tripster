@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,15 +11,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootlint/0.12.0/bootlint.min.js"></script>
 
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- // <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     <script src="http://malsup.github.com/jquery.form.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- // <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
-    <script src="js/search.js"></script>
-
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title> Google Map in test </title>
@@ -27,6 +26,21 @@
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
     <style type="text/css">
+
+    #buttons{
+      z-index: 1000;
+      position: absolute;
+      left: 100px;
+      top:200px;
+    }
+
+      .hide{
+        display: none;
+      }
+
+      .show{
+        display: block;
+      }
 
       #banner {
         font-style: normal;
@@ -78,12 +92,13 @@
 
       #signin button{
         font-family: 'Open Sans';
+        font-size: 12px;
         z-index: 1;
         position: absolute;
         top:16px;
         background-color: #FFFFFF;
         border-radius: 2px 0px 0px 2px;
-        right: 275px;
+        right: 265px;
         border: none;
         border-right: 1px solid #BDBDBD;
         cursor: pointer;
@@ -94,6 +109,7 @@
 
       #signup button{
         font-family: 'Open Sans';
+        font-size: 12px;
         z-index: 1;
         position: absolute;
         top:16px;
@@ -136,91 +152,45 @@
         background: transparent;
       }
 
-      #panel button[type ="submit"]{
-        font-family: 'Open Sans';
-        position:absolute;
-        right:-99999px;
-      }
-
-      #preference_selection {
+      #submit_button button{
+        z-index: 110;
         font-family: 'Open Sans';
         font-style: normal;
         font-size: 14px;
-        position:absolute;
-        top:120px;
-        left:10px;
-        border-radius: 5px;
-        z-index:2;
         background-color:#FFFFFF;
-        font-family: 'Open Sans',arial, sans;
-        color:#686868;
-        padding:10px;
-        width: 450px;
-        height: 200px;
-        border-top:1px solid #ddd;
-        box-shadow: 20px 20px 20px rgba(0,0,0,0.22);
-      }
-
-      .myaccordion{
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-size: 14px;
-        position:absolute;
-        color:#686868;
-        border-radius: 5px;
-        top:91px;
-        left:10px;
-        background-color:#FFFFFF;
+        position: absolute;
+        top: 10px;
+        left: 272px;
         margin:0px;
-        z-index:2;
-        padding:10px;
-        width: 300px;
-        display:inline-block;
-        border-top:1px solid #ddd;
-        box-shadow: 20px 20px 20px rgba(0,0,0,0.22);
+        width:40px;
+        height:22px;
+        border:0px;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22);
       }
 
-      .myaccordion h2{
+      #submit_button button:hover{
+        background-color: #bfbfbf;
+      }
+
+      #back_button button{
+        z-index: 110;
         font-family: 'Open Sans';
         font-style: normal;
-        border-bottom: 1px solid #F0F0F0;
-        color:#686868;
-        background-color:#FFFFFF;
         font-size: 14px;
+        background-color:#FFFFFF;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        margin:0px;
+        width:80px;
+        height:40px;
+        border:0px;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22);
       }
 
-      .myaccordion #check1 {
-      position: absolute;
-      padding:5px;
-      margin:3px;
-      left: 0px;
+      #back_button button:hover{
+        background-color: #bfbfbf;
       }
-
-
-      .myaccordion #check2 {
-      position: absolute;
-      margin:3px;
-      padding:5px;
-      left: 150px;
-      }
-
-      .myaccordion #check3 {
-      position: absolute;
-      left: 300px;
-      padding:5px;
-      margin:3px;
-      }
-
-      .myaccordion button[type ="submit"]{
-        font-family: 'Open Sans';
-        font-style: normal;
-      }
-
-      .myaccordion button[type ="submit"]:hover{
-        background:linear-gradient(to bottom, #339966 5%);
-        background-color: #339966;
-      }
-
       label {
           padding-left: 15px;
           text-indent: -15px;
@@ -231,8 +201,10 @@
   </head>
   <body>
 
+<ul id="buttons"></ul>
+
 <div id="banner-content">
-  <a href="http://google.com"> <img src="logo_new_new.png" alt="Tripster" style="width:130px;height:45px"></a>
+  <a href="main_index.html"> <img src="logo_new_new.png" alt="Tripster" style="width:130px;height:45px"></a>
 </div>
 
 <div id = "explore_random_trip">
@@ -247,49 +219,22 @@
   <button> Sign up </button>
 </div>
 
+<div id = 'back_button'>
+  <button onclick="block_none()">Return</button>
+</div>
 
+<!-- <form id = "myForm" action = "http://tripster4red.appspot.com/main" method="get"> -->
 <form id = "myForm" action = "http://localhost:9080/main" method="get">
-
 <div id = "panel">
   <input type = "text" id = 'start_var' name = "origin" placeholder = 'From'>
   <p><input type = "text" id = 'end_var' name = "dest" placeholder = 'To'></p>
 </div>
-<!-- 
-<div class="myaccordion"
-<h2>
-  <center>Point of interests
-  </center>
-</h2>
 
+<div id = "submit_button">
+  <button type = "submit" value = "submit"> Go </button>
 
-
-
-<div style="overflow-y: scroll; height:200px;">
-  <label><input type="checkbox" name="category" value="naturemuseum" checked>  Nature Museum</label>
-  <label><input type="checkbox" name="category" value="shoppingmall" checked>  Shopping Mall</label>
-  <label><input type="checkbox" name="category" value="chinesefood" checked>  Chinese Food<br></label>
-  <label><input type="checkbox" name="category" value="italianfood" checked>  Italian Food</label>
-  <label><input type="checkbox" name="category" value="hikingsite" checked>  Hiking Sites</label>
-  <label><input type="checkbox" name="category" value="historymuseum" checked>  History Museum<br></label>
-  <label><input type="checkbox" name="category" value="piers" checked>  Piers</label>
-  <label><input type="checkbox" name="category" value="watersports" checked>  Water Sports</label>
-  <label><input type="checkbox" name="category" value="childrenfriengly" checked>  Children Friendly<br></label>
-  <label><input type="checkbox" name="category" value="petfriendly" checked>  Pet Friendly</label>
-  <label><input type="checkbox" name="category" value="beaches" checked>  Beaches</label>
-  <label><input type="checkbox" name="category" value="artmuseum" checked>  Arts Museum<br></label>
-  <label><input type="checkbox" name="category" value="naturemuseum" checked>  Nature Museum</label>
-  <label><input type="checkbox" name="category" value="shoppingmall" checked>  Shopping Mall</label>
-  <label><input type="checkbox" name="category" value="chinesefood" checked>  Chinese Food<br></label>
-  <label><input type="checkbox" name="category" value="petfriendly" checked>  Pet Friendly</label>
-  <label><input type="checkbox" name="category" value="beaches" checked>  Beaches</label>
-  <label><input type="checkbox" name="category" value="artmuseum" checked>  Arts Museum<br></label>
-  <p><button type = "submit" value = "submit">Submit Preference</button></p>
 </div>
-</div> -->
 </form>
-
-
-
 
 <div class="container" style="position: absolute; top: 80px; left: -6px; z-index: 120; margin: 0;">
 <div id="categories" class="btn-group" style = "box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22); margin: 0px;">
@@ -387,7 +332,6 @@
 </div> <!-- end of my div -->
 
 
-
 <script type="text/javascript">
 
 function clearSubCategory(btn) {
@@ -466,6 +410,7 @@ $(sub_categories).click(selectSubCategory);
 
 
 var selected_items = [];
+var append_string;
 $(category_group).mouseleave(updateSelections);
 
 // update the user selections
@@ -479,8 +424,6 @@ function updateSelections() {
     var this_button = buttons[i];
     if (this_button.getAttribute("class").indexOf("success") != -1) {
 
-      
-
       // if this is a single button or main button of dropdown
       if (this_button.parentNode.getAttribute("id") == 'categories') {
         this_category = this_button.getAttribute("id").split("-")[1];
@@ -489,7 +432,7 @@ function updateSelections() {
         sub_categories = this_button.parentNode.getElementsByTagName("li");
         if (sub_categories[0].getAttribute("class") == "active") {
           new_selections.push(sub_categories[0].getAttribute("id").split("-")[1]);
-        } else {  
+        } else {
           for (var j = 1; j < sub_categories.length; j++) {
             this_sub = sub_categories[j];
             if (this_sub.getAttribute("class") == "active") {
@@ -508,30 +451,49 @@ function updateSelections() {
   if (!is_same) {
     console.log("selection changed, new selections: " + new_selections);
     selected_items = new_selections;
+    append_string = "";
+    for (var j = 0; j < selected_items.length; j++)
+    {
+      append_string = append_string + "&categories=" + selected_items[j]
+    }
   }
 }
+
+function block_none(){
+ // document.getElementById('hidden-div').classList.add('show');
+  map.setZoom(8);
+  map.setCenter(temp_center);
+  document.getElementById('back_button').style.visibility = 'hidden';
+  go_back(markers_array);
+}
+
+function makeButton(value) {
+  var b = document.createElement('button');
+  b.value = value;
+  return b;
+}
+
+// var list = document.getElementById('select_buttons');
+
+// console.log(list);
+
+// var b = makeButton("ss");
+// var li = document.createElement("LI");
+// console.log(b)
+// li.appendChild(b);
+// console.log(li)
+// list.appendChild(li);
+
+
 </script>
 
 
 <script type="text/javascript" src="js/showToolTip_jQuery.js"></script>
+<script src="js/search.js"></script>
 
 
 <div id="map-canvas"></div>
 
-<!-- <script>
-
-
-  $(function(){
-    $(".selector").accordion({
-      animate: 200
-    });
-
-    $(".myaccordion").accordion(
-      {collapsible:true,
-        alwaysOpen: false});
-    })
-
-</script> -->
 
   </body>
 </html>
