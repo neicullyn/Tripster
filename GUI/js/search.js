@@ -103,13 +103,51 @@
               {
                 n_zoom = 9;
               }
-
-              map.setZoom(n_zoom);
-
+              else
+              {
+                n_zoom = 8;
+              }
               var current_center = this.getCenter();
               draw_markers(business_info[current_center]);
               document.getElementById('back_button').style.visibility = 'visible';
+
+              map.setZoom(n_zoom);
+
             });
+        }
+
+      }
+
+      var via_points_list = [];
+      var address_list = [];
+
+      function add_to_route(address){
+        var via = {}
+        // console.log(address.name);
+        var values = address.name.split(",");
+        var la = parseFloat(values[0]);
+        var lo = parseFloat(values[1]);
+        locations = new google.maps.LatLng(la, lo);
+
+        var inserts = 0;
+        for (var i = 0; i < address_list.length; i++)
+        {
+          if (la == address_list[i][0])
+          {
+            inserts = 1;
+          }
+        }
+        var length1 = address_list.length;
+        if (inserts == 0)
+        {
+          address_list.push([la, lo]);
+          via_points_list.push({location: locations});
+        }
+        var length2 = address_list.length;
+
+        if (length1 != length2)
+        {
+          window.alert("Added to Routes!");
         }
 
       }
@@ -118,39 +156,28 @@
         window.open(op.name,"_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=yes, copyhistory=yes, width=800, height=600");
       }
 
-      var via_points_list;
-
-      function add_to_route(address){
-        var via = {}
-        var values = address.name.split(",");
-
-        console.log(value[0]);
-
-        locations = new google.maps.LatLng(address.latitude, address.longtitude);
-        if (typeof(via_points_list) == 'undefined')
-        {
-          via_points_list = {location: locations};
-        }
-        else
-        {
-          via_points_list.push({location: locations});
-        }
-        console.log(via_points_list);
-      }
-
       var temp_center;
 
       $(document).on('submit', function(e) {
+          $('#loading').show();
           $.ajax({
             url: $('#myForm').attr('action'),
             type: $('#myForm').attr('method'),
             data: $('#myForm').serialize()+
                   append_string,
             error: function(){
+              $('#loading').hide();
                 window.alert("error");
             },
 
             success: function(return_data){
+              $('#loading').hide();
+
+              // directionDisplay.setDirections({routes: []});
+              // directionDisplay.setMap(map);
+              directionDisplay.setMap(null);
+              directionDisplay = null;
+
               if (typeof(append_string) == "undefined")
               {
                 alert("Please select your preference")
@@ -174,8 +201,6 @@
                     business_info[new google.maps.LatLng(obj[i][j].center[0], obj[i][j].center[1])] = obj[i][j].businesses;
                   }
                 }
-                console.log(business_info);
-                console.log(cluster_map);
                 map.setZoom(8);
 
                 temp_center = cluster_map[4].center;
@@ -198,24 +223,93 @@
         }
       }
 
+
       function draw_markers(business){
         go_back(markers_array);
         console.log(business);
+        var category_icon = {};
+        category_icon["restaurant"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["african"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["arabian"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["armenian"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["asianfusion"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["breakfast_brunch"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["buffets"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["chinese"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["cuban"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["french"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["german"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["gluten_free"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["greek"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["italian"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["japanese"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["mexican"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["nightfood"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["seafood"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["spanish"] = '<i class="fa fa-cutlery"></i>';
+        category_icon["thai"] = '<i class="fa fa-cutlery"></i>';
 
-        var icon_active = 'icon/active.png';
-        var icon_hotel = 'icon/hotel.png';
-        var icon_restaurant = 'icon/fork.png';
-        var icon_night = 'icon/night.png';
-        var icon_shopping = 'icon/shopping.png';
-        var icon_art = 'icon/paint-brush.png';
+        category_icon["shopping"] = '<i class="fa fa-shopping-cart"></i>';
+        category_icon["cosmetics"] = '<i class="fa fa-shopping-cart"></i>';
+        category_icon["electronics"] = '<i class="fa fa-shopping-cart"></i>';
+        category_icon["fashion"] = '<i class="fa fa-shopping-cart"></i>';
+        category_icon["outlet_stores"] = '<i class="fa fa-shopping-cart"></i>';
+
+
+        category_icon["localflavor"] = '<i class="fa fa-map-marker"></i>';
+        category_icon["hotelstravel"] = '<i class="fa fa-bed"></i>';
+        category_icon["arts"] = '<i class="fa fa-paint-brush"></i>';
+        category_icon["active"] = '<i class="fa fa-child"></i>';
+
+        category_icon["nightlife"] = '<i class="fa fa-glass"></i>';
+        category_icon["bars"] = '<i class="fa fa-glass"></i>';
+        category_icon["beergardens"] = '<i class="fa fa-glass"></i>';
+        category_icon["coffeeshops"] = '<i class="fa fa-glass"></i>';
+        category_icon["comedyclubs"] = '<i class="fa fa-glass"></i>';
+        category_icon["countrydancehalls"] = '<i class="fa fa-glass"></i>';
+        category_icon["danceclubs"] = '<i class="fa fa-glass"></i>';
+        category_icon["dancerestaurants"] = '<i class="fa fa-glass"></i>';
+        category_icon["fasil"] = '<i class="fa fa-glass"></i>';
+        category_icon["jazzandblues"] = '<i class="fa fa-glass"></i>';
+        category_icon["karaoke"] = '<i class="fa fa-glass"></i>';
+        category_icon["musicvenues"] = '<i class="fa fa-glass"></i>';
+        category_icon["pianobars"] = '<i class="fa fa-glass"></i>';
+        category_icon["poolhalls"] = '<i class="fa fa-glass"></i>';
 
         for (var i = 0; i < business.length; i++)
         {
+          var marker_label;
+          var marker_icon = {
+            path: SQUARE_PIN,
+            fillColor: '#C00000',
+            fillOpacity: 1,
+            strokeColor: '',
+            strokeWeight: 0,
+            scale: 2/7
+          };
 
-          var marker = new google.maps.Marker({
+          for (var key in category_icon)
+          {
+            if (business[i].categories == key)
+            {
+              marker_label = category_icon[business[i].categories];
+            }
+          }
+
+          var marker = new Marker({
             position: new google.maps.LatLng(business[i].latitude, business[i].longitude),
             map: map,
-            title: 'hi'
+            title: 'hi',
+            zIndex: 20,
+            icon: {
+              path: SQUARE_PIN,
+              fillColor: '#FF7C6F',
+              fillOpacity: 1,
+              strokeColor: '#FF3366',
+              strokeWeight: 1,
+              scale: 1/4
+            },
+            label: marker_label
           });
 
           // var b = create_selection_buttons("s");
@@ -234,8 +328,8 @@
               + business[i].all.location.city + '<br>'
               + business[i].all.location.state_code + ' ' + business[i].all.location.postal_code +
               '</p>'
-              + '<input type="button" value="Open in Yelp" name=' + [business[i].latitude, business[i].longitude] + ' onclick="add_to_route(this)">'
-              + '<input type="button" value="Add to Route" name=' + business[i] + 'onclick="add_to_route(this)"></div></div>';
+              + '<input type="button" value="Open in Yelp" name=' + business[i].all.url + ' onclick="open_yelp_window(this)">'
+              + '<input type="button" value="Add to Route" name=' + [business[i].latitude, business[i].longitude] + ' onclick="add_to_route(this)"> </div></div>';
           }
           else if (business[i].all.location.address.length == 2)
           {
@@ -249,8 +343,8 @@
               + business[i].all.location.city + '<br>'
               + business[i].all.location.state_code + ' ' + business[i].all.location.postal_code +
               '</p>'
-              + '<input type="button" value="Open in Yelp" name=' + [business[i].latitude, business[i].longitude] + ' onclick="add_to_route(this)">'
-              + '<input type="button" value="Add to Route" name=' + business[i] + 'onclick="add_to_route(this)"></div></div>';
+              + '<input type="button" value="Open in Yelp" name=' + business[i].all.url + ' onclick="open_yelp_window(this)">'
+              + '<input type="button" value="Add to Route" name=' + [business[i].latitude, business[i].longitude] + ' onclick="add_to_route(this)"> </div></div>';
           }
 
           var infowindow = new google.maps.InfoWindow({
@@ -271,35 +365,43 @@
 
 
       function renderDirections(result, routeToDisplay){
-        var tempDisplay = new google.maps.DirectionsRenderer({
-          draggable: true
-        });
-        tempDisplay.setMap(map);
-        tempDisplay.setDirections(result);
-        tempDisplay.setRouteIndex(routeToDisplay);
+        // var tempDisplay = new google.maps.DirectionsRenderer({
+        //   draggable: true
+        // });
+        // directionDisplay.setMap(map);
+        directionDisplay.setDirections(result);
+        // directionDisplay.setRouteIndex(routeToDisplay);
       }
 
-      function calcRoute(start, end) {
+      function calcRoute() {
+        directionDisplay = new google.maps.DirectionsRenderer(
+        {draggable: true
+        });
+        directionDisplay.setMap(map);
+
+        var start = document.getElementById('start_var').value;
+        var end = document.getElementById('end_var').value;
+
+        console.log(start);
+
         var direction = {
           origin: start,
           destination: end,
+          waypoints: via_points_list,
           travelMode: google.maps.TravelMode.DRIVING,
-          provideRouteAlternatives: true
+          provideRouteAlternatives: false
         };
         directionService.route(direction,
           function(response, status)
           {
             if (status == google.maps.DirectionsStatus.OK) {
-              for (var i = 0, len = response.routes.length; i < len; i++) {
+              // for (var i = 0, len = response.routes.length; i < len; i++) {
                 renderDirections(response);
-              }
+              // }
             }
           }
         );
       };
-
-
-
 
       // function click_enter(){
       //   document.getElementById('end_var').addEventListener("keydown",function(event){

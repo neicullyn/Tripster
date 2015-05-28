@@ -5,19 +5,26 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/map-icons.css" />
+    <link rel="stylesheet" href="loading-master/site/style.css" />
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script src="js/map-icons.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootlint/0.12.0/bootlint.min.js"></script>
 
     <!-- // <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
     <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     <script src="http://malsup.github.com/jquery.form.js"></script>
-    <!-- // <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?sensor=false">
-    </script>
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title> Google Map in test </title>
@@ -27,12 +34,54 @@
     </style>
     <style type="text/css">
 
-    #buttons{
-      z-index: 1000;
-      position: absolute;
-      left: 100px;
-      top:200px;
-    }
+      #loading{
+        z-index: 2000;
+        position:absolute;
+        background-color: #FF5544;
+        color: #FFFFFF;
+        font-family: 'Open Sans';
+        width:100%;
+        opacity: 0.7;
+        height:100%;
+      }
+
+      #loading h1{
+        position: absolute;
+        left: 42%;
+        top: 45%;
+      }
+      #loading img{
+        position: absolute;
+        left: 48%;
+        top: 40%;
+      }
+
+      #loading p{
+        position: absolute;
+        left: 44%;
+        top: 60%;
+      }
+      #buttons{
+        z-index: 1000;
+        position: absolute;
+        left: 100px;
+        top:200px;
+      }
+
+      .marker-label,
+      .marker-icon {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        margin-top: -26px;
+        margin-left: -25px;
+        width: 50px;
+        height: 50px;
+        font-size: 15px !important;
+        text-align: center;
+        color: #FFFFFF;
+        white-space: nowrap;
+      }
 
       .hide{
         display: none;
@@ -60,7 +109,7 @@
         position: absolute;
         z-index: 1;
         height:20px;
-        weight:90px;
+        width:90px;
         top:2px;
         right: -20px;
       }
@@ -71,8 +120,8 @@
         font-size: 16px;
         z-index: 1;
         position: absolute;
-        top:7px;
-        background-color: #f2b34d;
+        top:10px;
+        background-color: #FF7C6F;
         border-radius: 3px;
         border:0px solid #c89438;
         cursor: pointer;
@@ -80,14 +129,14 @@
         text-align: center;
         text-shadow: 0 1px 0 rgba(0,0,0,0.5);
         padding: 8px 10px;
-        right: 90px;
+        right: 30px;
         box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22);
 
       }
 
       #explore_random_trip button:hover{
         background:linear-gradient(to bottom, #ECB368 5%);
-        background-color: #ECB368;
+        background-color: #FF5544;
       }
 
       #signin button{
@@ -98,7 +147,7 @@
         top:16px;
         background-color: #FFFFFF;
         border-radius: 2px 0px 0px 2px;
-        right: 265px;
+        right: 165px;
         border: none;
         border-right: 1px solid #BDBDBD;
         cursor: pointer;
@@ -115,11 +164,11 @@
         top:16px;
         background-color: #FFFFFF;
         border-radius: 0px 2px 2px 0px;
-        right: 210px;
+        right: 110px;
         border:none;
         border-left: 1px solid #BDBDBD;
         cursor: pointer;
-        color:#ECB368;
+        color:#FF7C6F;
         padding: 3px 8px;
         box-shadow: 3px 0px 5px 1px rgba(0,0,0,0.22);
       }
@@ -176,17 +225,22 @@
         z-index: 110;
         font-family: 'Open Sans';
         font-style: normal;
+        color: #FFFFFF;
         font-size: 14px;
-        background-color:#FFFFFF;
+        background-color:#FF7C6F;
         position: absolute;
         bottom: 20px;
         right: 20px;
         margin:0px;
         width:80px;
         height:40px;
-        border:0px;
-        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22);
-      }
+        border-radius: 3px;
+        border:0px solid #c89438;
+        cursor: pointer;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+        padding: 8px 10px;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.22);      }
 
       #back_button button:hover{
         background-color: #bfbfbf;
@@ -203,12 +257,12 @@
 
 <ul id="buttons"></ul>
 
-<div id="banner-content">
-  <a href="main_index.html"> <img src="logo_new_new.png" alt="Tripster" style="width:130px;height:45px"></a>
-</div>
+<!-- <div id="banner-content"> -->
+<!--   <a href="main_index.html"> <img src="logo_new_new.png" alt="Tripster" style="width:130px;height:45px"></a>-->
+ <!-- </div> -->
 
 <div id = "explore_random_trip">
-  <button> Save Route</button>
+  <button  onclick="calcRoute()"> Route</button>
 </div>
 
 <div id = "signin">
@@ -223,8 +277,8 @@
   <button onclick="block_none()">Return</button>
 </div>
 
-<!-- <form id = "myForm" action = "http://tripster4red.appspot.com/main" method="get"> -->
-<form id = "myForm" action = "http://localhost:9080/main" method="get">
+<form id = "myForm" action = "http://tripster4red.appspot.com/main" method="get">
+<!-- <form id = "myForm" action = "http://localhost:9080/main" method="get"> -->
 <div id = "panel">
   <input type = "text" id = 'start_var' name = "origin" placeholder = 'From'>
   <p><input type = "text" id = 'end_var' name = "dest" placeholder = 'To'></p>
@@ -256,12 +310,11 @@
 
   <div class="btn-group">
   <button type="button" id="btn-nightlife" class="btn btn-default" data-toggle="tooltip" data-original-title="nightlife" data-placement="top" data-container="body">
-  <i class="fa fa-moon-o"></i>
+  <i class="fa fa-glass"></i>
   </button>
   <ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
   <li id="li-nightlife"><a href="#">All</a></li>
   <li class="divider" style="margin:0;"></li>
-  <li id="li-adultentertainment"><a href="#">adult entertainment</a></li>
   <li id="li-bars"><a href="#">bars</a></li>
   <li id="li-beergardens"><a href="#">beer gardens</a></li>
   <li id="li-coffeeshops"><a href="#">coffeeshops</a></li>
@@ -318,7 +371,6 @@
   <ul class="dropdown-menu" role="menu" style="margin: 0; padding: 0; position: absolute; z-index: 100;">
   <li id="li-shopping"><a href="#">All</a></li>
   <li class="divider" style="margin:0;"></li>
-  <li id="li-adult"><a href="#">adult</a></li>
   <li id="li-cosmetics"><a href="#">cosmetics &amp; beauty supply</a></li>
   <li id="li-electronics"><a href="#">electronics</a></li>
   <li id="li-fashion"><a href="#">fashion</a></li>
@@ -460,7 +512,6 @@ function updateSelections() {
 }
 
 function block_none(){
- // document.getElementById('hidden-div').classList.add('show');
   map.setZoom(8);
   map.setCenter(temp_center);
   document.getElementById('back_button').style.visibility = 'hidden';
@@ -491,6 +542,20 @@ function makeButton(value) {
 <script type="text/javascript" src="js/showToolTip_jQuery.js"></script>
 <script src="js/search.js"></script>
 
+<div id = "loading" style="display: none;">
+<!--   <div class="white bg-red">
+    <div class="table min-h100 center bg-red">
+    <div class="table-cell"> -->
+      <img src="loading-master/loading-bubbles.svg" width="64" height="64" />
+      <h1 class="h1 mt2 mb0">Loading...</h1>
+      <p class="small mb2">Planning road trip is easier than you think</p>
+        <svg class="geomicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+        </svg>
+      </a>
+<!--     </div>
+    </div>
+  </div> -->
+</div>
 
 <div id="map-canvas"></div>
 
